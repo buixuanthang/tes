@@ -1,0 +1,234 @@
+#search {
+      position: relative;
+    margin-right: 51px;
+}
+
+#search_form {
+    position: relative;
+    display: inline-block;
+}
+
+#search input {
+        border: 1px solid #eeeeee36;
+    color: #FFF;
+    font-size: 14px;
+    height: 40px;
+    line-height: 32px;
+    margin: 0;
+    padding: 5px 30px 5px 15px;
+    width: 436px;
+    box-sizing: border-box;
+    max-width: 100%;
+    border-radius: 4px;
+    background: #ffffff12;
+}
+#search .button-search{
+      padding: 1px 31px 1px 16px;
+    color: #6d6d6d;
+    cursor: pointer;
+    height: 40px;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+    width: 52px;
+    background: #4d4d4d;
+    border: none;
+    text-align: center;
+    -moz-transition: all 0.2s ease-in 0;
+    -webkit-transition: all 0.2s ease-in;
+    -webkit-transition-delay: 0;
+    transition: all 0.2s ease-in 0;
+    border-radius: 0 4px 4px 0;
+}
+#search .button-search:hover {
+  color: #d60012;
+      background: #d8d8d8;
+
+}
+#search .button-search:after{
+   
+}
+#search .button-search i{
+        font-size: 20px;
+    color: #FFF;
+}
+
+.autocomplete-suggestions {
+    margin: 6px 0 0 6px;
+    position: absolute;
+    right: -5px;
+    top: 4px;
+}
+.autocomplete-suggestions {
+  background: #fff none repeat scroll 0 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: default;
+    margin: 0 3px 6px -1px;
+    overflow: auto;
+}
+.autocomplete-suggestions div {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    box-sizing: border-box;
+    clear: both;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.autocomplete-suggestions .autocomplete-group {
+    background: #f1f1f1 none repeat scroll 0 0;
+    padding: 8px 3%;
+    width: 100%;
+    box-sizing: border-box;
+}
+.autocomplete-suggestions .autocomplete-suggestion:nth-child(even){
+	background: #ECECEC;
+}
+.autocomplete-suggestions .autocomplete-suggestion:nth-child(odd){
+    background: #F5F5F5;
+}
+.autocomplete-suggestions div:hover {
+    background: #d4d4d4 !important;
+}
+.autocomplete-suggestions div a img {
+    float: left;
+    width: 50px;
+}
+.autocomplete-suggestions div a, .autocomplete-suggestions div a:link, .autocomplete-suggestions div a:visited {
+        clear: both;
+    color: #ED1C24;
+    font-size: 16px;
+    display: inline-block;
+    margin: 0;
+    padding: 6px 0 6px 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.autocomplete-suggestions div a img {
+       float: left;
+    margin-right: 13px;
+    width: 72px;
+}
+.autocomplete-suggestions div a label {
+     cursor: pointer;
+    /* float: left; */
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+.autocomplete-suggestions div a span {
+       cursor: pointer;
+    display: block;
+    margin: 0;
+    padding: 0;
+    color: #000;
+}
+.autocomplete-suggestions div a span.price {
+       color: #ED1C24;
+    font-weight: 600;
+    padding-top: 6px;
+}
+.autocomplete-suggestions div.last {
+    border: medium none;
+}
+.autocomplete-suggestions strong {
+    color: #ED1C24;
+    font-weight: 600;
+}
+@media screen and (max-width:1200px){
+}
+@media screen and (max-width:1100px){
+    #search input, #search-mobile input {       
+        width: 220px;
+        
+    }
+}
+@media screen and (max-width:1024px){
+    .block-search {
+        width: 100%;
+    }
+}
+@media screen and (max-width:966px){
+    .keyword {
+        width: 48%;
+    }
+}
+@media screen and (max-width:800px){
+}
+@media screen and (max-width:768px){
+    .block-search {
+        width: 100%;
+        border: none;
+    }
+    .search_cat, .guide-deals {
+        display: none;
+    }
+}
+@media screen and (max-width:600px){
+    #search {
+        margin-right: 12px;
+        min-width: 40px;
+    }
+	.search_header {
+	  	    border-left: 1px solid #eaeaea;
+        padding-left: 11px;
+        padding-bottom: 10px;
+        width: auto;
+	}
+	#search_form {
+	   display: none;
+        position: absolute;
+        width: 225px;
+        right: -45px;
+        top: 39px;
+        z-index: 99;
+	}
+	#search:before {
+          position: absolute;
+        top: 0;
+        left: 0;
+        width: 35px;
+        height: 34px;
+        content: "\f002";
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: 19px;
+        border: 1px solid #ffffff12;
+        border-radius: 50%;
+        text-align: center;
+        padding-top: 7px;
+        box-sizing: border-box;
+        color: #cdcdcd;
+        background: #ffffff12;
+    }
+    #search:hover #search_form {
+        display: block;
+    }
+    #search input{
+            background: #FFF;
+    color: #000;
+    }
+}
+@media screen and (max-width:480px){
+    .guide-deals {
+        display: block;
+        margin: 0 auto 8px;
+        width: 100%;
+    }
+    .guide-deals .guide-deals-lf{
+        padding: 10px 4% 11px 15%;
+        width: 30%;
+    }
+    .guide-deals .guide-deals-fr {
+        width: 42%;
+        padding: 10px 1% 11px 6%;
+    }
+}
+@media screen and (max-width:420px){
+    #search {
+        margin-right: 12px;
+        min-width: 35px;
+    }
+}

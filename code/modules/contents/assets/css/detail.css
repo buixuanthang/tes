@@ -1,0 +1,38 @@
+.content_detail{
+       padding: 17px 0;
+}
+.description p, .description ul li, .description div , .description h2, .description h3 {
+    margin-bottom: 12px;
+}
+.content_title {
+        margin: 5px 0 30px;     
+}
+.description img{
+	max-width: 100%;
+	height: auto !important; 
+}
+.description iframe{
+        max-width: 100%;
+   
+}
+.content_title > span {
+   
+    font-weight: normal;
+    margin-bottom: 6px;
+    font-size: 22px;
+    padding-bottom: 6px;
+    margin-top: 9px;
+}
+@media only screen and (max-width:1200px){
+	#oc-column-left{
+		display: none;
+	}
+}
+@media only screen and (max-width:500px){
+	
+    .description iframe[src*=youtube]
+    {
+      max-width:100%;
+      height:auto;
+    }
+}

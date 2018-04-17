@@ -1,0 +1,201 @@
+.cat_item_store{
+   margin-top: 18px;
+    background: #FFF;
+    border-radius: 4px;
+}
+.cat-title{
+	    position: relative;
+    /* margin-bottom: 11px; */
+    /* background: #F4F4F4; */
+    padding-right: 10px;
+    border-bottom: 1px solid #F4F4F4;
+}
+.cat-title .cat-title-main{
+   float: left;
+    /* background: #734F2E; */
+    padding: 11px 24px 10px;
+    /* border-radius: 4px 4px 0 0; */
+    display: inline-block;
+    position: relative;
+    margin-left: 0px;
+    z-index: 10;
+    /* min-width: 116px; */
+    text-align: center;
+    webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    transition: all .5s ease;
+    /* margin-top: -6px; */
+    font-size: 16px;
+    text-transform: uppercase;
+    /* color: #FFF; */
+    text-decoration: none;
+    font-family: RobotoBold;
+}
+.cat-title .cat-title-main a{
+   
+}
+.cat-title .cat-title-main a:before {
+   position: absolute;
+    width: 21px;
+    height: 24px;
+    top: 12px;
+    left: 14px;
+    z-index: 10;
+    font-size: 29px;
+    font-family: FontAwesome;
+    font-weight: normal;
+}
+#cat-tai-nghe a:before {
+    content: "\f025";
+    font-size: 24px;
+}
+#cat-loa-di-dong a:before{
+    content: "\f028";
+    font-size: 24px;
+}
+#cat-may-nghe-nhac a:before{
+      content: "\f10b";
+    /* font-size: 24px; */
+    top: 8px;
+}
+#cat-amp--dac a:before{
+   content: "\f10a";
+    font-size: 24px;
+}
+#cat-may-tinh-bang:before{
+   content: "\f10a";
+    font-size: 24px;
+}
+#cat-phu-kien-apple:before{
+       content: "\f025";
+    font-size: 24px;
+}
+.cat-title .cat-title-main > a{
+       text-transform: uppercase;
+    font-size: 17px;
+    font-weight: normal;
+    padding-left: 28px;
+}
+.cat-title .nav-tabs{
+       float: right;
+    display: flex;
+    margin-top: 12px;
+}
+.cat-title .nav-tabs li{ 
+       margin-right: 14px;
+    margin-left: 16px;
+}
+.cat-title .nav-tabs li.active a, 
+.cat-title .nav-tabs li:hover a{
+	color: #0183BF;
+	text-decoration: underline;
+}
+.title_icon{
+        width: 40px;
+    height: 50px;
+    float: left;
+    background: #00A7F4;
+    margin-left: -1px;
+    margin-top: -1px;
+    margin-bottom: -1px;
+    position: relative;
+}
+.title_icon i {
+        position: absolute;
+    content: ' ';
+    width: 22px;
+    height: 26px;
+    top: 13px;
+    left: 16px;
+    z-index: 10;
+}
+.title_icon::before {
+       content: '';
+    position: absolute;
+    top: 0px;
+    right: -19px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 25px 0 25px 19px;
+    border-color: transparent transparent transparent #00A7F4;
+}
+.cat_slideshow_manu{
+    padding: 10px;
+}
+.cat_slideshow_manu .manufactories{
+       border: 1px solid #F4F4F4;
+    max-height: 223px;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+.cat_slideshow_manu .manufactories li{
+   float: left;
+    width: 50%;
+    border-bottom: 1px solid #F4F4F4;
+    border-right: 1px solid #F4F4F4;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 6px 13px;
+}
+.home_inner_pos_l{
+        float: left;
+    width: 75%;
+}
+.home_inner_pos_r{
+        float: right;
+    width: 25%;
+    box-sizing: border-box;
+    padding-left: 15px; 
+}
+
+#cat-dien-thoai .title_icon i,#cat-iphone .title_icon i {
+        background-position: -85px -64px;
+}
+#cat-phu-kien .title_icon i {
+    background-position: -113px -64px;
+    width: 29px;
+    height: 26px;
+    top: 13px;
+    left: 12px;
+}
+#cat-may-tinh-bang .title_icon i {
+     background-position: -229px -77px;
+}
+#cat-dich-vu .title_icon i {
+        background-position: -273px -125px;
+    height: 31px;
+    left: 13px;
+    top: 11px;
+}
+#cat-dich-vu-sua-chua .title_icon i {
+         background-position: -305px -124px;
+    height: 31px;
+    left: 13px;
+    top: 11px;
+}
+.product_grid .item_break:nth-child(8n){
+    display: none;
+}
+@media only screen and (max-width:768px){
+	.cat-title .nav-tabs {
+	    display: none;
+	}
+     .home_inner_pos_r{
+        display: none;
+    }
+    .home_inner_pos_l {
+        width: 100%;
+    }
+}
+@media only screen and (max-width:500px){
+
+	#cat_item_store_136{
+		display: none;
+	}
+	.home_pos_2 {
+		display: none;
+	}
+}

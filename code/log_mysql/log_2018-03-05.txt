@@ -1,0 +1,323 @@
+
+================REMOTE: ::1  (2018-03-05 08:36:56)===================
+
+================URL : /===================
+
+================1520235416===================
+
+ SELECT lang_key, lang_vi 
+						FROM fs_languages_text 
+						WHERE is_common = 1
+					 OR module = 'home' 
+
+time:::0.040493965148926
+
+===========
+
+ SELECT * FROM fs_config
+						WHERE is_common = 1
+					 
+
+time:::0.056112051010132
+
+===========
+
+ SELECT cache,params,fields_seo_title,fields_seo_keyword,fields_seo_description,fields_seo_h1,fields_seo_h2,fields_seo_image_alt,value_seo_title,value_seo_keyword,value_seo_description FROM fs_config_modules
+				WHERE module = "home" AND view = "home" AND ( task = "display" OR task = "" OR task IS NULL) 
+
+time:::0.084189176559448
+
+===========
+
+SELECT id,title,content, ordering, module, position, showTitle, params ,listItemid,news_categories,contents_categories,link_title
+						FROM fs_blocks AS a 
+						WHERE published = 1 
+					ORDER BY ordering
+
+time:::0.060158014297485
+
+===========
+
+ SELECT *
+					  FROM fs_products_categories
+					  WHERE published = 1 AND is_special = 1
+
+time:::0.029183864593506
+
+===========
+
+ SELECT id,name, alias,tags_group,tablename,is_accessories, root_id, is_accessories,list_parents,icon,is_special
+					FROM fs_products_categories 
+					WHERE 
+						show_in_homepage = 1 AND level = 0
+					ORDER BY ordering
+							
+
+time:::0.00063586235046387
+
+===========
+
+ SELECT id,name,summary,image, created_time,category_id, category_alias, alias,price,price_old ,discount,published_double,image_double,date_end,date_start,warranty,types,is_hotdeal,accessories  FROM fs_products
+						  WHERE 
+						  	 published = 1  AND category_published = 1 AND show_in_home = 1
+						  	 AND category_id_wrapper like '%1%'  ORDER BY  ordering DESC,created_time DESC, id DESC
+						 LIMIT 10
+
+time:::0.057574033737183
+
+===========
+
+ SELECT id,name, image, alias
+							FROM fs_manufactories 
+							WHERE published = 1  
+							 AND tablenames like "%,fs_products_tai_nghe,%"
+							 ORDER BY  ordering ASC,name ASC
+							 
+
+time:::0.12997579574585
+
+===========
+
+ SELECT id,name,summary,image, created_time,category_id, category_alias, alias,price,price_old ,discount,published_double,image_double,date_end,date_start,warranty,types,is_hotdeal,accessories  FROM fs_products
+						  WHERE 
+						  	 published = 1  AND category_published = 1 AND show_in_home = 1
+						  	 AND category_id_wrapper like '%2%'  ORDER BY  ordering DESC,created_time DESC, id DESC
+						 LIMIT 10
+
+time:::0.001230001449585
+
+===========
+
+ SELECT id,name, image, alias
+							FROM fs_manufactories 
+							WHERE published = 1  
+							 AND tablenames like "%,fs_products_loa_di_dong,%"
+							 ORDER BY  ordering ASC,name ASC
+							 
+
+time:::0.001230001449585
+
+===========
+
+ SELECT id,name,summary,image, created_time,category_id, category_alias, alias,price,price_old ,discount,published_double,image_double,date_end,date_start,warranty,types,is_hotdeal,accessories  FROM fs_products
+						  WHERE 
+						  	 published = 1  AND category_published = 1 AND show_in_home = 1
+						  	 AND category_id_wrapper like '%3%'  ORDER BY  ordering DESC,created_time DESC, id DESC
+						 LIMIT 10
+
+time:::0.0007169246673584
+
+===========
+
+ SELECT id,name, image, alias
+							FROM fs_manufactories 
+							WHERE published = 1  
+							 AND tablenames like "%,fs_products_may_nghe_nhac,%"
+							 ORDER BY  ordering ASC,name ASC
+							 
+
+time:::0.0011022090911865
+
+===========
+
+ SELECT id,name,summary,image, created_time,category_id, category_alias, alias,price,price_old ,discount,published_double,image_double,date_end,date_start,warranty,types,is_hotdeal,accessories  FROM fs_products
+						  WHERE 
+						  	 published = 1  AND category_published = 1 AND show_in_home = 1
+						  	 AND category_id_wrapper like '%4%'  ORDER BY  ordering DESC,created_time DESC, id DESC
+						 LIMIT 10
+
+time:::0.0012149810791016
+
+===========
+
+ SELECT id,name, image, alias
+							FROM fs_manufactories 
+							WHERE published = 1  
+							 AND tablenames like "%,fs_products_amp_dac,%"
+							 ORDER BY  ordering ASC,name ASC
+							 
+
+time:::0.0009310245513916
+
+===========
+
+ SELECT id,name,image,alias
+					  FROM fs_products_types  WHERE published = 1 ORDER BY ordering ASC
+
+time:::0.15115904808044
+
+===========
+
+ SELECT *
+					  FROM fs_products_filters  WHERE published = 1 AND is_home = 1 AND field_name <> "manufactory" 
+
+time:::0.14279007911682
+
+===========
+
+ SELECT *
+					  FROM fs_products_filters  WHERE published = 1 AND is_home = 1 AND field_name = "manufactory"  ORDER BY  ordering ASC 
+
+time:::0.0014369487762451
+
+===========
+
+ SELECT *
+					  FROM fs_slideshow_categories
+					  WHERE id = 47 
+
+time:::0.058747053146362
+
+===========
+
+  SELECT id,name,image,url,summary
+					FROM fs_slideshow
+					WHERE published = 1  AND category_id = 47 	
+					ORDER BY ordering 
+
+time:::0.027688980102539
+
+===========
+
+ SELECT *
+					  FROM fs_slideshow_categories
+					  WHERE id = 47 
+
+time:::0.00052213668823242
+
+===========
+
+  SELECT id,name,image,url,summary
+					FROM fs_slideshow
+					WHERE published = 1  AND category_id = 47 	
+					ORDER BY ordering 
+
+time:::0.00049495697021484
+
+===========
+
+ SELECT *
+					  FROM fs_slideshow_categories
+					  WHERE id = 47 
+
+time:::0.00045299530029297
+
+===========
+
+  SELECT id,name,image,url,summary
+					FROM fs_slideshow
+					WHERE published = 1  AND category_id = 47 	
+					ORDER BY ordering 
+
+time:::0.00050997734069824
+
+===========
+
+ SELECT *
+					  FROM fs_slideshow_categories
+					  WHERE id = 47 
+
+time:::0.0004429817199707
+
+===========
+
+  SELECT id,name,image,url,summary
+					FROM fs_slideshow
+					WHERE published = 1  AND category_id = 47 	
+					ORDER BY ordering 
+
+time:::0.00050497055053711
+
+===========
+
+SELECT name,alias,id,level,parent_id as parent_id,alias, list_parents,tablename,image,icon,show_in_homepage,show_in_footer						  FROM fs_products_categories AS a						  WHERE published = 1 						  ORDER BY ordering ASC, id ASC						  						 
+
+time:::0.00051188468933105
+
+===========
+
+ SELECT *						FROM fs_products_filters						WHERE published = 1						ORDER BY field_ordering ASC, ordering, is_common DESC						
+
+time:::0.0012049674987793
+
+===========
+
+ SELECT *
+					FROM fs_menus_items
+					WHERE published  = 1
+						AND group_id = 1 
+					ORDER BY ordering
+
+time:::0.041272878646851
+
+===========
+
+ SELECT *
+					  FROM fs_slideshow_categories
+					  WHERE id = 45 
+
+time:::0.00063395500183105
+
+===========
+
+  SELECT id,name,image,url,summary
+					FROM fs_slideshow
+					WHERE published = 1  AND category_id = 45 	
+					ORDER BY ordering 
+
+time:::0.00043010711669922
+
+===========
+
+ SELECT name,id,category_id,type,image,flash,content,link,height,width
+						  FROM fs_banners AS a
+						  WHERE published = 1
+						  AND category_id IN (43) AND (listItemid = 'all'
+							OR listItemid like '%,1,%')
+							 ORDER BY ordering, id 
+
+time:::0.050107955932617
+
+===========
+
+ SELECT *
+						  FROM fs_strengths
+						 WHERE  published = 1 
+						 ORDER BY  ordering ASC 
+						 LIMIT 4 
+						 
+
+time:::0.053296089172363
+
+===========
+
+ SELECT title,alias,image,summary,hits,updated_time,id,category_alias,is_hot,comments_total,created_time
+						  FROM fs_news
+						 WHERE  published = 1 and category_published = 1 
+						  ORDER BY   ordering DESC,created_time DESC, ordering DESC,created_time DESC
+						 LIMIT 4  
+						 
+
+time:::0.43149399757385
+
+===========
+
+ SELECT *
+					FROM fs_menus_items
+					WHERE published  = 1
+						AND group_id = 3 
+					ORDER BY ordering
+
+time:::0.00060701370239258
+
+===========
+
+ SELECT id, name, level, alias,is_bold,link
+					FROM fs_tags
+					WHERE published  = 1  
+					ORDER BY ordering
+					LIMIT 150 
+
+time:::0.0469810962677
+
+===========

@@ -1,0 +1,36 @@
+$(document).ready(function(){
+  $('.content-partners').owlCarousel({
+      loop:true,
+      nav:true,
+		      navText: [
+		         "‹",
+		        "›"
+		        ],
+		      dots:false,
+      autoplay:true,
+      margin:15,
+      responsive:{
+         0:{
+              items:2,
+              nav:true
+          },
+          320:{
+              items:2,
+              nav:true
+          },
+       
+          600:{
+              items:3,
+              nav:true
+          },
+          768:{
+              items:4,
+              nav:true
+          },
+          1000:{
+              items:6,
+              nav:true
+          }
+      }
+  })
+});

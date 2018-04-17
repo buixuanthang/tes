@@ -1,0 +1,199 @@
+.main_wrapper .left-col .filter_no_cal_multiselect_dropdown, .main_wrapper .right-col .filter_no_cal_multiselect_dropdown {
+    border: none;
+}
+.filter_no_cal_multiselect_dropdown {
+    margin: 0 0px;
+}
+.filter_no_cal_multiselect_dropdown .field_item {
+       float: left;
+    margin-right: 20px;
+    position: relative;
+    padding-right: 30px;
+}
+.filter_no_cal_multiselect_dropdown .field_item:after {
+   border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 5px solid #734F2E;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    right: 14px;
+    top: 18px;
+    vertical-align: top;
+    content: '';
+}
+.icon-filter{
+	    float: left;
+    margin-left: 38px;
+}
+.filter_no_cal_multiselect_dropdown .field_item .field_name {
+    color: #734F2E;
+    cursor: pointer;
+    font-weight: normal;
+}
+.filter_no_cal_multiselect_dropdown .field_label a {
+   margin: 3px 0;
+    line-height: 24px;
+    display: block;
+}
+.filter_no_cal_multiselect_dropdown .filters_in_field{
+    display: none;
+    position: absolute;
+    width: 400px;
+    z-index: 10000;
+    top: 44px;
+    padding-top: 4px;
+    left: -10px;
+}
+.filter_no_cal_multiselect_dropdown .filters_in_field_inner{
+    background: #FFF;
+    border: 1px solid #E7E7E7;
+    padding: 10px;
+    border-width: 0 1px 1px 1px;
+}
+.filter_no_cal_multiselect_dropdown .field_item:hover  .filters_in_field{
+	display: block;
+}
+.filter_no_cal_multiselect_dropdown .field_label .item{
+    transform: translate(0.5em,0px);
+    box-sizing: border-box;
+    display: flex;
+}
+.filter_no_cal_multiselect_dropdown .field_label .item:hover, 
+.filter_no_cal_multiselect_dropdown .field_label .item.activated {
+}
+.filter_no_cal_multiselect_dropdown .field_label .item a {
+    color: #333;
+    font-weight: 500;
+    margin-left: 0px;
+}
+.filter_no_cal_multiselect_dropdown .field_label .item i {
+        width: 15px;
+    height: 23px;
+    z-index: 10;
+    float: left;
+    background-position: -93px -143px;
+    margin-right: 8px;
+}
+.filter_no_cal_multiselect_dropdown .field_label .item:hover i,.filter_no_cal_multiselect_dropdown .field_label .item.activated i {
+         background-position: -72px -143px;
+}
+.filter_no_cal_multiselect_dropdown .field_label .item.activated:hover i {
+        background-position: -72px -143px;
+}
+.filter_no_cal_multiselect_dropdown .field_label .item:hover a, .filter_no_cal_multiselect_dropdown .field_label .item.activated a {
+    color: #ff2a00;
+}
+.filter_no_cal_multiselect_dropdown .field_label .item.activated:hover a {
+    color: #333;
+}
+.filters_in_field_3_column {
+	    width: 400px;
+}
+.filters_in_field_3_column .item {
+    width: 33.333%;
+    float: left;
+}
+.filters_in_field_2_column {
+	    width: 300px;
+}
+.filters_in_field_2_column .item {
+    width: 50%;
+    float: left;
+}
+.filters_in_field_1_column {
+    width: 200px;
+}
+.filters_in_field_1_column .item {
+}
+
+.icon-filter {
+   position: relative;
+    float: left;
+    display: none;
+    line-height: 40px;
+}
+.icon-filter > span {
+   background: #00A7F4;
+    padding: 14px 14px 14px;
+    margin-right: 8px;
+    cursor: pointer;
+    display: none;
+    margin-top: 9px;
+    border-bottom: 10px solid #FBFBFB;
+}
+.icon-filter > span::before {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 0;
+    width: 28px;
+    height: 5px;
+    background: #FFF;
+}
+.icon-filter > span::after {
+        content: '';
+    position: absolute;
+    top: 26px;
+    left: 0;
+    width: 28px;
+    height: 5px;
+    background: #FFF;
+}
+.filter_no_cal_multiselect_dropdown {
+    margin: 0 0px;
+}
+
+
+@media screen and (max-width:900px){
+	.icon-filter {
+        float: left;
+	}
+	.icon-filter > span {
+	    display: block;
+	}
+	.filter_no_cal_multiselect_dropdown .field_item {
+	    float: none;
+	}
+	.icon-filter .filter_inner {
+        display: none;
+	    padding: 10px;
+	    box-shadow: #bfbdbd 1px 2px 2px 1px;
+	    position: absolute;
+	    z-index: 1000;
+	    background: #FFF;
+	    width: 277px;
+	    top: 20px;
+	    left: 0;
+	    border-top: 3px solid #00A7F4;
+	    text-align: left;
+	}
+	.icon-filter .filter_inner {
+          display: none;
+	    padding: 10px;
+	    width: 277px;
+	    top: 42px;
+	    right: 0;
+	    left: 0;
+	}
+	
+	.filters_in_field_3_column {
+	    width: 300px;
+	}
+	.filters_in_field_3_column .item {
+	    width: 50%;
+	    float: left;
+	}
+.icon-filter:hover .filter_inner {
+		display: block;
+	}
+}
+@media screen and (max-width:550px){
+	.icon-filter {
+	    float: right;
+	}
+	.icon-filter .filter_inner {
+	    left: inherit;
+	}
+}

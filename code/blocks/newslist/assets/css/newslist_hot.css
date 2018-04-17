@@ -1,0 +1,31 @@
+.block_newslist {
+    border:  1px solid #ccc;
+    border-top: 2px solid #49c1ea;
+}
+.block_title {
+    margin: 0;
+    padding: 8px 10px;
+}
+.block_title span {
+    font-family: semibold;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+.news-hot {
+    border-top: 1px dotted #ccc;
+    margin-bottom: 10px;
+    padding: 10px 0 0;
+}
+.news-hot:first-child {
+    border-top: 1px solid #ccc;
+}
+.news_list_body img {
+    float: left;
+    height: 60px;
+    width: 75px;
+    margin: 0 8px 0 10px;
+}
+.news-hot a {
+    font-size: 12px;
+    font-weight: bold;
+}

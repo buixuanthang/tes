@@ -1,0 +1,24 @@
+.remove-fav > a {
+    position: relative;
+}
+.remove-fav > a span {
+    font-family: FontAwesome;
+    content: "\f046";
+    font-size: 19px;
+}
+.fa-trash-o:before {
+    content: "\f014";
+}
+.head-tr{
+	    background: #EFEFEF;
+    line-height: 26px;
+    font-family: RobotoBold;
+    text-align: center;
+}
+.pull-left{
+	    float: left;
+    margin-right: 20px;
+}
+.media-body .price{
+    margin-top: 5px;
+}

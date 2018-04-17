@@ -1,0 +1,45 @@
+.strengths-product {
+    width: 100%;
+    background: #f4f4f4;
+    color: #20282b;
+    margin-bottom: 15px;
+}
+
+.icons {
+    width: 70px;
+    background: red;
+    height: 70px;
+    text-align: center;
+    background: #20282d;
+    border-radius: 50%;
+}
+.strengths-product .title {
+    font-size: 18px;
+    font-family: RobotoBold;
+    padding: 15px;
+    width: 100%;
+    text-align: center;
+}
+
+.strengths-product ul li {
+    width: 50%;
+    float: left;
+     background: #f4f4f4;
+    box-sizing: border-box;
+    position: relative;
+    padding: 13px 0px 14px 20px;
+}
+
+.strengths-product i {
+    font-size: 45px;
+    color: white;
+    margin-top: 12px;
+}
+.content {
+    position: absolute;
+    top: 23px;
+    left: 107px;
+}
+.title_str{
+    font-family: RobotoBold;
+}

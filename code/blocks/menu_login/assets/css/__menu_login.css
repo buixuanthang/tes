@@ -1,0 +1,37 @@
+.menu_login {
+    margin-bottom: 20px;
+}
+.label.menu_user {
+    background: url("../images/icon-ttct.png") no-repeat scroll 14px 16px #0eb7d4;
+    color: #fff;
+    font-family: opensans;
+    font-size: 16px;
+    font-weight: normal;
+    padding: 12px 50px;
+    text-transform: uppercase;
+}
+.menu_item {
+    padding: 4px 2px 4px 12px;
+    border-bottom: 1px dotted #e0e0e0;
+    display: list-item;
+    list-style: square inside;
+}
+.menu_item > a {
+    color: #555555;
+    font-size: 14px;
+}
+.menu_item:hover, .menu_item.activated {
+}
+.menu_item:hover a, .menu_item.activated  a{
+   color: #F34242;
+}
+.menu_group{
+    margin-bottom: 10px;
+}
+.menu_group .label{
+	border-bottom: 1px dotted #e0e0e0;
+    color: #5DB8C9;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 3px 0 3px 10px;
+}

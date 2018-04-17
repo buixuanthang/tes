@@ -1,0 +1,87 @@
+.statics-feature{
+	 background-image: url('../images/certificate.png');
+    background-attachment: fixed;
+    background-position: center top !important;
+    -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+    background-size: cover;
+    padding-bottom: 250px !important;
+    padding-top: 250px  !important;
+    text-align: center;
+	position: relative;
+  @media only screen and (max-width:900px){
+        background-attachment: initial;
+    }
+	&:before {
+	    background: rgba(0,0,0,0.6);
+	    content: "";
+	    display: none;
+	    height: 100%;
+	    left: 0;
+	    position: absolute;
+	    top: 0;
+	    width: 100%;
+	    z-index: 1;
+	}
+	.block_content{
+	
+		 .block_content_inner{
+		    width: 100%;
+		    margin: 0 auto;
+		    background: rgba(0, 0, 0, 0.47);
+		    position: absolute;
+		    top: 0;
+		    bottom: 0;
+	        display: -webkit-box;
+		    display: -moz-box;
+		    display: -ms-flexbox;
+		    display: -webkit-flex;
+		    display: flex;
+		    -webkit-box-orient: vertical;
+		    -moz-box-orient: vertical;
+		    -webkit-flex-direction: column;
+		    flex-direction: column;
+		    -webkit-box-pack: center;
+		    -moz-box-pack: center;
+		    -ms-flex-pack: center;
+		    -webkit-justify-content: center;
+		    justify-content: center;
+		    float: left;
+		    padding: 0 10px;
+		    height: 100%;
+		    border: 1px solid transparent;
+		    margin-bottom: -1px;
+		}
+		.img{
+			margin-bottom: 80px;
+			display: none;
+		}
+		.text{
+	    font-size: 28px;
+      color: #fff;
+      max-width: 710px;
+      margin: 0 auto;
+      font-family: helveticaneuelight;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      line-height: 30px;
+		}
+		 .btn {
+		       border: 1px solid #af2a4a;
+		    background: #af2a4a;
+		    color: #FFF;
+		    border-radius: 0;
+		    max-width: 220px;
+		    margin: 0 auto;
+		    width: 100%;
+		    display: block;
+		    height: 50px;
+		    line-height: 50px;
+		    padding: 0;
+		    font-size: 18px;
+		    margin-bottom: 10px;
+		}
+	}
+}
+

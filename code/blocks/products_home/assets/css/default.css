@@ -1,0 +1,117 @@
+.block_products_home .cat_item_store:fisrt-chid {
+	margin-top: 0px;
+}
+.block_products_home  .cat_item_store {
+	margin-top: 20px;
+}
+.block_products_home  .cat_item_store .row{
+	border-color: #E7E7E7;
+    border-style: solid;
+    border-width: 2px 1px 1px 1px;
+    border-radius: 4px;
+    margin-top: -2px;
+    overflow: hidden;
+}
+.block_products_home  .cat_item_store .row_inner{
+	    margin-right: -2px;
+    background: #FFF;
+}
+.block_products_home .cat-title img{
+    border-bottom: 1px solid #D4D4D6;
+    padding: 5px 20px;
+}
+.block_products_home .cat-title h2{
+	    background: #ff8b00;
+    padding: 10px 24px;
+    border-radius: 4px 4px 0 0;
+    display: table;
+    position: relative;
+    margin-left: 0px;
+    z-index: 10;
+    min-width: 116px;
+    text-align: center;
+    webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    transition: all .5s ease;
+}
+.block_products_home .cat-title h2:hover{
+	background: #d87600;
+}
+
+.block_products_home .cat-title h2:after{
+	    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 4px 6px 0 0;
+    border-color: #ff8b00 transparent transparent transparent;
+}
+.block_products_home .cat-title h2:hover:after{
+    border-color: #d87600 transparent transparent transparent;
+}
+.block_products_home .cat-title h2 a {
+       font-size: 15px;
+    text-transform: uppercase;
+        color: #FFF;
+        text-decoration: none;
+}
+.block_products_home .cat-title {
+	    position: relative;
+}
+
+.block_products_home .cat-title .cat-title-main a {
+  font-size: 15px;
+}
+.block_products_home .cat_readmore{
+	float:right;
+	background:url(../images/view-all.jpg) no-repeat;
+	padding:11px 55px;
+}
+.block_products_home #main-cat{
+	background:#fff;
+	padding:0 33px 20px;
+}
+
+
+.block_products_home .wapper-content-page-bottom {
+    display: none;
+}
+
+.block_products_home  .product_type {
+    position: absolute;
+    right: 30px;
+    top: 32px;
+}
+.cat_sub_links{
+	float: right;
+}
+@media screen and (max-width:1200px){
+	.cat_sub_links{
+		display: none;
+	}
+}
+.cat_sub_links {
+    position: absolute;
+    right: 0;
+    top: 7px;
+}
+.cat_sub_links  a{
+}
+.cat_sub_links .sepa{
+    padding: 0 13px;
+    color: #CCC;
+}
+
+
+@media screen and (max-width:700px){
+    .product_grid .item {
+        float: left;
+        width: 50%;
+   
+    }
+}

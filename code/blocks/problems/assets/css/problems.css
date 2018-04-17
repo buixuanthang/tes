@@ -1,0 +1,354 @@
+.problems_wrapper .problems_container{
+	    position: absolute;
+    position: absolute;
+    top: 0;
+    /* width: 780px; */
+    max-width: 100%;
+    left: 50%;
+    /* height: 100%; */
+    transform: translate(-50%,0);
+}
+.problems_block	{
+	    display: block;
+    /* overflow: hidden; */
+    padding-bottom: 0px;
+    padding-top: 55px;
+    position: relative;
+    text-align: center;
+}
+.problems_label{
+	    color: #FFF;
+    text-transform: uppercase;
+    border-bottom: none;
+    margin-bottom: 0px;
+    font-size: 22px;
+    padding-bottom: 20px;
+    font-weight: 400;
+    margin-top: 15px;
+    text-align: center;
+}
+.problem_img{
+     display: inline-block;    
+        -webkit-transition: all cubic-bezier(0.4, 0, 1, 1) 2s;
+    transition: all 2.0s ease 0s;
+    -webkit-transition: all 2.0s ease 0s;
+}
+.problems_block ul{
+    margin-left: 220px;
+    text-align: left;
+}
+.problems_block ul li{
+     
+    display: table;
+    margin-bottom: 36px;
+    min-width: 277px;
+    
+
+    transform: translate(1500px, 0px) scale(0) rotate(90deg);
+     -webkit-transform:translate(1500px, 0px) scale(0) rotate(90deg);
+    -moz-transform:translate(1500px, 0px) scale(0) rotate(90deg);
+
+
+    transition: all 2.3s ease 0s;
+    -webkit-transition: all 2.3s ease 0s;
+    -webkit-transition-delay: .3s;
+    transition-delay: .3s;
+    
+
+}
+.problems_block ul li:nth-child(1) {    
+     transition: all 2.3s ease 0s;
+    -webkit-transition: all 2.3s ease 0s;
+    -webkit-transition-delay: .3s;
+    transition-delay: .6s;
+}
+.problems_block ul li:nth-child(2) {    
+     transition: all 2.9s ease 0s;
+    -webkit-transition: all 2.9s ease 0s;
+    -webkit-transition-delay: .9s;
+    transition-delay: .9s;
+}
+.problems_block ul li:nth-child(3) {    
+    transition: all 3.9s ease 0s;
+    -webkit-transition: all 3.9s ease 0s;
+    -webkit-transition-delay: 1.9s;
+    transition-delay: 1.9s;
+}
+.problems_block ul li:nth-child(4) {    
+    transition: all 4.9s ease 0s;
+    -webkit-transition: all 4.9s ease 0s;
+    -webkit-transition-delay: 2.9s;
+    transition-delay: 2.9s;
+}
+.problems_block ul .problem1{
+   
+}
+.problems_block ul .problem2{
+    
+}
+.problems_block ul .problem3{
+   
+}
+.problems_block ul li:hover a{    
+        background: #ff8b00;
+    padding-right: 30px;
+}
+.hello .problems_block ul li{
+      transform: translate(0, 0px) scale(1) rotate(0deg);
+     -webkit-transform:translate(0, 0px) scale(1) rotate(0deg);
+    -moz-transform:translate(0, 0px) scale(1) rotate(0deg);
+    
+}
+.problems_block li a:after {
+       content: "";
+    position: absolute;
+    border-top: 22px solid transparent;
+    border-bottom: 22px solid transparent;
+    border-left: 22px solid #FFF;
+    right: -22px;
+    top: 0%;
+    transition: all .4s ease-in;
+}
+.problems_block li:hover a:after {
+   border-left: 22px solid #ff8b00;
+
+}
+.problems_block li:last-child {
+    margin-bottom: 0;
+}
+.problems_block li:last-child:hover a{
+    padding-right: 10px;
+}
+.problems_block ul li h2{
+        text-transform: uppercase;
+    margin: 0;
+    border-bottom: none;
+    text-align: left;
+    font-weight: 600;
+    padding-bottom: 6px;
+    font-size: 17px;
+}
+.problems_block ul li:hover h2{
+   color: #FFF;
+}
+.problems_block ul li a{
+      display: block;
+    position: relative;
+    background: #FFF;
+    min-width: 277px;
+    position: relative;
+    border-radius: 4px 0 0 4px;
+    box-shadow: #6f6f6f -1px 2px 10px 0px;
+    padding: 12px;
+    transition: all 0.8s ease 0s;
+    -webkit-transition: all 0.8s ease 0s;
+
+}
+.problems_block ul li div{
+   color: #ff8b00;
+       font-size: 17px;
+}
+.problems_block ul .problem3 div,.problems_block ul .problem2 div{
+    
+}
+.problems_block ul li:hover div{
+        color: #FFF;
+}
+.problems_solution{
+        
+}
+.problems_solution h2 {
+   background: #FFF;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 600px;
+    margin: 0 auto 10px;
+    position: relative;
+    color: #fd720b;
+    -webkit-transition: 1.5s ease-in-out all;
+    transition: 1.5s ease-in-out all;
+    -moz-transform: scale(0);
+    -moz-transition: all ease 3s;
+    transform: scale(0);
+    text-align: left;
+}
+.problems_solution h2:nth-child(1){
+
+    -webkit-transition-delay: 2.4s;
+    transition-delay: 2.4s;
+}
+.problems_solution h2:nth-child(2){
+    -webkit-transition-delay: 2.9s;
+    transition-delay: 2.9s;
+}
+
+.problems_solution h2:after {
+       content: "";
+    position: absolute;
+    border-top: 18px solid transparent;
+    border-bottom: 19px solid transparent;
+    border-left: 20px solid #FFF;
+    right: -20px;
+    top: 0%;
+    transition: all .4s ease-in;
+    -webkit-transition: 0.5s ease-in-out all;
+    transition: 0.5s ease-in-out all;
+}
+.problems_solution h2 a{
+    color: #FF0000;
+    font-weight: bold;
+    font-size: 16px;
+}
+.problems_inner{
+        display: table;
+    position: relative;
+}
+.problems_t{
+       display: inline-block;
+}
+.problems_t .problem_img{
+        position: absolute;
+    /* left: 19px; */
+    /* box-sizing: border-box; */
+    top: 50%;
+    transform: translate(0,-50%);
+    /* float: left; */
+    top: 50;
+    left: 0;
+}
+.problems_t .problem_img a{
+        display: table-cell;
+    width: 175px;
+    height: 175px;
+    vertical-align: middle;
+    background: #ff8b00;
+    border-radius: 50%;
+    color: #FFF;
+    font-size: 18px;
+    padding: 20px;
+    box-sizing: border-box;
+    font-weight: bold;
+    line-height: 28px;
+    box-shadow: #6f6f6f -1px 2px 10px 0px;
+
+    -webkit-transform: scale(0) ;
+    -moz-transform: scale(0) ;
+    transition: all 2.3s ease 0s;
+    -webkit-transition: all 2.3s ease 0s;
+
+    -webkit-transition-delay: .3s;
+    transition-delay: .3s;
+    transform: translate(-1500px, -1000px) ;
+}
+.hello .problems_t .problem_img a{
+    transform: translate(0, 0);
+    -webkit-transform: scale(1) ;
+    -webkit-transition: all cubic-bezier(0.4, 0, 1, 1) 3.3s;
+    transition: all 3.3s ease 0s;
+    -webkit-transition: all 3.3s ease 0s;
+}
+
+/*
+
+.problem_img {
+    -webkit-transition-delay: .0s;
+    transition-delay: .0s;
+    transform: translate(-1500px, 0);
+}
+.problems_block ul .problem0{
+     -webkit-transition-delay: .2s;
+    transition-delay: .2s;
+    transform: translate(-1500px, 0);
+}
+.problems_block ul .problem1{
+     -webkit-transition-delay: .4s;
+    transition-delay: .4s;
+    transform: translate(1500px, 0);
+}
+.problems_block ul .problem2{
+     -webkit-transition-delay: 1.2s;
+    transition-delay: 1.2s;
+    transform: translate(-1500px, 0);
+}
+.problems_block ul .problem3{
+     -webkit-transition-delay: 1.9s;
+    transition-delay: 1.9s;
+    transform: translate(1500px, 0);
+}
+*/
+
+.hello .problem_img,.hello .problems_block ul .problem0,
+.hello  .problems_block ul .problem1,.hello  .problems_block ul .problem2,
+.hello .problems_block ul .problem3{
+    
+    
+}
+.hello .problems_solution h2 {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+
+}
+
+@media only screen  and (max-width: 870px){
+    .problems_block li{
+           margin-left: 0px !important; 
+    }
+}
+@media only screen  and (max-width: 720px){
+    .problems_block li:after {
+        display: none;
+    }
+    .problems_block ul li {
+       border-radius: 4px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .problems_block ul li:hover {
+        width: 100%;
+        background: rgb(204, 4, 4);
+    }
+}
+
+@media only screen  and (max-width: 650px){
+   .problems_block {       
+        padding-top: 15px;
+       
+    }
+    .problems_t .problem_img {
+           position: relative;
+        transform: translate(0,0);
+        margin-bottom: 15px;    
+    }
+    .problems_t .problem_img a {   
+        width: 175px;
+        height: auto;    
+        font-size: 14px;       
+    }
+    .problems_block ul {
+        margin-left: 0;        
+    }
+    .problems_block ul li {       
+        margin-bottom: 16px;
+    }
+}
+
+@media only screen  and (max-width: 450px){
+   .problems_block ul li a {
+        display: table;       
+        min-width: 234px;        
+        padding: 9px;
+        
+    }
+    .problems_block ul li div {
+        color: #ff8b00;
+        font-size: 14px;
+    }
+    .problems_block li a:after {
+       border-top: 18px solid transparent;
+        border-bottom: 17px solid transparent;
+        border-left: 18px solid #FFF;
+        right: -17px;
+   
+    }
+}

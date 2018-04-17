@@ -1,0 +1,85 @@
+.advice_cat {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #E2E2E2;
+    border-image: none;
+    border-style: solid;
+    border-width: 4px 1px 1px;
+    float: left;
+    margin:0 10px;
+}
+.advice_cat .cat_title {
+    border-bottom: 1px solid #E2E2E2;
+    font-size: 18px;
+    padding: 0 20px;
+}
+.advice_cat .wapper-content-page{
+    padding: 0 10px;
+}
+.advice_cat .item {
+    border-bottom: 2px solid #E5E5E5;
+    padding: 20px 0;
+}
+
+.advice_cat .item_last {
+    border: none;
+}
+.advice_cat .frame_img_advice {
+    display: none;
+}
+
+.advice_cat .advice_title a {
+    color: #F47921;
+    font-size: 16px;
+    font-weight: bold;
+}
+.advice_cat .timer {
+    float: left;
+    margin-bottom: 10px;
+    margin-right: 20px;
+}
+
+.advice_cat .txt_time {
+    color: #7A7A7B;
+}
+.advice_cat .vl_time {
+    color: #F47921;
+}
+
+.advice_cat .asker span{
+   color: #F47921;
+}
+.advice_cat .item-sum {
+    margin-bottom: 6px;
+}
+
+
+.advice_cat .advice_view {
+    background: url("../images/details-advice.png") no-repeat scroll 0 center;
+    color: #F47921;
+    padding-left: 16px;
+}
+.button span{
+}
+
+.related {
+    padding: 10px;
+}
+.related .relate_content{
+	background: url("../images/line-relate.png") no-repeat scroll left 6px transparent;
+	margin-bottom: 10px;
+    padding-left: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px dotted #EEEEEE;
+}
+.comment_form_title_send{
+	float:left;
+}
+.brief{
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 8px;
+}

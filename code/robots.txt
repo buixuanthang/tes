@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: http://msmobile.com.vn/sitemap.xml

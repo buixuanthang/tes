@@ -1,0 +1,3969 @@
+
+================REMOTE: 127.0.0.1  (2018-02-07 05:35:48)===================
+
+================URL : /===================
+
+================1517978148===================
+
+ SELECT lang_key, lang_vi 
+						FROM fs_languages_text 
+						WHERE is_common = 1
+					 OR module = 'home' 
+
+time:::0.02295708656311
+
+===========
+
+ SELECT * FROM fs_config
+						WHERE is_common = 1
+					 
+
+time:::0.044358968734741
+
+===========
+
+ SELECT cache,params,fields_seo_title,fields_seo_keyword,fields_seo_description,fields_seo_h1,fields_seo_h2,fields_seo_image_alt,value_seo_title,value_seo_keyword,value_seo_description FROM fs_config_modules
+				WHERE module = "home" AND view = "home" AND ( task = "display" OR task = "" OR task IS NULL) 
+
+time:::0.039530992507935
+
+===========
+
+SELECT id,title,content, ordering, module, position, showTitle, params ,listItemid,news_categories,contents_categories,link_title
+						FROM fs_blocks AS a 
+						WHERE published = 1 
+					ORDER BY ordering
+
+time:::0.037732839584351
+
+===========
+
+ SELECT *
+					  FROM fs_products_categories
+					  WHERE published = 1 AND is_special = 1
+
+time:::0.026297092437744
+
+===========
+
+ SELECT id,name, alias,tags_group,tablename,is_accessories, root_id, is_accessories,list_parents,icon,is_special
+					FROM fs_products_categories 
+					WHERE 
+						show_in_homepage = 1 AND level = 0
+					ORDER BY ordering
+							
+
+time:::0.00066995620727539
+
+===========
+
+ SELECT id,name,summary,image, created_time,category_id, category_alias, alias,price,price_old ,discount,published_double,image_double,date_end,date_start,warranty,types,is_hotdeal,accessories  FROM fs_products
+						  WHERE 
+						  	 published = 1  AND category_published = 1 AND show_in_home = 1
+						  	 AND category_id_wrapper like '%1%'  ORDER BY  ordering DESC,created_time DESC, id DESC
+						 LIMIT 10
+
+time:::0.07212495803833
+
+===========
+
+ SELECT id,name, image, alias
+							FROM fs_manufactories 
+							WHERE published = 1  
+							 AND tablenames like "%,fs_products_tai_nghe,%"
+							 ORDER BY  ordering ASC,name ASC
+							 
+
+time:::0.058358907699585
+
+===========
+
+ SELECT id,name,summary,image, created_time,category_id, category_alias, alias,price,price_old ,discount,published_double,image_double,date_end,date_start,warranty,types,is_hotdeal,accessories  FROM fs_products
+						  WHERE 
+						  	 published = 1  AND category_published = 1 AND show_in_home = 1
+						  	 AND category_id_wrapper like '%2%'  ORDER BY  ordering DESC,created_time DESC, id DESC
+						 LIMIT 10
+
+time:::0.00073885917663574
+
+===========
+
+ SELECT id,name, image, alias
+							FROM fs_manufactories 
+							WHERE published = 1  
+							 AND tablenames like "%,fs_products_loa_di_dong,%"
+							 ORDER BY  ordering ASC,name ASC
+							 
+
+time:::0.00072312355041504
+
+===========
+
+ SELECT id,name,summary,image, created_time,category_id, category_alias, alias,price,price_old ,discount,published_double,image_double,date_end,date_start,warranty,types,is_hotdeal,accessories  FROM fs_products
+						  WHERE 
+						  	 published = 1  AND category_published = 1 AND show_in_home = 1
+						  	 AND category_id_wrapper like '%3%'  ORDER BY  ordering DESC,created_time DESC, id DESC
+						 LIMIT 10
+
+time:::0.00067901611328125
+
+===========
+
+ SELECT id,name, image, alias
+							FROM fs_manufactories 
+							WHERE published = 1  
+							 AND tablenames like "%,fs_products_may_nghe_nhac,%"
+							 ORDER BY  ordering ASC,name ASC
+							 
+
+time:::0.0008690357208252
+
+===========
+
+ SELECT id,name,summary,image, created_time,category_id, category_alias, alias,price,price_old ,discount,published_double,image_double,date_end,date_start,warranty,types,is_hotdeal,accessories  FROM fs_products
+						  WHERE 
+						  	 published = 1  AND category_published = 1 AND show_in_home = 1
+						  	 AND category_id_wrapper like '%4%'  ORDER BY  ordering DESC,created_time DESC, id DESC
+						 LIMIT 10
+
+time:::0.00066208839416504
+
+===========
+
+ SELECT id,name, image, alias
+							FROM fs_manufactories 
+							WHERE published = 1  
+							 AND tablenames like "%,fs_products_amp_dac,%"
+							 ORDER BY  ordering ASC,name ASC
+							 
+
+time:::0.00073504447937012
+
+===========
+
+ SELECT id,name,image,alias
+					  FROM fs_products_types  WHERE published = 1 ORDER BY ordering ASC
+
+time:::0.03760814666748
+
+===========
+
+ SELECT *
+					  FROM fs_products_filters  WHERE published = 1 AND is_home = 1 AND field_name <> "manufactory" 
+
+time:::0.018480062484741
+
+===========
+
+ SELECT *
+					  FROM fs_products_filters  WHERE published = 1 AND is_home = 1 AND field_name = "manufactory"  ORDER BY  ordering ASC 
+
+time:::0.0011029243469238
+
+===========
+
+ SELECT *
+					  FROM fs_slideshow_categories
+					  WHERE id = 47 
+
+time:::0.029360055923462
+
+===========
+
+  SELECT id,name,image,url,summary
+					FROM fs_slideshow
+					WHERE published = 1  AND category_id = 47 	
+					ORDER BY ordering 
+
+time:::0.036307096481323
+
+===========
+
+ SELECT *
+					  FROM fs_slideshow_categories
+					  WHERE id = 47 
+
+time:::0.00043678283691406
+
+===========
+
+  SELECT id,name,image,url,summary
+					FROM fs_slideshow
+					WHERE published = 1  AND category_id = 47 	
+					ORDER BY ordering 
+
+time:::0.0019149780273438
+
+===========
+
+ SELECT *
+					  FROM fs_slideshow_categories
+					  WHERE id = 47 
+
+time:::0.00037598609924316
+
+===========
+
+  SELECT id,name,image,url,summary
+					FROM fs_slideshow
+					WHERE published = 1  AND category_id = 47 	
+					ORDER BY ordering 
+
+time:::0.00047707557678223
+
+===========
+
+ SELECT *
+					  FROM fs_slideshow_categories
+					  WHERE id = 47 
+
+time:::0.00050187110900879
+
+===========
+
+  SELECT id,name,image,url,summary
+					FROM fs_slideshow
+					WHERE published = 1  AND category_id = 47 	
+					ORDER BY ordering 
+
+time:::0.00060606002807617
+
+===========
+
+SELECT name,alias,id,level,parent_id as parent_id,alias, list_parents,tablename,image,icon,show_in_homepage,show_in_footer						  FROM fs_products_categories AS a						  WHERE published = 1 						  ORDER BY ordering ASC, id ASC						  						 
+
+time:::0.00041890144348145
+
+===========
+
+ SELECT *						FROM fs_products_filters						WHERE published = 1						ORDER BY field_ordering ASC, ordering, is_common DESC						
+
+time:::0.0019690990447998
+
+===========
+
+ SELECT *
+					FROM fs_menus_items
+					WHERE published  = 1
+						AND group_id = 1 
+					ORDER BY ordering
+
+time:::0.016330003738403
+
+===========
+
+ SELECT *
+					  FROM fs_slideshow_categories
+					  WHERE id = 45 
+
+time:::0.00067901611328125
+
+===========
+
+  SELECT id,name,image,url,summary
+					FROM fs_slideshow
+					WHERE published = 1  AND category_id = 45 	
+					ORDER BY ordering 
+
+time:::0.00054812431335449
+
+===========
+
+ SELECT name,id,category_id,type,image,flash,content,link,height,width
+						  FROM fs_banners AS a
+						  WHERE published = 1
+						  AND category_id IN (43) AND (listItemid = 'all'
+							OR listItemid like '%,1,%')
+							 ORDER BY ordering, id 
+
+time:::0.03588604927063
+
+===========
+
+ SELECT *
+						  FROM fs_strengths
+						 WHERE  published = 1 
+						 ORDER BY  ordering ASC 
+						 LIMIT 4 
+						 
+
+time:::0.041514158248901
+
+===========
+
+ SELECT title,alias,image,summary,hits,updated_time,id,category_alias,is_hot,comments_total,created_time
+						  FROM fs_news
+						 WHERE  published = 1 and category_published = 1 
+						  ORDER BY   ordering DESC,created_time DESC, ordering DESC,created_time DESC
+						 LIMIT 4  
+						 
+
+time:::0.042103052139282
+
+===========
+
+ SELECT *
+					FROM fs_menus_items
+					WHERE published  = 1
+						AND group_id = 3 
+					ORDER BY ordering
+
+time:::0.00056600570678711
+
+===========
+
+ SELECT id, name, level, alias,is_bold,link
+					FROM fs_tags
+					WHERE published  = 1  
+					ORDER BY ordering
+					LIMIT 150 
+
+time:::0.020963907241821
+
+===========
+
+================REMOTE: 127.0.0.1  (2018-02-07 05:36:01)===================
+
+================URL : /tai-nghe/akg-q701-p3.html===================
+
+================1517978161===================
+
+ SELECT lang_key, lang_vi 
+						FROM fs_languages_text 
+						WHERE is_common = 1
+					 OR module = 'products' 
+
+time:::0.00042295455932617
+
+===========
+
+ SELECT * FROM fs_config
+						WHERE is_common = 1
+					 
+
+time:::0.00053691864013672
+
+===========
+
+ SELECT cache,params,fields_seo_title,fields_seo_keyword,fields_seo_description,fields_seo_h1,fields_seo_h2,fields_seo_image_alt,value_seo_title,value_seo_keyword,value_seo_description FROM fs_config_modules
+				WHERE module = "products" AND view = "product" AND ( task = "display" OR task = "" OR task IS NULL) 
+
+time:::0.00040197372436523
+
+===========
+
+SELECT id,title,content, ordering, module, position, showTitle, params ,listItemid,news_categories,contents_categories,link_title
+						FROM fs_blocks AS a 
+						WHERE published = 1 
+					ORDER BY ordering
+
+time:::0.00063490867614746
+
+===========
+
+ SELECT  * 
+					  FROM fs_products
+					  WHERE published = 1 and category_published = 1 AND id = 3
+
+time:::0.0006101131439209
+
+===========
+
+ SELECT *
+						FROM fs_products_categories 
+						WHERE id = 1 
+
+time:::0.00046801567077637
+
+===========
+
+SELECT  TABLE_NAME  FROM INFORMATION_SCHEMA.TABLES WHERE 
+				TABLE_TYPE='BASE TABLE' AND TABLE_NAME='fs_products_tai_nghe'
+				AND TABLE_SCHEMA = 'tainghecaocap'
+
+time:::0.018526077270508
+
+===========
+
+ SELECT *
+					FROM fs_products_tai_nghe 
+					WHERE 
+						record_id = 3	
+					
+
+time:::0.048938035964966
+
+===========
+
+ SELECT *
+						FROM fs_products_tables 
+						WHERE table_name = 'fs_products_tai_nghe'
+						ANd  is_filter <> 1 
+						ORDER BY ordering  
+						 
+
+time:::0.15825796127319
+
+===========
+
+ SELECT name,link
+					  FROM fs_keywords  WHERE published = 1
+
+time:::0.08039379119873
+
+===========
+
+ SELECT id,image, record_id,title as name ,  color_id
+						  FROM fs_products_images
+						  WHERE record_id =  3
+						     LIMIT 10
+						 
+
+time:::0.063968896865845
+
+===========
+
+ SELECT *
+						  FROM fs_products_price
+						  WHERE record_id =  3
+						   ORDER BY  price DESC
+						 
+
+time:::0.12809085845947
+
+===========
+
+ SELECT id,title,alias ,category_id ,image , category_alias ,summary,created_time
+						FROM fs_news 
+						 WHERE published = 1 AND ( tags like '%AKG Q701%' OR  tags like '%tai nghe chính hãng%' OR  tags like '%tai nghe AKG%' )
+						ORDER BY id DESC,ordering DESC
+						LIMIT 0,6
+						
+
+time:::0.00072312355041504
+
+===========
+
+ SELECT id,title,summary,image, alias, category_id,category_alias
+						  FROM fs_news
+						  WHERE published = 1
+						     ORDER BY  ordering DESC , id DESC
+						     LIMIT 6
+						 
+
+time:::0.00063109397888184
+
+===========
+
+ SELECT name,id , image,price,price_old,discount, alias,category_alias,category_id,accessories,quantity, price,price_old,types,manufactory_image,manufactory_name,date_start,date_end,warranty,is_hotdeal  
+						FROM fs_products
+						WHERE category_id = 1
+							AND published = 1 ORDER BY ordering LIMIT 5
+
+time:::0.00055599212646484
+
+===========
+
+ SELECT name,id , image,price,price_old,discount, alias,category_alias,quantity, price,price_old,types,manufactory_image,manufactory_name,date_start,date_end,warranty,is_hotdeal  
+						FROM fs_products
+						WHERE category_id = 1 and manufactory = 49
+							AND published = 1 ORDER BY ordering LIMIT 8
+
+time:::0.00078201293945312
+
+===========
+
+ SELECT  name,id , image,price,price_old,discount, alias,category_alias,category_id,quantity, price,price_old,types,manufactory_image,manufactory_name,date_start,date_end,warranty,is_hotdeal,summary,accessories
+						  FROM fs_products
+						  WHERE ID IN ( 1,2,12,11,7,8,6,9,10,4 )
+						  	AND id <>  3
+						  	AND published = 1
+						     ORDER BY  ordering DESC , id DESC
+						     LIMIT 10
+						 
+
+time:::0.00093793869018555
+
+===========
+
+ SELECT *
+					  FROM fs_products
+					  WHERE id = 3 
+
+time:::0.00065302848815918
+
+===========
+
+ SELECT id,name,summary,image,price,price_old,discount,types, alias,accessories, category_id,category_alias, ABS(price - 7990000) as price_subtract,manufactory_image,manufactory_name
+						  FROM fs_products
+						  WHERE published = 1
+						  	AND id <>  3
+						  	AND category_id =  1
+						     ORDER BY price_subtract ASC
+						     LIMIT 5
+						 
+
+time:::0.0007779598236084
+
+===========
+
+ SELECT id,name,image,alias
+					  FROM fs_products_types  WHERE published = 1 ORDER BY ordering ASC
+
+time:::0.00036787986755371
+
+===========
+
+ SELECT *
+						FROM fs_products_incentives AS a
+						WHERE product_id = 3
+
+time:::0.022386074066162
+
+===========
+
+ SELECT *
+						FROM fs_order
+						WHERE  session_id = 'ckdeo2m2uc9piojtki5v2bbmb5' 
+						AND is_temporary = 1 
+
+time:::0.055188179016113
+
+===========
+
+ SELECT *
+					  FROM fs_products_filters
+					  WHERE  tablename = "fs_products_tai_nghe" AND field_name = "manufactory" AND filter_value = "49" 
+
+time:::0.00043797492980957
+
+===========
+
+SELECT name,id , image,price,price_old,discount, alias,category_alias,quantity, price,price_old,types,manufactory_image,manufactory_name,date_start,date_end,warranty,is_hotdeal,summary,accessories
+			 FROM fs_products WHERE published = 1  AND category_published = 1 AND show_in_homepage = 1  AND is_new = 1
+			ORDER BY  ordering DESC, created_time DESC, id DESC LIMIT 0,5
+
+time:::0.00048303604125977
+
+===========
+
+SELECT name,id , image,price,price_old,discount, alias,category_alias,quantity, price,price_old,types,manufactory_image,manufactory_name,date_start,date_end,warranty,is_hotdeal,summary,accessories
+			 FROM fs_products  WHERE is_sell = 1 ORDER BY sale_count DESC, created_time DESC, id DESC LIMIT 0,5
+
+time:::0.00044798851013184
+
+===========
+
+ SELECT *
+					  FROM fs_order  WHERE sender_name <> "" AND sender_telephone <> "" ORDER BY  id DESC  LIMIT 10
+
+time:::0.00095391273498535
+
+===========
+
+SELECT name,created_time,id,email,comment,parent_id,level,record_id,is_admin,avatar  FROM fs_products_comments
+						  WHERE  record_id = 3 
+								AND published = 1 
+						  AND parent_id = 0  ORDER BY  id DESC   LIMIT 0,3 
+
+time:::2.0980834960938E-5
+
+===========
+
+SELECT name,created_time,id,email,comment,parent_id,level,record_id,is_admin,avatar  FROM fs_products_comments
+						  WHERE  record_id = 3 
+								AND published = 1 
+						  AND parent_id > 0  ORDER BY  id ASC  
+
+time:::0.0002899169921875
+
+===========
+
+SELECT count(*) FROM fs_products_comments
+						  WHERE  record_id = 3 
+								AND published = 1 
+						  AND parent_id = 0 
+
+time:::0.00031304359436035
+
+===========
+
+SELECT name,alias,id,level,parent_id as parent_id,alias, list_parents,tablename,image,icon,show_in_homepage,show_in_footer						  FROM fs_products_categories AS a						  WHERE published = 1 						  ORDER BY ordering ASC, id ASC						  						 
+
+time:::0.00043892860412598
+
+===========
+
+ SELECT *						FROM fs_products_filters						WHERE published = 1						ORDER BY field_ordering ASC, ordering, is_common DESC						
+
+time:::0.0012519359588623
+
+===========
+
+ SELECT *
+					FROM fs_menus_items
+					WHERE published  = 1
+						AND group_id = 1 
+					ORDER BY ordering
+
+time:::0.00068092346191406
+
+===========
+
+ SELECT *
+					FROM fs_menus_items
+					WHERE published  = 1
+						AND group_id = 3 
+					ORDER BY ordering
+
+time:::0.00057005882263184
+
+===========
+
+ SELECT id, name, level, alias,is_bold,link
+					FROM fs_tags
+					WHERE published  = 1  
+					ORDER BY ordering
+					LIMIT 150 
+
+time:::0.00063300132751465
+
+===========
+
+================REMOTE: 127.0.0.1  (2018-02-07 05:36:07)===================
+
+================URL : /index.php?module=products&view=cart&task=buy_multi&raw=1&id=3&buy_count=1===================
+
+================1517978167===================
+
+ SELECT lang_key, lang_vi 
+						FROM fs_languages_text 
+						WHERE is_common = 1
+					 OR module = 'products' 
+
+time:::0.0060901641845703
+
+===========
+
+ SELECT * FROM fs_config
+						WHERE is_common = 1
+					 
+
+time:::0.00067591667175293
+
+===========
+
+ SELECT cache,params,fields_seo_title,fields_seo_keyword,fields_seo_description,fields_seo_h1,fields_seo_h2,fields_seo_image_alt,value_seo_title,value_seo_keyword,value_seo_description FROM fs_config_modules
+				WHERE module = "products" AND view = "cart" AND task = "buy_multi"  
+
+time:::0.0015809535980225
+
+===========
+
+ SELECT price,  discount
+						FROM fs_products 
+						WHERE id = 3
+						 
+
+time:::0.00034904479980469
+
+===========
+
+================REMOTE: 127.0.0.1  (2018-02-07 05:36:07)===================
+
+================URL : /gio-hang.html===================
+
+================1517978167===================
+
+ SELECT lang_key, lang_vi 
+						FROM fs_languages_text 
+						WHERE is_common = 1
+					 OR module = 'products' 
+
+time:::0.00093197822570801
+
+===========
+
+ SELECT * FROM fs_config
+						WHERE is_common = 1
+					 
+
+time:::0.00055599212646484
+
+===========
+
+ SELECT cache,params,fields_seo_title,fields_seo_keyword,fields_seo_description,fields_seo_h1,fields_seo_h2,fields_seo_image_alt,value_seo_title,value_seo_keyword,value_seo_description FROM fs_config_modules
+				WHERE module = "products" AND view = "cart" AND task = "eshopcart2"  
+
+time:::0.00045585632324219
+
+===========
+
+SELECT id,title,content, ordering, module, position, showTitle, params ,listItemid,news_categories,contents_categories,link_title
+						FROM fs_blocks AS a 
+						WHERE published = 1 
+					ORDER BY ordering
+
+time:::0.00054788589477539
+
+===========
+
+ SELECT *
+						FROM fs_order
+						WHERE  session_id = 'ckdeo2m2uc9piojtki5v2bbmb5' 
+						AND is_temporary = 1 
+
+time:::0.00076198577880859
+
+===========
+
+ SELECT *
+						FROM fs_products
+						WHERE  id = 3 
+
+time:::0.00072979927062988
+
+===========
+
+ SELECT name,id,alias 
+						FROM fs_products_categories
+						WHERE  id = 1 
+
+time:::0.0098989009857178
+
+===========
+
+SELECT name,alias,id,level,parent_id as parent_id,alias, list_parents,tablename,image,icon,show_in_homepage,show_in_footer						  FROM fs_products_categories AS a						  WHERE published = 1 						  ORDER BY ordering ASC, id ASC						  						 
+
+time:::0.012259006500244
+
+===========
+
+ SELECT *						FROM fs_products_filters						WHERE published = 1						ORDER BY field_ordering ASC, ordering, is_common DESC						
+
+time:::0.0023329257965088
+
+===========
+
+ SELECT *
+					FROM fs_menus_items
+					WHERE published  = 1
+						AND group_id = 1 
+					ORDER BY ordering
+
+time:::0.0058109760284424
+
+===========
+
+ SELECT *
+					FROM fs_menus_items
+					WHERE published  = 1
+						AND group_id = 3 
+					ORDER BY ordering
+
+time:::0.0016369819641113
+
+===========
+
+ SELECT id, name, level, alias,is_bold,link
+					FROM fs_tags
+					WHERE published  = 1  
+					ORDER BY ordering
+					LIMIT 150 
+
+time:::0.00063920021057129
+
+===========
+
+================REMOTE: 127.0.0.1  (2018-02-07 05:36:15)===================
+
+================URL : /gio-hang.html===================
+
+================1517978175===================
+
+ SELECT lang_key, lang_vi 
+						FROM fs_languages_text 
+						WHERE is_common = 1
+					 OR module = 'products' 
+
+time:::0.00038003921508789
+
+===========
+
+ SELECT * FROM fs_config
+						WHERE is_common = 1
+					 
+
+time:::0.00058984756469727
+
+===========
+
+ SELECT cache,params,fields_seo_title,fields_seo_keyword,fields_seo_description,fields_seo_h1,fields_seo_h2,fields_seo_image_alt,value_seo_title,value_seo_keyword,value_seo_description FROM fs_config_modules
+				WHERE module = "products" AND view = "cart" AND task = "eshopcart2_simple_save"  
+
+time:::0.00037598609924316
+
+===========
+
+SELECT id,title,content, ordering, module, position, showTitle, params ,listItemid,news_categories,contents_categories,link_title
+						FROM fs_blocks AS a 
+						WHERE published = 1 
+					ORDER BY ordering
+
+time:::0.00060701370239258
+
+===========
+
+ INSERT INTO  fs_order(`username`,`user_id`,`products_id`,`is_temporary`,`session_id`,`total_before_discount`,`total_after_discount`,`products_count`,`sender_name`,`sender_telephone`,`sender_email`,`sender_address`,`sender_comments`,`created_time`,`edited_time`) VALUES ('','','3','0','ckdeo2m2uc9piojtki5v2bbmb5','7990000','7990000','1','ấdfasdf','987654345','robocon20062007@gmail.com','1.55.40.133','','2018-02-07 05:36:16','2018-02-07 05:36:16') 
+
+time:::0.00036382675170898
+
+===========
+
+ DELETE FROM fs_order_items
+					WHERE order_id = '18'
+
+time:::0.082965135574341
+
+===========
+
+ INSERT INTO fs_order_items (order_id,product_id,price,count,total)
+					VALUES ('18','3','7990000','1','7990000') 
+
+time:::0.00065493583679199
+
+===========
+
+ SELECT * 
+						FROM fs_order
+						WHERE  id = '18' 
+							AND is_temporary = 0 
+					
+
+time:::0.00087690353393555
+
+===========
+
+ SELECT a.*
+						FROM fs_order_items AS a
+						WHERE  a.order_id = 18 
+
+time:::0.0033369064331055
+
+===========
+
+ SELECT a.*
+						FROM fs_products AS a
+						WHERE id IN (3) 
+
+time:::0.000701904296875
+
+===========
+
+ SELECT value FROM fs_config
+			WHERE name = 'admin_name' 
+
+time:::0.00037693977355957
+
+===========
+
+ SELECT value FROM fs_config
+			WHERE name = 'admin_email' 
+
+time:::0.00041699409484863
+
+===========
+
+ SELECT value FROM fs_config
+			WHERE name = 'mail_order_body' 
+
+time:::0.00035500526428223
+
+===========
+
+ SELECT value FROM fs_config
+			WHERE name = 'mail_order_subject' 
+
+time:::0.00033998489379883
+
+===========
+
+================REMOTE: 127.0.0.1  (2018-02-07 05:57:43)===================
+
+================URL : /hotdeal.html===================
+
+================1517979463===================
+
+ SELECT lang_key, lang_vi 
+						FROM fs_languages_text 
+						WHERE is_common = 1
+					 OR module = 'products' 
+
+time:::0.00041699409484863
+
+===========
+
+ SELECT * FROM fs_config
+						WHERE is_common = 1
+					 
+
+time:::0.00070381164550781
+
+===========
+
+ SELECT cache,params,fields_seo_title,fields_seo_keyword,fields_seo_description,fields_seo_h1,fields_seo_h2,fields_seo_image_alt,value_seo_title,value_seo_keyword,value_seo_description FROM fs_config_modules
+				WHERE module = "products" AND view = "hotdeal" AND ( task = "display" OR task = "" OR task IS NULL) 
+
+time:::0.00036907196044922
+
+===========
+
+SELECT id,title,content, ordering, module, position, showTitle, params ,listItemid,news_categories,contents_categories,link_title
+						FROM fs_blocks AS a 
+						WHERE published = 1 
+					ORDER BY ordering
+
+time:::0.0006861686706543
+
+===========
+
+ SELECT id,name,summary,image,accessories,price,price_old,quantity,alias,category_alias,category_id, discount,manufactory_alias,manufactory_image,manufactory_name,summary_auto ,types,promotion_info,published_double,warranty,published_double,date_start,date_end,is_hotdeal	 FROM fs_products
+						WHERE published =1 and category_published = 1  AND is_hotdeal = 1  AND date_start < NOW() AND date_end > NOW() LIMIT 0,20 
+
+time:::7.8678131103516E-6
+
+===========
+
+SELECT count(*) 	 FROM fs_products
+						WHERE published =1 and category_published = 1  AND is_hotdeal = 1  AND date_start < NOW() AND date_end > NOW()
+
+time:::0.00064301490783691
+
+===========
+
+ SELECT id,name,image,alias
+					  FROM fs_products_types  WHERE published = 1 ORDER BY ordering ASC
+
+time:::0.00055408477783203
+
+===========
+
+SELECT name,alias,id,level,parent_id as parent_id,alias, list_parents,tablename,image,icon,show_in_homepage,show_in_footer						  FROM fs_products_categories AS a						  WHERE published = 1 						  ORDER BY ordering ASC, id ASC						  						 
+
+time:::0.00054287910461426
+
+===========
+
+ SELECT *						FROM fs_products_filters						WHERE published = 1						ORDER BY field_ordering ASC, ordering, is_common DESC						
+
+time:::0.0013561248779297
+
+===========
+
+ SELECT *
+					FROM fs_menus_items
+					WHERE published  = 1
+						AND group_id = 1 
+					ORDER BY ordering
+
+time:::0.00083398818969727
+
+===========
+
+SELECT name,alias,id,level,parent_id as parent_id,alias, list_parents,tablename,image,icon,show_in_homepage,show_in_footer						  FROM fs_products_categories AS a						  WHERE published = 1 						  ORDER BY ordering ASC, id ASC						  						 
+
+time:::0.00059199333190918
+
+===========
+
+ SELECT *
+					FROM fs_menus_items
+					WHERE published  = 1
+						AND group_id = 3 
+					ORDER BY ordering
+
+time:::0.00065803527832031
+
+===========
+
+ SELECT id, name, level, alias,is_bold,link
+					FROM fs_tags
+					WHERE published  = 1  
+					ORDER BY ordering
+					LIMIT 150 
+
+time:::0.00053501129150391
+
+===========
+
+================REMOTE: 127.0.0.1  (2018-02-07 06:01:23)===================
+
+================URL : /hotdeal.html===================
+
+================1517979683===================
+
+ SELECT lang_key, lang_vi 
+						FROM fs_languages_text 
+						WHERE is_common = 1
+					 OR module = 'products' 
+
+time:::0.00040507316589355
+
+===========
+
+ SELECT * FROM fs_config
+						WHERE is_common = 1
+					 
+
+time:::0.00062012672424316
+
+===========
+
+ SELECT cache,params,fields_seo_title,fields_seo_keyword,fields_seo_description,fields_seo_h1,fields_seo_h2,fields_seo_image_alt,value_seo_title,value_seo_keyword,value_seo_description FROM fs_config_modules
+				WHERE module = "products" AND view = "hotdeal" AND ( task = "display" OR task = "" OR task IS NULL) 
+
+time:::0.00049090385437012
+
+===========
+
+SELECT id,title,content, ordering, module, position, showTitle, params ,listItemid,news_categories,contents_categories,link_title
+						FROM fs_blocks AS a 
+						WHERE published = 1 
+					ORDER BY ordering
+
+time:::0.00058197975158691
+
+===========
+
+ SELECT id,name,summary,image,accessories,price,price_old,quantity,alias,category_alias,category_id, discount,manufactory_alias,manufactory_image,manufactory_name,summary_auto ,types,promotion_info,published_double,warranty,published_double,date_start,date_end,is_hotdeal	 FROM fs_products
+						WHERE published =1 and category_published = 1  AND price_old <> 0 AND price_old < price  LIMIT 0,20 
+
+time:::3.814697265625E-6
+
+===========
+
+SELECT count(*) 	 FROM fs_products
+						WHERE published =1 and category_published = 1  AND price_old <> 0 AND price_old < price 
+
+time:::0.00041794776916504
+
+===========
+
+ SELECT id,name,image,alias
+					  FROM fs_products_types  WHERE published = 1 ORDER BY ordering ASC
+
+time:::0.0036671161651611
+
+===========
+
+SELECT name,alias,id,level,parent_id as parent_id,alias, list_parents,tablename,image,icon,show_in_homepage,show_in_footer						  FROM fs_products_categories AS a						  WHERE published = 1 						  ORDER BY ordering ASC, id ASC						  						 
+
+time:::0.0009610652923584
+
+===========
+
+ SELECT *						FROM fs_products_filters						WHERE published = 1						ORDER BY field_ordering ASC, ordering, is_common DESC						
+
+time:::0.0013439655303955
+
+===========
+
+ SELECT *
+					FROM fs_menus_items
+					WHERE published  = 1
+						AND group_id = 1 
+					ORDER BY ordering
+
+time:::0.00067520141601562
+
+===========
+
+SELECT name,alias,id,level,parent_id as parent_id,alias, list_parents,tablename,image,icon,show_in_homepage,show_in_footer						  FROM fs_products_categories AS a						  WHERE published = 1 						  ORDER BY ordering ASC, id ASC						  						 
+
+time:::0.00052595138549805
+
+===========
+
+ SELECT *
+					FROM fs_menus_items
+					WHERE published  = 1
+						AND group_id = 3 
+					ORDER BY ordering
+
+time:::0.0025510787963867
+
+===========
+
+ SELECT id, name, level, alias,is_bold,link
+					FROM fs_tags
+					WHERE published  = 1  
+					ORDER BY ordering
+					LIMIT 150 
+
+time:::0.00046920776367188
+
+===========
+
+================REMOTE: 127.0.0.1  (2018-02-07 06:01:57)===================
+
+================URL : /hotdeal.html===================
+
+================1517979717===================
+
+ SELECT lang_key, lang_vi 
+						FROM fs_languages_text 
+						WHERE is_common = 1
+					 OR module = 'products' 
+
+time:::0.00043606758117676
+
+===========
+
+ SELECT * FROM fs_config
+						WHERE is_common = 1
+					 
+
+time:::0.000701904296875
+
+===========
+
+ SELECT cache,params,fields_seo_title,fields_seo_keyword,fields_seo_description,fields_seo_h1,fields_seo_h2,fields_seo_image_alt,value_seo_title,value_seo_keyword,value_seo_description FROM fs_config_modules
+				WHERE module = "products" AND view = "hotdeal" AND ( task = "display" OR task = "" OR task IS NULL) 
+
+time:::0.0004119873046875
+
+===========
+
+SELECT id,title,content, ordering, module, position, showTitle, params ,listItemid,news_categories,contents_categories,link_title
+						FROM fs_blocks AS a 
+						WHERE published = 1 
+					ORDER BY ordering
+
+time:::0.00064396858215332
+
+===========
+
+ SELECT id,name,summary,image,accessories,price,price_old,quantity,alias,category_alias,category_id, discount,manufactory_alias,manufactory_image,manufactory_name,summary_auto ,types,promotion_info,published_double,warranty,published_double,date_start,date_end,is_hotdeal	 FROM fs_products
+						WHERE published =1 and category_published = 1  AND ( price_old <> 0 AND price_old < price )  LIMIT 0,20 
+
+time:::2.8610229492188E-6
+
+===========
+
+SELECT count(*) 	 FROM fs_products
+						WHERE published =1 and category_published = 1  AND ( price_old <> 0 AND price_old < price ) 
+
+time:::0.00047492980957031
+
+===========
+
+ SELECT id,name,image,alias
+					  FROM fs_products_types  WHERE published = 1 ORDER BY ordering ASC
+
+time:::0.00046586990356445
+
+===========
+
+SELECT name,alias,id,level,parent_id as parent_id,alias, list_parents,tablename,image,icon,show_in_homepage,show_in_footer						  FROM fs_products_categories AS a						  WHERE published = 1 						  ORDER BY ordering ASC, id ASC						  						 
+
+time:::0.00060796737670898
+
+===========
+
+ SELECT *						FROM fs_products_filters						WHERE published = 1						ORDER BY field_ordering ASC, ordering, is_common DESC						
+
+time:::0.0012340545654297
+
+===========
+
+ SELECT *
+					FROM fs_menus_items
+					WHERE published  = 1
+						AND group_id = 1 
+					ORDER BY ordering
+
+time:::0.000640869140625
+
+===========
+
+SELECT name,alias,id,level,parent_id as parent_id,alias, list_parents,tablename,image,icon,show_in_homepage,show_in_footer						  FROM fs_products_categories AS a						  WHERE published = 1 						  ORDER BY ordering ASC, id ASC						  						 
+
+time:::0.00042295455932617
+
+===========
+
+ SELECT *
+					FROM fs_menus_items
+					WHERE published  = 1
+						AND group_id = 3 
+					ORDER BY ordering
+
+time:::0.00059199333190918
+
+===========
+
+ SELECT id, name, level, alias,is_bold,link
+					FROM fs_tags
+					WHERE published  = 1  
+					ORDER BY ordering
+					LIMIT 150 
+
+time:::0.00045490264892578
+
+===========
+
+================REMOTE: 127.0.0.1  (2018-02-07 06:09:26)===================
+
+================URL : /hotdeal.html===================
+
+================1517980166===================
+
+ SELECT lang_key, lang_vi 
+						FROM fs_languages_text 
+						WHERE is_common = 1
+					 OR module = 'products' 
+
+time:::0.00048089027404785
+
+===========
+
+ SELECT * FROM fs_config
+						WHERE is_common = 1
+					 
+
+time:::0.00075912475585938
+
+===========
+
+ SELECT cache,params,fields_seo_title,fields_seo_keyword,fields_seo_description,fields_seo_h1,fields_seo_h2,fields_seo_image_alt,value_seo_title,value_seo_keyword,value_seo_description FROM fs_config_modules
+				WHERE module = "products" AND view = "hotdeal" AND ( task = "display" OR task = "" OR task IS NULL) 
+
+time:::0.00041508674621582
+
+===========
+
+SELECT id,title,content, ordering, module, position, showTitle, params ,listItemid,news_categories,contents_categories,link_title
+						FROM fs_blocks AS a 
+						WHERE published = 1 
+					ORDER BY ordering
+
+time:::0.00073885917663574
+
+===========
+
+ SELECT id,name,summary,image,accessories,price,price_old,quantity,alias,category_alias,category_id, discount,manufactory_alias,manufactory_image,manufactory_name,summary_auto ,types,promotion_info,published_double,warranty,published_double,date_start,date_end,is_hotdeal	 FROM fs_products
+						WHERE published =1 and category_published = 1  AND ( price_old <> 0 AND price_old > price )  LIMIT 0,20 
+
+time:::3.814697265625E-6
+
+===========
+
+SELECT count(*) 	 FROM fs_products
+						WHERE published =1 and category_published = 1  AND ( price_old <> 0 AND price_old > price ) 
+
+time:::0.00047993659973145
+
+===========
+
+ SELECT id,name,image,alias
+					  FROM fs_products_types  WHERE published = 1 ORDER BY ordering ASC
+
+time:::0.00047898292541504
+
+===========
+
+SELECT name,alias,id,level,parent_id as parent_id,alias, list_parents,tablename,image,icon,show_in_homepage,show_in_footer						  FROM fs_products_categories AS a						  WHERE published = 1 						  ORDER BY ordering ASC, id ASC						  						 
+
+time:::0.00047898292541504
+
+===========
+
+ SELECT *						FROM fs_products_filters						WHERE published = 1						ORDER BY field_ordering ASC, ordering, is_common DESC						
+
+time:::0.0015189647674561
+
+===========
+
+ SELECT *
+					FROM fs_menus_items
+					WHERE published  = 1
+						AND group_id = 1 
+					ORDER BY ordering
+
+time:::0.0007319450378418
+
+===========
+
+SELECT name,alias,id,level,parent_id as parent_id,alias, list_parents,tablename,image,icon,show_in_homepage,show_in_footer						  FROM fs_products_categories AS a						  WHERE published = 1 						  ORDER BY ordering ASC, id ASC						  						 
+
+time:::0.00054407119750977
+
+===========
+
+ SELECT *
+					FROM fs_menus_items
+					WHERE published  = 1
+						AND group_id = 3 
+					ORDER BY ordering
+
+time:::0.00060606002807617
+
+===========
+
+ SELECT id, name, level, alias,is_bold,link
+					FROM fs_tags
+					WHERE published  = 1  
+					ORDER BY ordering
+					LIMIT 150 
+
+time:::0.00054812431335449
+
+===========
+
+================REMOTE: 127.0.0.1  (2018-02-07 06:09:48)===================
+
+================URL : /tai-nghe-pc1.html===================
+
+================1517980188===================
+
+ SELECT lang_key, lang_vi 
+						FROM fs_languages_text 
+						WHERE is_common = 1
+					 OR module = 'products' 
+
+time:::0.0015571117401123
+
+===========
+
+ SELECT * FROM fs_config
+						WHERE is_common = 1
+					 
+
+time:::0.00069284439086914
+
+===========
+
+ SELECT cache,params,fields_seo_title,fields_seo_keyword,fields_seo_description,fields_seo_h1,fields_seo_h2,fields_seo_image_alt,value_seo_title,value_seo_keyword,value_seo_description FROM fs_config_modules
+				WHERE module = "products" AND view = "cat" AND ( task = "display" OR task = "" OR task IS NULL) 
+
+time:::0.00050687789916992
+
+===========
+
+SELECT id,title,content, ordering, module, position, showTitle, params ,listItemid,news_categories,contents_categories,link_title
+						FROM fs_blocks AS a 
+						WHERE published = 1 
+					ORDER BY ordering
+
+time:::0.0029449462890625
+
+===========
+
+ SELECT name,id,alias,parent_id,list_parents,seo_title,seo_keyword,seo_description,description,tablename,vat,level,parent_id, description, image,icon
+					  FROM fs_products_categories
+					  WHERE published = 1  AND id = '1'  
+
+time:::0.00046706199645996
+
+===========
+
+ SELECT record_id as id,alias,category_alias,category_id,accessories , name ,summary_auto,  image, price,price_old,discount,types,manufactory_image,manufactory_name,manufactory_alias,published_double,warranty ,image_double,summary,is_hotdeal,promotion_price ,if(price > 0,price, 9999999999) as price_new  	FROM fs_products_tai_nghe AS a
+						WHERE published = 1 AND category_id_wrapper like "%,1,%" ORDER BY ordering DESC, id DESC LIMIT 0,24 
+
+time:::5.9604644775391E-6
+
+===========
+
+SELECT count(*)  	FROM fs_products_tai_nghe AS a
+						WHERE published = 1 AND category_id_wrapper like "%,1,%" 
+
+time:::0.00044107437133789
+
+===========
+
+ SELECT id,name,image,alias
+					  FROM fs_products_types  WHERE published = 1 ORDER BY ordering ASC
+
+time:::0.00056219100952148
+
+===========
+
+SELECT name,id,alias,parent_id FROM fs_products_categories WHERE id IN (0,1,0) AND id <> 1
+					ORDER BY POSITION(","+id+"," IN "0,1,0")
+
+time:::0.00072193145751953
+
+===========
+
+ SELECT name,alias, id, level, parent_id as parent_id, tablename,image,list_parents
+						FROM fs_products_categories
+						WHERE  published = 1 
+						AND alias = 'tai-nghe' 
+						
+
+time:::0.00044584274291992
+
+===========
+
+ SELECT id, filter_show, field_name,field_show,alias, calculator,filter_value
+						FROM fs_products_filters
+						WHERE published = 1  AND tablename = "fs_products_tai_nghe" 
+						ORDER BY field_ordering,ordering,filter_show ASC
+						
+
+time:::0.00072908401489258
+
+===========
+
+SELECT name,alias,id,level,parent_id as parent_id,alias, list_parents,tablename,image,icon,show_in_homepage,show_in_footer						  FROM fs_products_categories AS a						  WHERE published = 1 						  ORDER BY ordering ASC, id ASC						  						 
+
+time:::0.00067806243896484
+
+===========
+
+ SELECT *						FROM fs_products_filters						WHERE published = 1						ORDER BY field_ordering ASC, ordering, is_common DESC						
+
+time:::0.0015029907226562
+
+===========
+
+ SELECT *
+					FROM fs_menus_items
+					WHERE published  = 1
+						AND group_id = 1 
+					ORDER BY ordering
+
+time:::0.0007789134979248
+
+===========
+
+SELECT name,alias,id,level,parent_id as parent_id,alias, list_parents,tablename,image,icon,show_in_homepage,show_in_footer						  FROM fs_products_categories AS a						  WHERE published = 1 						  ORDER BY ordering ASC, id ASC						  						 
+
+time:::0.00064682960510254
+
+===========
+
+ SELECT name,alias, id, level, parent_id as parent_id, tablename,image,list_parents
+						FROM fs_products_categories
+						WHERE  published = 1 
+						AND alias = 'tai-nghe' 
+						
+
+time:::0.00056004524230957
+
+===========
+
+ SELECT id, filter_show, field_name,field_show,alias, calculator,filter_value
+						FROM fs_products_filters
+						WHERE published = 1  AND tablename = "fs_products_tai_nghe" 
+						ORDER BY field_ordering,ordering,filter_show ASC
+						
+
+time:::0.00086092948913574
+
+===========
+
+ SELECT *
+					FROM fs_menus_items
+					WHERE published  = 1
+						AND group_id = 3 
+					ORDER BY ordering
+
+time:::0.00076699256896973
+
+===========
+
+ SELECT id, name, level, alias,is_bold,link
+					FROM fs_tags
+					WHERE published  = 1  
+					ORDER BY ordering
+					LIMIT 150 
+
+time:::0.00092697143554688
+
+===========
+
+================REMOTE: 127.0.0.1  (2018-02-07 06:11:55)===================
+
+================URL : /hotdeal.html===================
+
+================1517980315===================
+
+ SELECT lang_key, lang_vi 
+						FROM fs_languages_text 
+						WHERE is_common = 1
+					 OR module = 'products' 
+
+time:::0.00046396255493164
+
+===========
+
+ SELECT * FROM fs_config
+						WHERE is_common = 1
+					 
+
+time:::0.0006561279296875
+
+===========
+
+ SELECT cache,params,fields_seo_title,fields_seo_keyword,fields_seo_description,fields_seo_h1,fields_seo_h2,fields_seo_image_alt,value_seo_title,value_seo_keyword,value_seo_description FROM fs_config_modules
+				WHERE module = "products" AND view = "hotdeal" AND ( task = "display" OR task = "" OR task IS NULL) 
+
+time:::0.0004429817199707
+
+===========
+
+SELECT id,title,content, ordering, module, position, showTitle, params ,listItemid,news_categories,contents_categories,link_title
+						FROM fs_blocks AS a 
+						WHERE published = 1 
+					ORDER BY ordering
+
+time:::0.00068187713623047
+
+===========
+
+ SELECT id,name,summary,image,accessories,price,price_old,quantity,alias,category_alias,category_id, discount,manufactory_alias,manufactory_image,manufactory_name,summary_auto ,types,promotion_info,published_double,warranty,published_double,date_start,date_end,is_hotdeal	 FROM fs_products
+						WHERE published =1 and category_published = 1  AND ( price_old <> 0 AND price_old > price )  LIMIT 0,20 
+
+time:::4.0531158447266E-6
+
+===========
+
+SELECT count(*) 	 FROM fs_products
+						WHERE published =1 and category_published = 1  AND ( price_old <> 0 AND price_old > price ) 
+
+time:::0.00046205520629883
+
+===========
+
+ SELECT id,name,image,alias
+					  FROM fs_products_types  WHERE published = 1 ORDER BY ordering ASC
+
+time:::0.00054287910461426
+
+===========
+
+SELECT name,alias,id,level,parent_id as parent_id,alias, list_parents,tablename,image,icon,show_in_homepage,show_in_footer						  FROM fs_products_categories AS a						  WHERE published = 1 						  ORDER BY ordering ASC, id ASC						  						 
+
+time:::0.00052595138549805
+
+===========
+
+ SELECT *						FROM fs_products_filters						WHERE published = 1						ORDER BY field_ordering ASC, ordering, is_common DESC						
+
+time:::0.0019280910491943
+
+===========
+
+ SELECT *
+					FROM fs_menus_items
+					WHERE published  = 1
+						AND group_id = 1 
+					ORDER BY ordering
+
+time:::0.00076508522033691
+
+===========
+
+SELECT name,alias,id,level,parent_id as parent_id,alias, list_parents,tablename,image,icon,show_in_homepage,show_in_footer						  FROM fs_products_categories AS a						  WHERE published = 1 						  ORDER BY ordering ASC, id ASC						  						 
+
+time:::0.00051498413085938
+
+===========
+
+ SELECT *
+					FROM fs_menus_items
+					WHERE published  = 1
+						AND group_id = 3 
+					ORDER BY ordering
+
+time:::0.00069808959960938
+
+===========
+
+ SELECT id, name, level, alias,is_bold,link
+					FROM fs_tags
+					WHERE published  = 1  
+					ORDER BY ordering
+					LIMIT 150 
+
+time:::0.00067400932312012
+
+===========
+
+================REMOTE: 127.0.0.1  (2018-02-07 06:23:19)===================
+
+================URL : /khuyen-mai.html===================
+
+================1517980999===================
+
+ SELECT lang_key, lang_vi 
+						FROM fs_languages_text 
+						WHERE is_common = 1
+					 OR module = 'products' 
+
+time:::0.0011348724365234
+
+===========
+
+ SELECT * FROM fs_config
+						WHERE is_common = 1
+					 
+
+time:::0.0006718635559082
+
+===========
+
+ SELECT cache,params,fields_seo_title,fields_seo_keyword,fields_seo_description,fields_seo_h1,fields_seo_h2,fields_seo_image_alt,value_seo_title,value_seo_keyword,value_seo_description FROM fs_config_modules
+				WHERE module = "products" AND view = "promotion" AND ( task = "display" OR task = "" OR task IS NULL) 
+
+time:::0.00079607963562012
+
+===========
+
+SELECT id,title,content, ordering, module, position, showTitle, params ,listItemid,news_categories,contents_categories,link_title
+						FROM fs_blocks AS a 
+						WHERE published = 1 
+					ORDER BY ordering
+
+time:::0.00081396102905273
+
+===========
+
+================REMOTE: 127.0.0.1  (2018-02-07 06:23:47)===================
+
+================URL : /hotdeal.html===================
+
+================1517981027===================
+
+ SELECT lang_key, lang_vi 
+						FROM fs_languages_text 
+						WHERE is_common = 1
+					 OR module = 'products' 
+
+time:::0.00039005279541016
+
+===========
+
+ SELECT * FROM fs_config
+						WHERE is_common = 1
+					 
+
+time:::0.00058603286743164
+
+===========
+
+ SELECT cache,params,fields_seo_title,fields_seo_keyword,fields_seo_description,fields_seo_h1,fields_seo_h2,fields_seo_image_alt,value_seo_title,value_seo_keyword,value_seo_description FROM fs_config_modules
+				WHERE module = "products" AND view = "hotdeal" AND ( task = "display" OR task = "" OR task IS NULL) 
+
+time:::0.00037693977355957
+
+===========
+
+SELECT id,title,content, ordering, module, position, showTitle, params ,listItemid,news_categories,contents_categories,link_title
+						FROM fs_blocks AS a 
+						WHERE published = 1 
+					ORDER BY ordering
+
+time:::0.00052714347839355
+
+===========
+
+ SELECT id,name,summary,image,accessories,price,price_old,quantity,alias,category_alias,category_id, discount,manufactory_alias,manufactory_image,manufactory_name,summary_auto ,types,promotion_info,published_double,warranty,published_double,date_start,date_end,is_hotdeal	 FROM fs_products
+						WHERE published =1 and category_published = 1  AND ( price_old <> 0 AND price_old > price )  LIMIT 0,20 
+
+time:::2.8610229492188E-6
+
+===========
+
+SELECT count(*) 	 FROM fs_products
+						WHERE published =1 and category_published = 1  AND ( price_old <> 0 AND price_old > price ) 
+
+time:::0.00040793418884277
+
+===========
+
+ SELECT id,name,image,alias
+					  FROM fs_products_types  WHERE published = 1 ORDER BY ordering ASC
+
+time:::0.00037980079650879
+
+===========
+
+SELECT name,alias,id,level,parent_id as parent_id,alias, list_parents,tablename,image,icon,show_in_homepage,show_in_footer						  FROM fs_products_categories AS a						  WHERE published = 1 						  ORDER BY ordering ASC, id ASC						  						 
+
+time:::0.00041484832763672
+
+===========
+
+ SELECT *						FROM fs_products_filters						WHERE published = 1						ORDER BY field_ordering ASC, ordering, is_common DESC						
+
+time:::0.0013749599456787
+
+===========
+
+ SELECT *
+					FROM fs_menus_items
+					WHERE published  = 1
+						AND group_id = 1 
+					ORDER BY ordering
+
+time:::0.00063800811767578
+
+===========
+
+SELECT name,alias,id,level,parent_id as parent_id,alias, list_parents,tablename,image,icon,show_in_homepage,show_in_footer						  FROM fs_products_categories AS a						  WHERE published = 1 						  ORDER BY ordering ASC, id ASC						  						 
+
+time:::0.00043296813964844
+
+===========
+
+ SELECT *
+					FROM fs_menus_items
+					WHERE published  = 1
+						AND group_id = 3 
+					ORDER BY ordering
+
+time:::0.0005490779876709
+
+===========
+
+ SELECT id, name, level, alias,is_bold,link
+					FROM fs_tags
+					WHERE published  = 1  
+					ORDER BY ordering
+					LIMIT 150 
+
+time:::0.000823974609375
+
+===========
+
+================REMOTE: 127.0.0.1  (2018-02-07 06:25:25)===================
+
+================URL : /hotdeal.html===================
+
+================1517981125===================
+
+ SELECT lang_key, lang_vi 
+						FROM fs_languages_text 
+						WHERE is_common = 1
+					 OR module = 'products' 
+
+time:::0.00038003921508789
+
+===========
+
+ SELECT * FROM fs_config
+						WHERE is_common = 1
+					 
+
+time:::0.00059795379638672
+
+===========
+
+ SELECT cache,params,fields_seo_title,fields_seo_keyword,fields_seo_description,fields_seo_h1,fields_seo_h2,fields_seo_image_alt,value_seo_title,value_seo_keyword,value_seo_description FROM fs_config_modules
+				WHERE module = "products" AND view = "hotdeal" AND ( task = "display" OR task = "" OR task IS NULL) 
+
+time:::0.00038003921508789
+
+===========
+
+SELECT id,title,content, ordering, module, position, showTitle, params ,listItemid,news_categories,contents_categories,link_title
+						FROM fs_blocks AS a 
+						WHERE published = 1 
+					ORDER BY ordering
+
+time:::0.00066208839416504
+
+===========
+
+ SELECT id,name,summary,image,accessories,price,price_old,quantity,alias,category_alias,category_id, discount,manufactory_alias,manufactory_image,manufactory_name,summary_auto ,types,promotion_info,published_double,warranty,published_double,date_start,date_end,is_hotdeal	 FROM fs_products
+						WHERE published =1 and category_published = 1  AND ( price_old <> 0 AND price_old > price )  LIMIT 0,20 
+
+time:::9.0599060058594E-6
+
+===========
+
+SELECT count(*) 	 FROM fs_products
+						WHERE published =1 and category_published = 1  AND ( price_old <> 0 AND price_old > price ) 
+
+time:::0.00046396255493164
+
+===========
+
+ SELECT id,name,image,alias
+					  FROM fs_products_types  WHERE published = 1 ORDER BY ordering ASC
+
+time:::0.00041413307189941
+
+===========
+
+SELECT name,alias,id,level,parent_id as parent_id,alias, list_parents,tablename,image,icon,show_in_homepage,show_in_footer						  FROM fs_products_categories AS a						  WHERE published = 1 						  ORDER BY ordering ASC, id ASC						  						 
+
+time:::0.00046610832214355
+
+===========
+
+ SELECT *						FROM fs_products_filters						WHERE published = 1						ORDER BY field_ordering ASC, ordering, is_common DESC						
+
+time:::0.0013341903686523
+
+===========
+
+ SELECT *
+					FROM fs_menus_items
+					WHERE published  = 1
+						AND group_id = 1 
+					ORDER BY ordering
+
+time:::0.00070309638977051
+
+===========
+
+SELECT name,alias,id,level,parent_id as parent_id,alias, list_parents,tablename,image,icon,show_in_homepage,show_in_footer						  FROM fs_products_categories AS a						  WHERE published = 1 						  ORDER BY ordering ASC, id ASC						  						 
+
+time:::0.0005180835723877
+
+===========
+
+ SELECT *
+					FROM fs_menus_items
+					WHERE published  = 1
+						AND group_id = 3 
+					ORDER BY ordering
+
+time:::0.00058603286743164
+
+===========
+
+ SELECT id, name, level, alias,is_bold,link
+					FROM fs_tags
+					WHERE published  = 1  
+					ORDER BY ordering
+					LIMIT 150 
+
+time:::0.00045108795166016
+
+===========
+
+================REMOTE: 127.0.0.1  (2018-02-07 06:31:19)===================
+
+================URL : /===================
+
+================1517981479===================
+
+ SELECT lang_key, lang_vi 
+						FROM fs_languages_text 
+						WHERE is_common = 1
+					 OR module = 'home' 
+
+time:::0.0015780925750732
+
+===========
+
+ SELECT * FROM fs_config
+						WHERE is_common = 1
+					 
+
+time:::0.00065898895263672
+
+===========
+
+ SELECT cache,params,fields_seo_title,fields_seo_keyword,fields_seo_description,fields_seo_h1,fields_seo_h2,fields_seo_image_alt,value_seo_title,value_seo_keyword,value_seo_description FROM fs_config_modules
+				WHERE module = "home" AND view = "home" AND ( task = "display" OR task = "" OR task IS NULL) 
+
+time:::0.00052785873413086
+
+===========
+
+SELECT id,title,content, ordering, module, position, showTitle, params ,listItemid,news_categories,contents_categories,link_title
+						FROM fs_blocks AS a 
+						WHERE published = 1 
+					ORDER BY ordering
+
+time:::0.00057387351989746
+
+===========
+
+ SELECT *
+					  FROM fs_products_categories
+					  WHERE published = 1 AND is_special = 1
+
+time:::0.00066995620727539
+
+===========
+
+ SELECT id,name, alias,tags_group,tablename,is_accessories, root_id, is_accessories,list_parents,icon,is_special
+					FROM fs_products_categories 
+					WHERE 
+						show_in_homepage = 1 AND level = 0
+					ORDER BY ordering
+							
+
+time:::0.00052714347839355
+
+===========
+
+ SELECT id,name,summary,image, created_time,category_id, category_alias, alias,price,price_old ,discount,published_double,image_double,date_end,date_start,warranty,types,is_hotdeal,accessories  FROM fs_products
+						  WHERE 
+						  	 published = 1  AND category_published = 1 AND show_in_home = 1
+						  	 AND category_id_wrapper like '%1%'  ORDER BY  ordering DESC,created_time DESC, id DESC
+						 LIMIT 10
+
+time:::0.00092101097106934
+
+===========
+
+ SELECT id,name, image, alias
+							FROM fs_manufactories 
+							WHERE published = 1  
+							 AND tablenames like "%,fs_products_tai_nghe,%"
+							 ORDER BY  ordering ASC,name ASC
+							 
+
+time:::0.00074911117553711
+
+===========
+
+ SELECT id,name,summary,image, created_time,category_id, category_alias, alias,price,price_old ,discount,published_double,image_double,date_end,date_start,warranty,types,is_hotdeal,accessories  FROM fs_products
+						  WHERE 
+						  	 published = 1  AND category_published = 1 AND show_in_home = 1
+						  	 AND category_id_wrapper like '%2%'  ORDER BY  ordering DESC,created_time DESC, id DESC
+						 LIMIT 10
+
+time:::0.0008242130279541
+
+===========
+
+ SELECT id,name, image, alias
+							FROM fs_manufactories 
+							WHERE published = 1  
+							 AND tablenames like "%,fs_products_loa_di_dong,%"
+							 ORDER BY  ordering ASC,name ASC
+							 
+
+time:::0.00071907043457031
+
+===========
+
+ SELECT id,name,summary,image, created_time,category_id, category_alias, alias,price,price_old ,discount,published_double,image_double,date_end,date_start,warranty,types,is_hotdeal,accessories  FROM fs_products
+						  WHERE 
+						  	 published = 1  AND category_published = 1 AND show_in_home = 1
+						  	 AND category_id_wrapper like '%3%'  ORDER BY  ordering DESC,created_time DESC, id DESC
+						 LIMIT 10
+
+time:::0.00061893463134766
+
+===========
+
+ SELECT id,name, image, alias
+							FROM fs_manufactories 
+							WHERE published = 1  
+							 AND tablenames like "%,fs_products_may_nghe_nhac,%"
+							 ORDER BY  ordering ASC,name ASC
+							 
+
+time:::0.00068402290344238
+
+===========
+
+ SELECT id,name,summary,image, created_time,category_id, category_alias, alias,price,price_old ,discount,published_double,image_double,date_end,date_start,warranty,types,is_hotdeal,accessories  FROM fs_products
+						  WHERE 
+						  	 published = 1  AND category_published = 1 AND show_in_home = 1
+						  	 AND category_id_wrapper like '%4%'  ORDER BY  ordering DESC,created_time DESC, id DESC
+						 LIMIT 10
+
+time:::0.00077605247497559
+
+===========
+
+ SELECT id,name, image, alias
+							FROM fs_manufactories 
+							WHERE published = 1  
+							 AND tablenames like "%,fs_products_amp_dac,%"
+							 ORDER BY  ordering ASC,name ASC
+							 
+
+time:::0.00062799453735352
+
+===========
+
+ SELECT id,name,image,alias
+					  FROM fs_products_types  WHERE published = 1 ORDER BY ordering ASC
+
+time:::0.00046896934509277
+
+===========
+
+ SELECT *
+					  FROM fs_products_filters  WHERE published = 1 AND is_home = 1 AND field_name <> "manufactory" 
+
+time:::0.00069999694824219
+
+===========
+
+ SELECT *
+					  FROM fs_products_filters  WHERE published = 1 AND is_home = 1 AND field_name = "manufactory"  ORDER BY  ordering ASC 
+
+time:::0.00094509124755859
+
+===========
+
+ SELECT *
+					  FROM fs_slideshow_categories
+					  WHERE id = 47 
+
+time:::0.00037908554077148
+
+===========
+
+  SELECT id,name,image,url,summary
+					FROM fs_slideshow
+					WHERE published = 1  AND category_id = 47 	
+					ORDER BY ordering 
+
+time:::0.0004570484161377
+
+===========
+
+ SELECT *
+					  FROM fs_slideshow_categories
+					  WHERE id = 47 
+
+time:::0.00056815147399902
+
+===========
+
+  SELECT id,name,image,url,summary
+					FROM fs_slideshow
+					WHERE published = 1  AND category_id = 47 	
+					ORDER BY ordering 
+
+time:::0.0010809898376465
+
+===========
+
+ SELECT *
+					  FROM fs_slideshow_categories
+					  WHERE id = 47 
+
+time:::0.0086371898651123
+
+===========
+
+  SELECT id,name,image,url,summary
+					FROM fs_slideshow
+					WHERE published = 1  AND category_id = 47 	
+					ORDER BY ordering 
+
+time:::0.00049686431884766
+
+===========
+
+ SELECT *
+					  FROM fs_slideshow_categories
+					  WHERE id = 47 
+
+time:::0.00040817260742188
+
+===========
+
+  SELECT id,name,image,url,summary
+					FROM fs_slideshow
+					WHERE published = 1  AND category_id = 47 	
+					ORDER BY ordering 
+
+time:::0.00052189826965332
+
+===========
+
+SELECT name,alias,id,level,parent_id as parent_id,alias, list_parents,tablename,image,icon,show_in_homepage,show_in_footer						  FROM fs_products_categories AS a						  WHERE published = 1 						  ORDER BY ordering ASC, id ASC						  						 
+
+time:::0.00043797492980957
+
+===========
+
+ SELECT *						FROM fs_products_filters						WHERE published = 1						ORDER BY field_ordering ASC, ordering, is_common DESC						
+
+time:::0.0012080669403076
+
+===========
+
+ SELECT *
+					FROM fs_menus_items
+					WHERE published  = 1
+						AND group_id = 1 
+					ORDER BY ordering
+
+time:::0.00068402290344238
+
+===========
+
+ SELECT *
+					  FROM fs_slideshow_categories
+					  WHERE id = 45 
+
+time:::0.00036096572875977
+
+===========
+
+  SELECT id,name,image,url,summary
+					FROM fs_slideshow
+					WHERE published = 1  AND category_id = 45 	
+					ORDER BY ordering 
+
+time:::0.00076103210449219
+
+===========
+
+ SELECT name,id,category_id,type,image,flash,content,link,height,width
+						  FROM fs_banners AS a
+						  WHERE published = 1
+						  AND category_id IN (43) AND (listItemid = 'all'
+							OR listItemid like '%,1,%')
+							 ORDER BY ordering, id 
+
+time:::0.00061416625976562
+
+===========
+
+ SELECT *
+						  FROM fs_strengths
+						 WHERE  published = 1 
+						 ORDER BY  ordering ASC 
+						 LIMIT 4 
+						 
+
+time:::0.00044417381286621
+
+===========
+
+ SELECT title,alias,image,summary,hits,updated_time,id,category_alias,is_hot,comments_total,created_time
+						  FROM fs_news
+						 WHERE  published = 1 and category_published = 1 
+						  ORDER BY   ordering DESC,created_time DESC, ordering DESC,created_time DESC
+						 LIMIT 4  
+						 
+
+time:::0.0031380653381348
+
+===========
+
+ SELECT *
+					FROM fs_menus_items
+					WHERE published  = 1
+						AND group_id = 3 
+					ORDER BY ordering
+
+time:::0.0005500316619873
+
+===========
+
+ SELECT id, name, level, alias,is_bold,link
+					FROM fs_tags
+					WHERE published  = 1  
+					ORDER BY ordering
+					LIMIT 150 
+
+time:::0.00049805641174316
+
+===========
+
+================REMOTE: 127.0.0.1  (2018-02-07 09:45:05)===================
+
+================URL : /===================
+
+================1517993105===================
+
+ SELECT lang_key, lang_vi 
+						FROM fs_languages_text 
+						WHERE is_common = 1
+					 OR module = 'home' 
+
+time:::0.0043940544128418
+
+===========
+
+ SELECT * FROM fs_config
+						WHERE is_common = 1
+					 
+
+time:::0.010144948959351
+
+===========
+
+ SELECT cache,params,fields_seo_title,fields_seo_keyword,fields_seo_description,fields_seo_h1,fields_seo_h2,fields_seo_image_alt,value_seo_title,value_seo_keyword,value_seo_description FROM fs_config_modules
+				WHERE module = "home" AND view = "home" AND ( task = "display" OR task = "" OR task IS NULL) 
+
+time:::0.00093483924865723
+
+===========
+
+SELECT id,title,content, ordering, module, position, showTitle, params ,listItemid,news_categories,contents_categories,link_title
+						FROM fs_blocks AS a 
+						WHERE published = 1 
+					ORDER BY ordering
+
+time:::0.0010571479797363
+
+===========
+
+ SELECT *
+					  FROM fs_products_categories
+					  WHERE published = 1 AND is_special = 1
+
+time:::0.0012941360473633
+
+===========
+
+ SELECT id,name, alias,tags_group,tablename,is_accessories, root_id, is_accessories,list_parents,icon,is_special
+					FROM fs_products_categories 
+					WHERE 
+						show_in_homepage = 1 AND level = 0
+					ORDER BY ordering
+							
+
+time:::0.00099515914916992
+
+===========
+
+ SELECT id,name,summary,image, created_time,category_id, category_alias, alias,price,price_old ,discount,published_double,image_double,date_end,date_start,warranty,types,is_hotdeal,accessories  FROM fs_products
+						  WHERE 
+						  	 published = 1  AND category_published = 1 AND show_in_home = 1
+						  	 AND category_id_wrapper like '%1%'  ORDER BY  ordering DESC,created_time DESC, id DESC
+						 LIMIT 10
+
+time:::0.0015420913696289
+
+===========
+
+ SELECT id,name, image, alias
+							FROM fs_manufactories 
+							WHERE published = 1  
+							 AND tablenames like "%,fs_products_tai_nghe,%"
+							 ORDER BY  ordering ASC,name ASC
+							 
+
+time:::0.0014040470123291
+
+===========
+
+ SELECT id,name,summary,image, created_time,category_id, category_alias, alias,price,price_old ,discount,published_double,image_double,date_end,date_start,warranty,types,is_hotdeal,accessories  FROM fs_products
+						  WHERE 
+						  	 published = 1  AND category_published = 1 AND show_in_home = 1
+						  	 AND category_id_wrapper like '%2%'  ORDER BY  ordering DESC,created_time DESC, id DESC
+						 LIMIT 10
+
+time:::0.00088906288146973
+
+===========
+
+ SELECT id,name, image, alias
+							FROM fs_manufactories 
+							WHERE published = 1  
+							 AND tablenames like "%,fs_products_loa_di_dong,%"
+							 ORDER BY  ordering ASC,name ASC
+							 
+
+time:::0.00097203254699707
+
+===========
+
+ SELECT id,name,summary,image, created_time,category_id, category_alias, alias,price,price_old ,discount,published_double,image_double,date_end,date_start,warranty,types,is_hotdeal,accessories  FROM fs_products
+						  WHERE 
+						  	 published = 1  AND category_published = 1 AND show_in_home = 1
+						  	 AND category_id_wrapper like '%3%'  ORDER BY  ordering DESC,created_time DESC, id DESC
+						 LIMIT 10
+
+time:::0.00062990188598633
+
+===========
+
+ SELECT id,name, image, alias
+							FROM fs_manufactories 
+							WHERE published = 1  
+							 AND tablenames like "%,fs_products_may_nghe_nhac,%"
+							 ORDER BY  ordering ASC,name ASC
+							 
+
+time:::0.00082302093505859
+
+===========
+
+ SELECT id,name,summary,image, created_time,category_id, category_alias, alias,price,price_old ,discount,published_double,image_double,date_end,date_start,warranty,types,is_hotdeal,accessories  FROM fs_products
+						  WHERE 
+						  	 published = 1  AND category_published = 1 AND show_in_home = 1
+						  	 AND category_id_wrapper like '%4%'  ORDER BY  ordering DESC,created_time DESC, id DESC
+						 LIMIT 10
+
+time:::0.00078296661376953
+
+===========
+
+ SELECT id,name, image, alias
+							FROM fs_manufactories 
+							WHERE published = 1  
+							 AND tablenames like "%,fs_products_amp_dac,%"
+							 ORDER BY  ordering ASC,name ASC
+							 
+
+time:::0.00089502334594727
+
+===========
+
+ SELECT id,name,image,alias
+					  FROM fs_products_types  WHERE published = 1 ORDER BY ordering ASC
+
+time:::0.00054383277893066
+
+===========
+
+ SELECT *
+					  FROM fs_products_filters  WHERE published = 1 AND is_home = 1 AND field_name <> "manufactory" 
+
+time:::0.00069999694824219
+
+===========
+
+ SELECT *
+					  FROM fs_products_filters  WHERE published = 1 AND is_home = 1 AND field_name = "manufactory"  ORDER BY  ordering ASC 
+
+time:::0.0012578964233398
+
+===========
+
+ SELECT *
+					  FROM fs_slideshow_categories
+					  WHERE id = 47 
+
+time:::0.0041201114654541
+
+===========
+
+  SELECT id,name,image,url,summary
+					FROM fs_slideshow
+					WHERE published = 1  AND category_id = 47 	
+					ORDER BY ordering 
+
+time:::0.00075793266296387
+
+===========
+
+ SELECT *
+					  FROM fs_slideshow_categories
+					  WHERE id = 47 
+
+time:::0.00046300888061523
+
+===========
+
+  SELECT id,name,image,url,summary
+					FROM fs_slideshow
+					WHERE published = 1  AND category_id = 47 	
+					ORDER BY ordering 
+
+time:::0.00044703483581543
+
+===========
+
+ SELECT *
+					  FROM fs_slideshow_categories
+					  WHERE id = 47 
+
+time:::0.0013589859008789
+
+===========
+
+  SELECT id,name,image,url,summary
+					FROM fs_slideshow
+					WHERE published = 1  AND category_id = 47 	
+					ORDER BY ordering 
+
+time:::0.00053191184997559
+
+===========
+
+ SELECT *
+					  FROM fs_slideshow_categories
+					  WHERE id = 47 
+
+time:::0.00038290023803711
+
+===========
+
+  SELECT id,name,image,url,summary
+					FROM fs_slideshow
+					WHERE published = 1  AND category_id = 47 	
+					ORDER BY ordering 
+
+time:::0.00058794021606445
+
+===========
+
+SELECT name,alias,id,level,parent_id as parent_id,alias, list_parents,tablename,image,icon,show_in_homepage,show_in_footer						  FROM fs_products_categories AS a						  WHERE published = 1 						  ORDER BY ordering ASC, id ASC						  						 
+
+time:::0.00049591064453125
+
+===========
+
+ SELECT *						FROM fs_products_filters						WHERE published = 1						ORDER BY field_ordering ASC, ordering, is_common DESC						
+
+time:::0.0027780532836914
+
+===========
+
+ SELECT *
+					FROM fs_menus_items
+					WHERE published  = 1
+						AND group_id = 1 
+					ORDER BY ordering
+
+time:::0.00090885162353516
+
+===========
+
+ SELECT *
+					  FROM fs_slideshow_categories
+					  WHERE id = 45 
+
+time:::0.00049495697021484
+
+===========
+
+  SELECT id,name,image,url,summary
+					FROM fs_slideshow
+					WHERE published = 1  AND category_id = 45 	
+					ORDER BY ordering 
+
+time:::0.0004270076751709
+
+===========
+
+ SELECT name,id,category_id,type,image,flash,content,link,height,width
+						  FROM fs_banners AS a
+						  WHERE published = 1
+						  AND category_id IN (43) AND (listItemid = 'all'
+							OR listItemid like '%,1,%')
+							 ORDER BY ordering, id 
+
+time:::0.00075292587280273
+
+===========
+
+ SELECT *
+						  FROM fs_strengths
+						 WHERE  published = 1 
+						 ORDER BY  ordering ASC 
+						 LIMIT 4 
+						 
+
+time:::0.00071477890014648
+
+===========
+
+ SELECT title,alias,image,summary,hits,updated_time,id,category_alias,is_hot,comments_total,created_time
+						  FROM fs_news
+						 WHERE  published = 1 and category_published = 1 
+						  ORDER BY   ordering DESC,created_time DESC, ordering DESC,created_time DESC
+						 LIMIT 4  
+						 
+
+time:::0.0018668174743652
+
+===========
+
+ SELECT *
+					FROM fs_menus_items
+					WHERE published  = 1
+						AND group_id = 3 
+					ORDER BY ordering
+
+time:::0.0014810562133789
+
+===========
+
+ SELECT id, name, level, alias,is_bold,link
+					FROM fs_tags
+					WHERE published  = 1  
+					ORDER BY ordering
+					LIMIT 150 
+
+time:::0.00097298622131348
+
+===========
+
+================REMOTE: 127.0.0.1  (2018-02-07 09:45:06)===================
+
+================URL : /===================
+
+================1517993106===================
+
+ SELECT lang_key, lang_vi 
+						FROM fs_languages_text 
+						WHERE is_common = 1
+					 OR module = 'home' 
+
+time:::0.00067400932312012
+
+===========
+
+ SELECT * FROM fs_config
+						WHERE is_common = 1
+					 
+
+time:::0.0030021667480469
+
+===========
+
+ SELECT cache,params,fields_seo_title,fields_seo_keyword,fields_seo_description,fields_seo_h1,fields_seo_h2,fields_seo_image_alt,value_seo_title,value_seo_keyword,value_seo_description FROM fs_config_modules
+				WHERE module = "home" AND view = "home" AND ( task = "display" OR task = "" OR task IS NULL) 
+
+time:::0.0004889965057373
+
+===========
+
+SELECT id,title,content, ordering, module, position, showTitle, params ,listItemid,news_categories,contents_categories,link_title
+						FROM fs_blocks AS a 
+						WHERE published = 1 
+					ORDER BY ordering
+
+time:::0.0049889087677002
+
+===========
+
+ SELECT *
+					  FROM fs_products_categories
+					  WHERE published = 1 AND is_special = 1
+
+time:::0.00052404403686523
+
+===========
+
+ SELECT id,name, alias,tags_group,tablename,is_accessories, root_id, is_accessories,list_parents,icon,is_special
+					FROM fs_products_categories 
+					WHERE 
+						show_in_homepage = 1 AND level = 0
+					ORDER BY ordering
+							
+
+time:::0.00047397613525391
+
+===========
+
+ SELECT id,name,summary,image, created_time,category_id, category_alias, alias,price,price_old ,discount,published_double,image_double,date_end,date_start,warranty,types,is_hotdeal,accessories  FROM fs_products
+						  WHERE 
+						  	 published = 1  AND category_published = 1 AND show_in_home = 1
+						  	 AND category_id_wrapper like '%1%'  ORDER BY  ordering DESC,created_time DESC, id DESC
+						 LIMIT 10
+
+time:::0.0022749900817871
+
+===========
+
+ SELECT id,name, image, alias
+							FROM fs_manufactories 
+							WHERE published = 1  
+							 AND tablenames like "%,fs_products_tai_nghe,%"
+							 ORDER BY  ordering ASC,name ASC
+							 
+
+time:::0.0012481212615967
+
+===========
+
+ SELECT id,name,summary,image, created_time,category_id, category_alias, alias,price,price_old ,discount,published_double,image_double,date_end,date_start,warranty,types,is_hotdeal,accessories  FROM fs_products
+						  WHERE 
+						  	 published = 1  AND category_published = 1 AND show_in_home = 1
+						  	 AND category_id_wrapper like '%2%'  ORDER BY  ordering DESC,created_time DESC, id DESC
+						 LIMIT 10
+
+time:::0.00082802772521973
+
+===========
+
+ SELECT id,name, image, alias
+							FROM fs_manufactories 
+							WHERE published = 1  
+							 AND tablenames like "%,fs_products_loa_di_dong,%"
+							 ORDER BY  ordering ASC,name ASC
+							 
+
+time:::0.00063395500183105
+
+===========
+
+ SELECT id,name,summary,image, created_time,category_id, category_alias, alias,price,price_old ,discount,published_double,image_double,date_end,date_start,warranty,types,is_hotdeal,accessories  FROM fs_products
+						  WHERE 
+						  	 published = 1  AND category_published = 1 AND show_in_home = 1
+						  	 AND category_id_wrapper like '%3%'  ORDER BY  ordering DESC,created_time DESC, id DESC
+						 LIMIT 10
+
+time:::0.00058889389038086
+
+===========
+
+ SELECT id,name, image, alias
+							FROM fs_manufactories 
+							WHERE published = 1  
+							 AND tablenames like "%,fs_products_may_nghe_nhac,%"
+							 ORDER BY  ordering ASC,name ASC
+							 
+
+time:::0.00083804130554199
+
+===========
+
+ SELECT id,name,summary,image, created_time,category_id, category_alias, alias,price,price_old ,discount,published_double,image_double,date_end,date_start,warranty,types,is_hotdeal,accessories  FROM fs_products
+						  WHERE 
+						  	 published = 1  AND category_published = 1 AND show_in_home = 1
+						  	 AND category_id_wrapper like '%4%'  ORDER BY  ordering DESC,created_time DESC, id DESC
+						 LIMIT 10
+
+time:::0.00080680847167969
+
+===========
+
+ SELECT id,name, image, alias
+							FROM fs_manufactories 
+							WHERE published = 1  
+							 AND tablenames like "%,fs_products_amp_dac,%"
+							 ORDER BY  ordering ASC,name ASC
+							 
+
+time:::0.0008540153503418
+
+===========
+
+ SELECT id,name,image,alias
+					  FROM fs_products_types  WHERE published = 1 ORDER BY ordering ASC
+
+time:::0.00044608116149902
+
+===========
+
+ SELECT *
+					  FROM fs_products_filters  WHERE published = 1 AND is_home = 1 AND field_name <> "manufactory" 
+
+time:::0.0019190311431885
+
+===========
+
+ SELECT *
+					  FROM fs_products_filters  WHERE published = 1 AND is_home = 1 AND field_name = "manufactory"  ORDER BY  ordering ASC 
+
+time:::0.0010068416595459
+
+===========
+
+ SELECT *
+					  FROM fs_slideshow_categories
+					  WHERE id = 47 
+
+time:::0.00054287910461426
+
+===========
+
+  SELECT id,name,image,url,summary
+					FROM fs_slideshow
+					WHERE published = 1  AND category_id = 47 	
+					ORDER BY ordering 
+
+time:::0.00056195259094238
+
+===========
+
+ SELECT *
+					  FROM fs_slideshow_categories
+					  WHERE id = 47 
+
+time:::0.00062203407287598
+
+===========
+
+  SELECT id,name,image,url,summary
+					FROM fs_slideshow
+					WHERE published = 1  AND category_id = 47 	
+					ORDER BY ordering 
+
+time:::0.00044798851013184
+
+===========
+
+ SELECT *
+					  FROM fs_slideshow_categories
+					  WHERE id = 47 
+
+time:::0.00041103363037109
+
+===========
+
+  SELECT id,name,image,url,summary
+					FROM fs_slideshow
+					WHERE published = 1  AND category_id = 47 	
+					ORDER BY ordering 
+
+time:::0.00049090385437012
+
+===========
+
+ SELECT *
+					  FROM fs_slideshow_categories
+					  WHERE id = 47 
+
+time:::0.0019340515136719
+
+===========
+
+  SELECT id,name,image,url,summary
+					FROM fs_slideshow
+					WHERE published = 1  AND category_id = 47 	
+					ORDER BY ordering 
+
+time:::0.0012519359588623
+
+===========
+
+SELECT name,alias,id,level,parent_id as parent_id,alias, list_parents,tablename,image,icon,show_in_homepage,show_in_footer						  FROM fs_products_categories AS a						  WHERE published = 1 						  ORDER BY ordering ASC, id ASC						  						 
+
+time:::0.00051093101501465
+
+===========
+
+ SELECT *						FROM fs_products_filters						WHERE published = 1						ORDER BY field_ordering ASC, ordering, is_common DESC						
+
+time:::0.0013630390167236
+
+===========
+
+ SELECT *
+					FROM fs_menus_items
+					WHERE published  = 1
+						AND group_id = 1 
+					ORDER BY ordering
+
+time:::0.00070405006408691
+
+===========
+
+ SELECT *
+					  FROM fs_slideshow_categories
+					  WHERE id = 45 
+
+time:::0.0003960132598877
+
+===========
+
+  SELECT id,name,image,url,summary
+					FROM fs_slideshow
+					WHERE published = 1  AND category_id = 45 	
+					ORDER BY ordering 
+
+time:::0.00042891502380371
+
+===========
+
+ SELECT name,id,category_id,type,image,flash,content,link,height,width
+						  FROM fs_banners AS a
+						  WHERE published = 1
+						  AND category_id IN (43) AND (listItemid = 'all'
+							OR listItemid like '%,1,%')
+							 ORDER BY ordering, id 
+
+time:::0.00045299530029297
+
+===========
+
+ SELECT *
+						  FROM fs_strengths
+						 WHERE  published = 1 
+						 ORDER BY  ordering ASC 
+						 LIMIT 4 
+						 
+
+time:::0.0011260509490967
+
+===========
+
+ SELECT title,alias,image,summary,hits,updated_time,id,category_alias,is_hot,comments_total,created_time
+						  FROM fs_news
+						 WHERE  published = 1 and category_published = 1 
+						  ORDER BY   ordering DESC,created_time DESC, ordering DESC,created_time DESC
+						 LIMIT 4  
+						 
+
+time:::0.0013539791107178
+
+===========
+
+ SELECT *
+					FROM fs_menus_items
+					WHERE published  = 1
+						AND group_id = 3 
+					ORDER BY ordering
+
+time:::0.00060701370239258
+
+===========
+
+ SELECT id, name, level, alias,is_bold,link
+					FROM fs_tags
+					WHERE published  = 1  
+					ORDER BY ordering
+					LIMIT 150 
+
+time:::0.00046586990356445
+
+===========
+
+================REMOTE: 127.0.0.1  (2018-02-07 09:45:09)===================
+
+================URL : /tai-nghe/akg-y50-bt-copy-p14.html===================
+
+================1517993109===================
+
+ SELECT lang_key, lang_vi 
+						FROM fs_languages_text 
+						WHERE is_common = 1
+					 OR module = 'products' 
+
+time:::0.00046586990356445
+
+===========
+
+ SELECT * FROM fs_config
+						WHERE is_common = 1
+					 
+
+time:::0.00069785118103027
+
+===========
+
+ SELECT cache,params,fields_seo_title,fields_seo_keyword,fields_seo_description,fields_seo_h1,fields_seo_h2,fields_seo_image_alt,value_seo_title,value_seo_keyword,value_seo_description FROM fs_config_modules
+				WHERE module = "products" AND view = "product" AND ( task = "display" OR task = "" OR task IS NULL) 
+
+time:::0.00047397613525391
+
+===========
+
+SELECT id,title,content, ordering, module, position, showTitle, params ,listItemid,news_categories,contents_categories,link_title
+						FROM fs_blocks AS a 
+						WHERE published = 1 
+					ORDER BY ordering
+
+time:::0.00076699256896973
+
+===========
+
+ SELECT  * 
+					  FROM fs_products
+					  WHERE published = 1 and category_published = 1 AND id = 14
+
+time:::0.00074911117553711
+
+===========
+
+ SELECT *
+						FROM fs_products_categories 
+						WHERE id = 1 
+
+time:::0.00068497657775879
+
+===========
+
+SELECT  TABLE_NAME  FROM INFORMATION_SCHEMA.TABLES WHERE 
+				TABLE_TYPE='BASE TABLE' AND TABLE_NAME='fs_products_tai_nghe'
+				AND TABLE_SCHEMA = 'tainghecaocap'
+
+time:::0.012095928192139
+
+===========
+
+ SELECT *
+					FROM fs_products_tai_nghe 
+					WHERE 
+						record_id = 14	
+					
+
+time:::0.0042369365692139
+
+===========
+
+ SELECT *
+						FROM fs_products_tables 
+						WHERE table_name = 'fs_products_tai_nghe'
+						ANd  is_filter <> 1 
+						ORDER BY ordering  
+						 
+
+time:::0.011266946792603
+
+===========
+
+ SELECT name,link
+					  FROM fs_keywords  WHERE published = 1
+
+time:::0.0040090084075928
+
+===========
+
+ SELECT id,image, record_id,title as name ,  color_id
+						  FROM fs_products_images
+						  WHERE record_id =  14
+						     LIMIT 10
+						 
+
+time:::0.001209020614624
+
+===========
+
+ SELECT *
+						  FROM fs_products_price
+						  WHERE record_id =  14
+						   ORDER BY  price DESC
+						 
+
+time:::0.0025720596313477
+
+===========
+
+ SELECT id,title,alias ,category_id ,image , category_alias ,summary,created_time
+						FROM fs_news 
+						 WHERE published = 1 AND ( tags like '%tai nghe%' OR  tags like '%tai nghe AKG%' OR  tags like '%AKG Y50%' OR  tags like '%tai nghe cao cấp%' )
+						ORDER BY id DESC,ordering DESC
+						LIMIT 0,6
+						
+
+time:::0.0026628971099854
+
+===========
+
+ SELECT id,title,summary,image, alias, category_id,category_alias
+						  FROM fs_news
+						  WHERE published = 1
+						     ORDER BY  ordering DESC , id DESC
+						     LIMIT 6
+						 
+
+time:::0.00080490112304688
+
+===========
+
+ SELECT name,id , image,price,price_old,discount, alias,category_alias,category_id,accessories,quantity, price,price_old,types,manufactory_image,manufactory_name,date_start,date_end,warranty,is_hotdeal  
+						FROM fs_products
+						WHERE category_id = 1
+							AND published = 1 ORDER BY ordering LIMIT 5
+
+time:::0.0078840255737305
+
+===========
+
+ SELECT name,id , image,price,price_old,discount, alias,category_alias,quantity, price,price_old,types,manufactory_image,manufactory_name,date_start,date_end,warranty,is_hotdeal  
+						FROM fs_products
+						WHERE category_id = 1 and manufactory = 49
+							AND published = 1 ORDER BY ordering LIMIT 8
+
+time:::0.00077390670776367
+
+===========
+
+ SELECT  name,id , image,price,price_old,discount, alias,category_alias,category_id,quantity, price,price_old,types,manufactory_image,manufactory_name,date_start,date_end,warranty,is_hotdeal,summary,accessories
+						  FROM fs_products
+						  WHERE ID IN ( 1,12,11,10,9,8,7,6,5,4 )
+						  	AND id <>  14
+						  	AND published = 1
+						     ORDER BY  ordering DESC , id DESC
+						     LIMIT 10
+						 
+
+time:::0.0011959075927734
+
+===========
+
+ SELECT *
+					  FROM fs_products
+					  WHERE id = 14 
+
+time:::0.00070405006408691
+
+===========
+
+ SELECT id,name,summary,image,price,price_old,discount,types, alias,accessories, category_id,category_alias, ABS(price - 2990000) as price_subtract,manufactory_image,manufactory_name
+						  FROM fs_products
+						  WHERE published = 1
+						  	AND id <>  14
+						  	AND category_id =  1
+						     ORDER BY price_subtract ASC
+						     LIMIT 5
+						 
+
+time:::0.0010249614715576
+
+===========
+
+ SELECT id,name,image,alias
+					  FROM fs_products_types  WHERE published = 1 ORDER BY ordering ASC
+
+time:::0.001417875289917
+
+===========
+
+ SELECT *
+						FROM fs_products_incentives AS a
+						WHERE product_id = 14
+
+time:::0.00070714950561523
+
+===========
+
+ SELECT *
+						FROM fs_order
+						WHERE  session_id = 'ckdeo2m2uc9piojtki5v2bbmb5' 
+						AND is_temporary = 1 
+
+time:::0.0041840076446533
+
+===========
+
+ SELECT *
+					  FROM fs_products_filters
+					  WHERE  tablename = "fs_products_tai_nghe" AND field_name = "manufactory" AND filter_value = "49" 
+
+time:::0.00069689750671387
+
+===========
+
+SELECT name,id , image,price,price_old,discount, alias,category_alias,quantity, price,price_old,types,manufactory_image,manufactory_name,date_start,date_end,warranty,is_hotdeal,summary,accessories
+			 FROM fs_products WHERE published = 1  AND category_published = 1 AND show_in_homepage = 1  AND is_new = 1
+			ORDER BY  ordering DESC, created_time DESC, id DESC LIMIT 0,5
+
+time:::0.00062704086303711
+
+===========
+
+SELECT name,id , image,price,price_old,discount, alias,category_alias,quantity, price,price_old,types,manufactory_image,manufactory_name,date_start,date_end,warranty,is_hotdeal,summary,accessories
+			 FROM fs_products  WHERE is_sell = 1 ORDER BY sale_count DESC, created_time DESC, id DESC LIMIT 0,5
+
+time:::0.00096011161804199
+
+===========
+
+ SELECT *
+					  FROM fs_order  WHERE sender_name <> "" AND sender_telephone <> "" ORDER BY  id DESC  LIMIT 10
+
+time:::0.00095295906066895
+
+===========
+
+SELECT name,created_time,id,email,comment,parent_id,level,record_id,is_admin,avatar  FROM fs_products_comments
+						  WHERE  record_id = 14 
+								AND published = 1 
+						  AND parent_id = 0  ORDER BY  id DESC   LIMIT 0,3 
+
+time:::6.9141387939453E-6
+
+===========
+
+SELECT name,created_time,id,email,comment,parent_id,level,record_id,is_admin,avatar  FROM fs_products_comments
+						  WHERE  record_id = 14 
+								AND published = 1 
+						  AND parent_id > 0  ORDER BY  id ASC  
+
+time:::0.00033903121948242
+
+===========
+
+SELECT count(*) FROM fs_products_comments
+						  WHERE  record_id = 14 
+								AND published = 1 
+						  AND parent_id = 0 
+
+time:::0.0008389949798584
+
+===========
+
+SELECT name,alias,id,level,parent_id as parent_id,alias, list_parents,tablename,image,icon,show_in_homepage,show_in_footer						  FROM fs_products_categories AS a						  WHERE published = 1 						  ORDER BY ordering ASC, id ASC						  						 
+
+time:::0.0021219253540039
+
+===========
+
+ SELECT *						FROM fs_products_filters						WHERE published = 1						ORDER BY field_ordering ASC, ordering, is_common DESC						
+
+time:::0.0021169185638428
+
+===========
+
+ SELECT *
+					FROM fs_menus_items
+					WHERE published  = 1
+						AND group_id = 1 
+					ORDER BY ordering
+
+time:::0.00078892707824707
+
+===========
+
+ SELECT *
+					FROM fs_menus_items
+					WHERE published  = 1
+						AND group_id = 3 
+					ORDER BY ordering
+
+time:::0.00095605850219727
+
+===========
+
+ SELECT id, name, level, alias,is_bold,link
+					FROM fs_tags
+					WHERE published  = 1  
+					ORDER BY ordering
+					LIMIT 150 
+
+time:::0.00070595741271973
+
+===========
+
+================REMOTE: 127.0.0.1  (2018-02-07 09:45:13)===================
+
+================URL : /tai-nghe/akg-y50-bt-copy-p14.html===================
+
+================1517993113===================
+
+ SELECT lang_key, lang_vi 
+						FROM fs_languages_text 
+						WHERE is_common = 1
+					 OR module = 'products' 
+
+time:::0.0005190372467041
+
+===========
+
+ SELECT * FROM fs_config
+						WHERE is_common = 1
+					 
+
+time:::0.00061178207397461
+
+===========
+
+ SELECT cache,params,fields_seo_title,fields_seo_keyword,fields_seo_description,fields_seo_h1,fields_seo_h2,fields_seo_image_alt,value_seo_title,value_seo_keyword,value_seo_description FROM fs_config_modules
+				WHERE module = "products" AND view = "cart" AND task = "buy_fast_save"  
+
+time:::0.00044894218444824
+
+===========
+
+SELECT id,title,content, ordering, module, position, showTitle, params ,listItemid,news_categories,contents_categories,link_title
+						FROM fs_blocks AS a 
+						WHERE published = 1 
+					ORDER BY ordering
+
+time:::0.000640869140625
+
+===========
+
+ SELECT *
+					  FROM fs_products
+					  WHERE id = 14 
+
+time:::0.00088000297546387
+
+===========
+
+ INSERT INTO  fs_order(`products_id`,`is_temporary`,`session_id`,`total_before_discount`,`total_after_discount`,`products_count`,`sender_name`,`sender_telephone`,`sender_email`,`sender_address`,`sender_comments`,`created_time`,`edited_time`,`type`) VALUES ('14','0','ckdeo2m2uc9piojtki5v2bbmb5','2990000','2990000','1','','0987876765','','','','2018-02-07 09:45:13','2018-02-07 09:45:13','fast') 
+
+time:::0.0019190311431885
+
+===========
+
+ SELECT * 
+						FROM fs_order
+						WHERE  id = '19' 
+							AND is_temporary = 0 
+					
+
+time:::0.00066304206848145
+
+===========
+
+ SELECT a.*
+						FROM fs_order_items AS a
+						WHERE  a.order_id = 19 
+
+time:::0.00062894821166992
+
+===========
+
+ SELECT value FROM fs_config
+			WHERE name = 'admin_name' 
+
+time:::0.00036883354187012
+
+===========
+
+ SELECT value FROM fs_config
+			WHERE name = 'admin_email' 
+
+time:::0.00036787986755371
+
+===========
+
+ SELECT value FROM fs_config
+			WHERE name = 'mail_order_body' 
+
+time:::0.00050187110900879
+
+===========
+
+ SELECT value FROM fs_config
+			WHERE name = 'mail_order_subject' 
+
+time:::0.00073504447937012
+
+===========
+
+================REMOTE: 127.0.0.1  (2018-02-07 09:46:06)===================
+
+================URL : /tai-nghe/akg-y50-bt-copy-p14.html===================
+
+================1517993166===================
+
+ SELECT lang_key, lang_vi 
+						FROM fs_languages_text 
+						WHERE is_common = 1
+					 OR module = 'products' 
+
+time:::0.00079607963562012
+
+===========
+
+ SELECT * FROM fs_config
+						WHERE is_common = 1
+					 
+
+time:::0.00060820579528809
+
+===========
+
+ SELECT cache,params,fields_seo_title,fields_seo_keyword,fields_seo_description,fields_seo_h1,fields_seo_h2,fields_seo_image_alt,value_seo_title,value_seo_keyword,value_seo_description FROM fs_config_modules
+				WHERE module = "products" AND view = "product" AND ( task = "display" OR task = "" OR task IS NULL) 
+
+time:::0.00040388107299805
+
+===========
+
+SELECT id,title,content, ordering, module, position, showTitle, params ,listItemid,news_categories,contents_categories,link_title
+						FROM fs_blocks AS a 
+						WHERE published = 1 
+					ORDER BY ordering
+
+time:::0.00088000297546387
+
+===========
+
+ SELECT  * 
+					  FROM fs_products
+					  WHERE published = 1 and category_published = 1 AND id = 14
+
+time:::0.0005800724029541
+
+===========
+
+ SELECT *
+						FROM fs_products_categories 
+						WHERE id = 1 
+
+time:::0.00068211555480957
+
+===========
+
+SELECT  TABLE_NAME  FROM INFORMATION_SCHEMA.TABLES WHERE 
+				TABLE_TYPE='BASE TABLE' AND TABLE_NAME='fs_products_tai_nghe'
+				AND TABLE_SCHEMA = 'tainghecaocap'
+
+time:::0.00048589706420898
+
+===========
+
+ SELECT *
+					FROM fs_products_tai_nghe 
+					WHERE 
+						record_id = 14	
+					
+
+time:::0.00051689147949219
+
+===========
+
+ SELECT *
+						FROM fs_products_tables 
+						WHERE table_name = 'fs_products_tai_nghe'
+						ANd  is_filter <> 1 
+						ORDER BY ordering  
+						 
+
+time:::0.00070595741271973
+
+===========
+
+ SELECT name,link
+					  FROM fs_keywords  WHERE published = 1
+
+time:::0.00035309791564941
+
+===========
+
+ SELECT id,image, record_id,title as name ,  color_id
+						  FROM fs_products_images
+						  WHERE record_id =  14
+						     LIMIT 10
+						 
+
+time:::0.00079512596130371
+
+===========
+
+ SELECT *
+						  FROM fs_products_price
+						  WHERE record_id =  14
+						   ORDER BY  price DESC
+						 
+
+time:::0.00077390670776367
+
+===========
+
+ SELECT id,title,alias ,category_id ,image , category_alias ,summary,created_time
+						FROM fs_news 
+						 WHERE published = 1 AND ( tags like '%tai nghe%' OR  tags like '%tai nghe AKG%' OR  tags like '%AKG Y50%' OR  tags like '%tai nghe cao cấp%' )
+						ORDER BY id DESC,ordering DESC
+						LIMIT 0,6
+						
+
+time:::0.0010051727294922
+
+===========
+
+ SELECT id,title,summary,image, alias, category_id,category_alias
+						  FROM fs_news
+						  WHERE published = 1
+						     ORDER BY  ordering DESC , id DESC
+						     LIMIT 6
+						 
+
+time:::0.00090503692626953
+
+===========
+
+ SELECT name,id , image,price,price_old,discount, alias,category_alias,category_id,accessories,quantity, price,price_old,types,manufactory_image,manufactory_name,date_start,date_end,warranty,is_hotdeal  
+						FROM fs_products
+						WHERE category_id = 1
+							AND published = 1 ORDER BY ordering LIMIT 5
+
+time:::0.00064206123352051
+
+===========
+
+ SELECT name,id , image,price,price_old,discount, alias,category_alias,quantity, price,price_old,types,manufactory_image,manufactory_name,date_start,date_end,warranty,is_hotdeal  
+						FROM fs_products
+						WHERE category_id = 1 and manufactory = 49
+							AND published = 1 ORDER BY ordering LIMIT 8
+
+time:::0.0013248920440674
+
+===========
+
+ SELECT  name,id , image,price,price_old,discount, alias,category_alias,category_id,quantity, price,price_old,types,manufactory_image,manufactory_name,date_start,date_end,warranty,is_hotdeal,summary,accessories
+						  FROM fs_products
+						  WHERE ID IN ( 1,12,11,10,9,8,7,6,5,4 )
+						  	AND id <>  14
+						  	AND published = 1
+						     ORDER BY  ordering DESC , id DESC
+						     LIMIT 10
+						 
+
+time:::0.00092482566833496
+
+===========
+
+ SELECT *
+					  FROM fs_products
+					  WHERE id = 14 
+
+time:::0.00058388710021973
+
+===========
+
+ SELECT id,name,summary,image,price,price_old,discount,types, alias,accessories, category_id,category_alias, ABS(price - 2990000) as price_subtract,manufactory_image,manufactory_name
+						  FROM fs_products
+						  WHERE published = 1
+						  	AND id <>  14
+						  	AND category_id =  1
+						     ORDER BY price_subtract ASC
+						     LIMIT 5
+						 
+
+time:::0.00092196464538574
+
+===========
+
+ SELECT id,name,image,alias
+					  FROM fs_products_types  WHERE published = 1 ORDER BY ordering ASC
+
+time:::0.00055599212646484
+
+===========
+
+ SELECT *
+						FROM fs_products_incentives AS a
+						WHERE product_id = 14
+
+time:::0.00038003921508789
+
+===========
+
+ SELECT *
+						FROM fs_order
+						WHERE  session_id = 'ckdeo2m2uc9piojtki5v2bbmb5' 
+						AND is_temporary = 1 
+
+time:::0.0005640983581543
+
+===========
+
+ SELECT *
+					  FROM fs_products_filters
+					  WHERE  tablename = "fs_products_tai_nghe" AND field_name = "manufactory" AND filter_value = "49" 
+
+time:::0.00055289268493652
+
+===========
+
+SELECT name,id , image,price,price_old,discount, alias,category_alias,quantity, price,price_old,types,manufactory_image,manufactory_name,date_start,date_end,warranty,is_hotdeal,summary,accessories
+			 FROM fs_products WHERE published = 1  AND category_published = 1 AND show_in_homepage = 1  AND is_new = 1
+			ORDER BY  ordering DESC, created_time DESC, id DESC LIMIT 0,5
+
+time:::0.00066804885864258
+
+===========
+
+SELECT name,id , image,price,price_old,discount, alias,category_alias,quantity, price,price_old,types,manufactory_image,manufactory_name,date_start,date_end,warranty,is_hotdeal,summary,accessories
+			 FROM fs_products  WHERE is_sell = 1 ORDER BY sale_count DESC, created_time DESC, id DESC LIMIT 0,5
+
+time:::0.00080299377441406
+
+===========
+
+ SELECT *
+					  FROM fs_order  WHERE sender_name <> "" AND sender_telephone <> "" ORDER BY  id DESC  LIMIT 10
+
+time:::0.00055289268493652
+
+===========
+
+SELECT name,created_time,id,email,comment,parent_id,level,record_id,is_admin,avatar  FROM fs_products_comments
+						  WHERE  record_id = 14 
+								AND published = 1 
+						  AND parent_id = 0  ORDER BY  id DESC   LIMIT 0,3 
+
+time:::4.0531158447266E-6
+
+===========
+
+SELECT name,created_time,id,email,comment,parent_id,level,record_id,is_admin,avatar  FROM fs_products_comments
+						  WHERE  record_id = 14 
+								AND published = 1 
+						  AND parent_id > 0  ORDER BY  id ASC  
+
+time:::0.00035715103149414
+
+===========
+
+SELECT count(*) FROM fs_products_comments
+						  WHERE  record_id = 14 
+								AND published = 1 
+						  AND parent_id = 0 
+
+time:::0.00037908554077148
+
+===========
+
+SELECT name,alias,id,level,parent_id as parent_id,alias, list_parents,tablename,image,icon,show_in_homepage,show_in_footer						  FROM fs_products_categories AS a						  WHERE published = 1 						  ORDER BY ordering ASC, id ASC						  						 
+
+time:::0.000640869140625
+
+===========
+
+ SELECT *						FROM fs_products_filters						WHERE published = 1						ORDER BY field_ordering ASC, ordering, is_common DESC						
+
+time:::0.0022668838500977
+
+===========
+
+ SELECT *
+					FROM fs_menus_items
+					WHERE published  = 1
+						AND group_id = 1 
+					ORDER BY ordering
+
+time:::0.0010128021240234
+
+===========
+
+ SELECT *
+					FROM fs_menus_items
+					WHERE published  = 1
+						AND group_id = 3 
+					ORDER BY ordering
+
+time:::0.00061798095703125
+
+===========
+
+ SELECT id, name, level, alias,is_bold,link
+					FROM fs_tags
+					WHERE published  = 1  
+					ORDER BY ordering
+					LIMIT 150 
+
+time:::0.00086593627929688
+
+===========
+
+================REMOTE: 127.0.0.1  (2018-02-07 09:46:10)===================
+
+================URL : /tai-nghe/akg-y50-bt-copy-p14.html===================
+
+================1517993170===================
+
+ SELECT lang_key, lang_vi 
+						FROM fs_languages_text 
+						WHERE is_common = 1
+					 OR module = 'products' 
+
+time:::0.00058197975158691
+
+===========
+
+ SELECT * FROM fs_config
+						WHERE is_common = 1
+					 
+
+time:::0.0013110637664795
+
+===========
+
+ SELECT cache,params,fields_seo_title,fields_seo_keyword,fields_seo_description,fields_seo_h1,fields_seo_h2,fields_seo_image_alt,value_seo_title,value_seo_keyword,value_seo_description FROM fs_config_modules
+				WHERE module = "products" AND view = "cart" AND task = "buy_fast_save"  
+
+time:::0.00039815902709961
+
+===========
+
+SELECT id,title,content, ordering, module, position, showTitle, params ,listItemid,news_categories,contents_categories,link_title
+						FROM fs_blocks AS a 
+						WHERE published = 1 
+					ORDER BY ordering
+
+time:::0.00060009956359863
+
+===========
+
+ SELECT *
+					  FROM fs_products
+					  WHERE id = 14 
+
+time:::0.0022358894348145
+
+===========
+
+ INSERT INTO  fs_order(`products_id`,`is_temporary`,`session_id`,`total_before_discount`,`total_after_discount`,`products_count`,`sender_name`,`sender_telephone`,`sender_email`,`sender_address`,`sender_comments`,`created_time`,`edited_time`,`type`) VALUES ('14','0','ckdeo2m2uc9piojtki5v2bbmb5','2990000','2990000','1','','0987876765','','','','2018-02-07 09:46:10','2018-02-07 09:46:10','fast') 
+
+time:::0.00059008598327637
+
+===========
+
+ SELECT * 
+						FROM fs_order
+						WHERE  id = '1' 
+							AND is_temporary = 0 
+					
+
+time:::0.00061798095703125
+
+===========
+
+ SELECT a.*
+						FROM fs_order_items AS a
+						WHERE  a.order_id = 1 
+
+time:::0.00048208236694336
+
+===========
+
+ SELECT value FROM fs_config
+			WHERE name = 'admin_name' 
+
+time:::0.0003819465637207
+
+===========
+
+ SELECT value FROM fs_config
+			WHERE name = 'admin_email' 
+
+time:::0.00041413307189941
+
+===========
+
+ SELECT value FROM fs_config
+			WHERE name = 'mail_order_body' 
+
+time:::0.00049304962158203
+
+===========
+
+ SELECT value FROM fs_config
+			WHERE name = 'mail_order_subject' 
+
+time:::0.00041103363037109
+
+===========
+
+================REMOTE: 127.0.0.1  (2018-02-07 09:48:02)===================
+
+================URL : /tai-nghe/akg-y50-bt-copy-p14.html===================
+
+================1517993282===================
+
+ SELECT lang_key, lang_vi 
+						FROM fs_languages_text 
+						WHERE is_common = 1
+					 OR module = 'products' 
+
+time:::0.00038599967956543
+
+===========
+
+ SELECT * FROM fs_config
+						WHERE is_common = 1
+					 
+
+time:::0.00067996978759766
+
+===========
+
+ SELECT cache,params,fields_seo_title,fields_seo_keyword,fields_seo_description,fields_seo_h1,fields_seo_h2,fields_seo_image_alt,value_seo_title,value_seo_keyword,value_seo_description FROM fs_config_modules
+				WHERE module = "products" AND view = "cart" AND task = "buy_fast_save"  
+
+time:::0.00045490264892578
+
+===========
+
+SELECT id,title,content, ordering, module, position, showTitle, params ,listItemid,news_categories,contents_categories,link_title
+						FROM fs_blocks AS a 
+						WHERE published = 1 
+					ORDER BY ordering
+
+time:::0.00059914588928223
+
+===========
+
+ SELECT *
+					  FROM fs_products
+					  WHERE id = 14 
+
+time:::0.00058794021606445
+
+===========
+
+ INSERT INTO  fs_order(`products_id`,`is_temporary`,`session_id`,`total_before_discount`,`total_after_discount`,`products_count`,`sender_name`,`sender_telephone`,`sender_email`,`sender_address`,`sender_comments`,`created_time`,`edited_time`,`type`) VALUES ('14','0','ckdeo2m2uc9piojtki5v2bbmb5','2990000','2990000','1','','0987876765','','','','2018-02-07 09:48:02','2018-02-07 09:48:02','fast') 
+
+time:::0.001054048538208
+
+===========
+
+ INSERT INTO  fs_order_items(`order_id`,`product_id`,`price`,`count`,`total`) VALUES ('1','14','2990000','1','2990000') 
+
+time:::0.042498111724854
+
+===========
+
+ SELECT * 
+						FROM fs_order
+						WHERE  id = '1' 
+							AND is_temporary = 0 
+					
+
+time:::0.00069308280944824
+
+===========
+
+ SELECT a.*
+						FROM fs_order_items AS a
+						WHERE  a.order_id = 1 
+
+time:::0.00053191184997559
+
+===========
+
+ SELECT a.*
+						FROM fs_products AS a
+						WHERE id IN (14) 
+
+time:::0.00073099136352539
+
+===========
+
+ SELECT value FROM fs_config
+			WHERE name = 'admin_name' 
+
+time:::0.00038790702819824
+
+===========
+
+ SELECT value FROM fs_config
+			WHERE name = 'admin_email' 
+
+time:::0.00036501884460449
+
+===========
+
+ SELECT value FROM fs_config
+			WHERE name = 'mail_order_body' 
+
+time:::0.00048089027404785
+
+===========
+
+ SELECT value FROM fs_config
+			WHERE name = 'mail_order_subject' 
+
+time:::0.00042200088500977
+
+===========
+
+================REMOTE: 127.0.0.1  (2018-02-07 09:49:32)===================
+
+================URL : /tai-nghe/akg-y50-bt-copy-p14.html===================
+
+================1517993372===================
+
+ SELECT lang_key, lang_vi 
+						FROM fs_languages_text 
+						WHERE is_common = 1
+					 OR module = 'products' 
+
+time:::0.00054407119750977
+
+===========
+
+ SELECT * FROM fs_config
+						WHERE is_common = 1
+					 
+
+time:::0.0018658638000488
+
+===========
+
+ SELECT cache,params,fields_seo_title,fields_seo_keyword,fields_seo_description,fields_seo_h1,fields_seo_h2,fields_seo_image_alt,value_seo_title,value_seo_keyword,value_seo_description FROM fs_config_modules
+				WHERE module = "products" AND view = "cart" AND task = "buy_fast_save"  
+
+time:::0.00042486190795898
+
+===========
+
+SELECT id,title,content, ordering, module, position, showTitle, params ,listItemid,news_categories,contents_categories,link_title
+						FROM fs_blocks AS a 
+						WHERE published = 1 
+					ORDER BY ordering
+
+time:::0.0006859302520752
+
+===========
+
+ SELECT *
+					  FROM fs_products
+					  WHERE id = 14 
+
+time:::0.00058579444885254
+
+===========
+
+ INSERT INTO  fs_order(`products_id`,`is_temporary`,`session_id`,`total_before_discount`,`total_after_discount`,`products_count`,`sender_name`,`sender_telephone`,`sender_email`,`sender_address`,`sender_comments`,`created_time`,`edited_time`,`type`) VALUES ('14','0','ckdeo2m2uc9piojtki5v2bbmb5','2990000','2990000','1','','0987876765','','','','2018-02-07 09:49:32','2018-02-07 09:49:32','fast') 
+
+time:::0.00052690505981445
+
+===========
+
+ INSERT INTO  fs_order_items(`order_id`,`product_id`,`price`,`count`,`total`) VALUES ('2','14','2990000','1','2990000') 
+
+time:::0.00037002563476562
+
+===========
+
+ SELECT * 
+						FROM fs_order
+						WHERE  id = '2' 
+							AND is_temporary = 0 
+					
+
+time:::0.002173900604248
+
+===========
+
+ SELECT a.*
+						FROM fs_order_items AS a
+						WHERE  a.order_id = 2 
+
+time:::0.0011398792266846
+
+===========
+
+ SELECT a.*
+						FROM fs_products AS a
+						WHERE id IN (14) 
+
+time:::0.0012969970703125
+
+===========
+
+ SELECT value FROM fs_config
+			WHERE name = 'admin_name' 
+
+time:::0.00043702125549316
+
+===========
+
+ SELECT value FROM fs_config
+			WHERE name = 'admin_email' 
+
+time:::0.00036406517028809
+
+===========
+
+ SELECT value FROM fs_config
+			WHERE name = 'mail_order_body' 
+
+time:::0.0003969669342041
+
+===========
+
+ SELECT value FROM fs_config
+			WHERE name = 'mail_order_subject' 
+
+time:::0.00057411193847656
+
+===========
+
+================REMOTE: 127.0.0.1  (2018-02-07 09:49:50)===================
+
+================URL : /tai-nghe/akg-y50-bt-copy-p14.html===================
+
+================1517993390===================
+
+ SELECT lang_key, lang_vi 
+						FROM fs_languages_text 
+						WHERE is_common = 1
+					 OR module = 'products' 
+
+time:::0.0003969669342041
+
+===========
+
+ SELECT * FROM fs_config
+						WHERE is_common = 1
+					 
+
+time:::0.00066709518432617
+
+===========
+
+ SELECT cache,params,fields_seo_title,fields_seo_keyword,fields_seo_description,fields_seo_h1,fields_seo_h2,fields_seo_image_alt,value_seo_title,value_seo_keyword,value_seo_description FROM fs_config_modules
+				WHERE module = "products" AND view = "cart" AND task = "buy_fast_save"  
+
+time:::0.00043702125549316
+
+===========
+
+SELECT id,title,content, ordering, module, position, showTitle, params ,listItemid,news_categories,contents_categories,link_title
+						FROM fs_blocks AS a 
+						WHERE published = 1 
+					ORDER BY ordering
+
+time:::0.0020151138305664
+
+===========
+
+ SELECT *
+					  FROM fs_products
+					  WHERE id = 14 
+
+time:::0.00058484077453613
+
+===========
+
+ INSERT INTO  fs_order(`products_id`,`is_temporary`,`session_id`,`total_before_discount`,`total_after_discount`,`products_count`,`sender_name`,`sender_telephone`,`sender_email`,`sender_address`,`sender_comments`,`created_time`,`edited_time`,`type`) VALUES ('14','0','ckdeo2m2uc9piojtki5v2bbmb5','2990000','2990000','1','','0987876765','','','','2018-02-07 09:49:50','2018-02-07 09:49:50','fast') 
+
+time:::0.00046086311340332
+
+===========
+
+ INSERT INTO  fs_order_items(`order_id`,`product_id`,`price`,`count`,`total`) VALUES ('3','14','2990000','1','2990000') 
+
+time:::0.00045609474182129
+
+===========
+
+ SELECT * 
+						FROM fs_order
+						WHERE  id = '3' 
+							AND is_temporary = 0 
+					
+
+time:::0.00093293190002441
+
+===========
+
+ SELECT a.*
+						FROM fs_order_items AS a
+						WHERE  a.order_id = 3 
+
+time:::0.00047802925109863
+
+===========
+
+ SELECT a.*
+						FROM fs_products AS a
+						WHERE id IN (14) 
+
+time:::0.00074911117553711
+
+===========
+
+ SELECT value FROM fs_config
+			WHERE name = 'admin_name' 
+
+time:::0.00038981437683105
+
+===========
+
+ SELECT value FROM fs_config
+			WHERE name = 'admin_email' 
+
+time:::0.00039005279541016
+
+===========
+
+ SELECT value FROM fs_config
+			WHERE name = 'mail_order_body' 
+
+time:::0.00043797492980957
+
+===========
+
+ SELECT value FROM fs_config
+			WHERE name = 'mail_order_subject' 
+
+time:::0.00044393539428711
+
+===========

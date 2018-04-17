@@ -1,0 +1,66 @@
+.share_fast{
+        margin-top: 20px;
+    text-align: left;
+}
+.share_fast a {
+    margin-right: 4px;
+}
+.share_fast a i {
+       color: #FFF;
+    width: 36px;
+    height: 36px;
+    border-radius: 50px;
+    background: transparent;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 16px;
+    /* float: left; */
+    line-height: 36px;
+    margin-right: 10px;
+    font-family: FontAwesome;
+    font-weight: normal;
+    box-sizing: border-box;
+    font-style: normal;
+    
+}
+/*.share_fast .facebook-icon i{
+       color: #FFF;
+    background: #ffffff4f;
+}
+.share_fast .googleplus-icon i{
+    background: #D4252A;    
+}
+.share_fast .youtube-icon i{
+    background: #B61010;    
+}
+
+.share_fast .twitter-icon i {
+    color: #FFF;
+    background: #00AAEF;
+}
+*/
+.share_fast a i{
+       color: #FFF;
+    background: #ffffff4f;
+        -moz-transition: all 0.2s ease-in 0;
+    -webkit-transition: all 0.2s ease-in;
+    -webkit-transition-delay: 0;
+    transition: all 0.2s ease-in 0;
+}
+.share_fast a:hover i{
+       color: #734F2E;
+    background: #ffffffb5;
+}
+.fa-facebook-f:before, .fa-facebook:before {
+    content: "\f09a";
+}
+.fa-google-plus:before {
+    content: "\f0d5";
+}
+.fa-twitter:before {
+    content: "\f099";
+}
+.fa-youtube:before {
+    content: "\f167";
+}

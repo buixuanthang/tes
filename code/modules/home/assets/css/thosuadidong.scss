@@ -1,0 +1,169 @@
+/*.icon{
+	font-size: 32px;
+    padding-right: 10px;
+}*/
+img.lazy {
+    height: 160px;
+}
+.stt-0{
+	 border-right:1px solid #f4f4f4;
+}
+.title {
+    font-size: 30px;
+    font-family: robotothin;
+    padding-bottom: 45px;
+    padding-top: 35px;
+    /*padding-top: 8px;*/
+}
+.title span i {
+    padding-right:10px;
+    font-size: 33px; 
+}
+.item-pro-limit {
+
+    width: 50%;
+    float: left;
+    height: 212px;
+   
+    box-sizing:border-box;
+    padding-bottom: 40px;
+}
+.item-pro-limit .img{
+    width: 235px;
+    float: left;
+    padding: 15px 0px 0px 10px;
+    box-sizing: border-box;
+}
+.item-pro-limit .text{
+	width: 307px;
+    float: left;
+    box-sizing: border-box;
+}
+
+.text h2 {
+    font-size: 18px;
+    font-family: Roboto;
+    color: #20282b;
+}
+.price_arae span{
+	font-size: 14px;
+	font-family: RobotoItalic;
+	color: #4d4d4d;
+	margin-top: 15px;
+}
+.text .price_current{
+	font-family: RobotoBold;
+	font-size:24px;
+	color: #e83d16;
+}
+
+.text .des {
+    font-size: 14px;
+    color: #4d4d4d;
+    display: flex;
+    margin: 5px 0px;
+}
+.cate {
+    margin-top: 10px;
+}
+.cate a{
+	font-size: 14px;
+    color: #20282b;
+    padding-top: 10px;
+}
+.cate i{
+	font-size: 15px;
+}
+.list-pro {
+    margin-right: -10px;
+    box-sizing: border-box;
+    color: #464141;
+}
+
+
+.item-pro{
+	width: 15.811%;
+	float: left;
+	background: white;
+    padding-top: 20px;
+	margin-right: 10px;
+	box-sizing: border-box;
+}
+.poduct-cate {
+    /* height: 42px; */
+    text-align: center;
+    padding: 12px;
+    background: #f4f4f4;
+    color: #20282b !important;
+    font-size: 14px;
+
+}
+.poduct-cate i{
+	font-size: 15px;
+	color: #20282b
+}
+.poduct-cate:hover {
+    background: #20282b;
+
+}
+.poduct-cate:hover a{
+    background: #20282b;
+    color: white;
+}
+
+
+.poduct-cate a{
+	color: #20282b;
+    /*font-family: Rotobo;*/
+    font-size: 14px;
+}
+.top-pro {
+    /*background: rebeccapurple;*/
+
+            height: 222px;
+    text-align: center;
+        padding-top: 40px;
+}
+.top-pro img{
+	max-height: 132px;
+}
+
+.price_current {
+    color: red;
+
+}
+.top-pro h2 {
+    color: #20282b;
+    /*background: rebeccapurple;*/
+    height: 40px;
+    padding: 10px 0px;
+}
+
+@media all and (max-width: 1024px){
+    
+    .title{
+        padding-bottom: 10px;
+    }
+    .item-pro-limit{
+        width: 100%;
+        float: none;
+        border-bottom: 1px solid #ccc;
+        padding-top: 20px;
+    }
+    .item-pro{
+        width: 48%;
+        margin-right: 14px;
+    }
+}
+    @media all and (max-width: 768px){
+        .item-pro {
+            width: 45%;
+            margin-right: 10px;
+            margin-left: 5px;
+        }
+        .item-pro-limit .text{
+            width: 100%;
+     
+        }
+
+    }

@@ -1,0 +1,21 @@
+.block-products-vertical_img_large_content .item{
+	    width: 100%;
+    float: none;
+    border-right: none;
+    border-bottom: 1px solid #EEE;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.block-products-vertical_img_large_content .item .product_image img {
+    
+}
+.block-products-vertical_img_large_content .item .product_image {
+    padding-bottom: 7px;
+}
+.block-products-vertical_img_large_content .item .discount{
+	display: none;
+}
+.block-products-vertical_img_large_content  .button-detail,
+.block-products-vertical_img_large_content  .price_arae{
+	display: none;
+}

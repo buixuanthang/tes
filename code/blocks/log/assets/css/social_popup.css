@@ -1,0 +1,188 @@
+.logs a{
+	margin-left: 5px; 
+}
+.logs .form_log a{
+	margin-left: 0px; 
+}
+.logs {
+    margin-right: 7px;
+  margin-top: 11px;
+  padding: 8px 0px 8px 38px;
+  position: relative;
+}
+.unlogged{
+	 background: transparent url("../images/login.png") no-repeat scroll 7px 5px;
+    margin-right: 15px;
+    margin-top: 18px;
+}
+.form_log{
+	 background: none repeat scroll 0 0 #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 23px 20px;
+    position: absolute;
+    right: 0;
+    text-align: left;
+    width: 600px;
+    z-index: 1000;
+}
+.hsubs{
+	  font-weight: bold;
+  padding-top: 1px;
+  line-height: 24px;
+  float: left;
+}
+.hsubs img{
+	  border-radius: 18px;
+}
+#register-form {
+    float: left;
+    width: 46%;
+}
+#login-form{
+	float: right;
+    width: 46%;
+}
+
+.form_log .frame_large_head {
+    border-bottom: 3px solid #ccc;
+    color: #354680;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+.form_log .txtinput {
+    border: 1px solid #ccc;
+    height: 20px;
+    margin-bottom: 15px;
+    width: 200px;
+}
+.form_log #txtCaptcha {
+    border: 1px solid #ccc;
+    height: 20px;
+    width: 80px;
+}
+.form_log .button {
+    background: none repeat scroll 0 0 #3b5998;
+    border: 0 none;
+    color: #fff;
+    font-weight: bold;
+    margin-right: 10px;
+    padding: 6px 12px;
+}
+.form_log .sepa {
+    border: 1px solid #ccc;
+}
+.close_popup{
+	position: absolute;
+    right: 10px;
+    top: 5px;
+}
+.logs a,.logs span {
+    color: #fff;
+    font-size: 13px;
+}
+.message_no {
+    background: url("../images/icon_message.png") no-repeat scroll left bottom transparent;
+    margin: 0 17px !important;
+    padding: 7px 5px 5px 12px;
+    display: none;
+}
+.message_no > span {
+    background: none repeat scroll 0 0 #fc0303;
+    color: #fff;
+    font-size: 10px;
+    padding: 0 3px;
+    position: absolute;
+    top: 1px;
+}
+.message_0 > span,.download_0  > span{
+   display: none;
+}
+.download_no {
+    background: url("../images/icon_global.png") no-repeat scroll left bottom transparent;
+    margin: 0 13px !important;
+    padding: 3px 7px 3px 13px;
+    display: none;
+}
+.download_no > span {
+    background: none repeat scroll 0 0 #fc0303;
+    color: #fff;
+    font-size: 10px;
+     padding: 0 3px;
+      position: absolute;
+    top: 1px;
+}
+#loged_popup_title{
+	background: url("../images/arrow_bottom.png") no-repeat scroll center center transparent;
+  padding: 14px 12px 5px 5px;
+  float: left;
+    margin-right: 10px;
+}
+.add_product{
+	  background: url("../images/plus.png") no-repeat scroll 11px 7px #FFF;
+  float: left;
+  padding: 7px 10px 5px 39px;
+  margin-top: 3px;
+  border-radius: 4px;
+}
+.add_product span{
+  color: #EE3434;
+  font-weight: bold;
+}
+.loged_popup_content{
+ background: none repeat scroll 0 0 #fff;
+  box-shadow: 0 0 1px #D8D8D8, 2px 2px 4px #e2e2e2;
+  font-size: 14px;
+  position: absolute;
+  right: 0;
+  text-align: left;
+  top: 60px;
+  width: 206px;
+  z-index: 100;
+  border: 1px solid #D8D8D8;
+  border-width: 0 1px 1px 1px;
+}
+.loged_popup_content::before {
+	    border-bottom: 7px solid #fff;
+	  border-image: none;
+	  border-left: 7px solid transparent;
+	  border-right: 7px solid transparent;
+	  border-top: medium none !important;
+	  content: "";
+	  display: block;
+	  opacity: 1;
+	  position: absolute;
+	  top: -7px;
+	  left: 39px;
+}
+.loged_popup_content ul{
+	 padding: 12px;
+}
+.logs .loged_popup_content a{
+	color: #000;
+}
+.logs .loged_popup_content li:hover a{
+	color: #EE3434;
+}
+.logs .loged_popup_content ul li{
+ 	margin-bottom: 5px;
+ 	 padding-left: 0px;
+}
+.manage_file{
+}
+.deposit{
+}
+.loged_popup_content .statistic{
+}
+.edit_info{
+}
+.logout{
+}
+.help{
+	background-position: 3px -176px !important;
+}
+.incident{
+	background-position: 3px -205px !important;
+}

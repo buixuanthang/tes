@@ -1,0 +1,54 @@
+.block_leftmenu .navbar{
+        margin: 0 10px;
+}
+
+.navbar-inner  .sub_menu{
+    margin-bottom: 10px;
+}
+
+
+.left-col  .block_leftmenu .level_0 > a {
+    
+	font-size: 14px;
+    /* font-family: RobotoBold; */
+    border-bottom: 1px solid #efefef;
+    display: block;
+    padding: 10px 10px 10px 23px;
+    position: relative;
+}
+.left-col  .block_leftmenu .level_0 > a:before {
+       content: "\f138";
+    position: absolute;
+    top: 12px;
+    font-family: FontAwesome;
+    font-weight: normal;
+    left: 3px;
+    color: #00B8E0;
+    -webkit-transition: 0.7s ease-in-out all;
+    transition: 0.7s ease-in-out all;
+    font-size: 14px;
+}
+.sub_menu .level_1 >  a:before {
+       content: "\f138";
+    position: absolute;
+    top: 5px;
+    font-family: FontAwesome;
+    font-weight: normal;
+    left: 0px;
+    color: #00B8E0;
+    -webkit-transition: 0.7s ease-in-out all;
+    transition: 0.7s ease-in-out all;
+    font-size: 13px;
+}
+.sub_menu .level_1:hover > a {
+	color: #000;
+}
+.sub_menu  a:hover{
+	color: #000;
+}
+.sub_menu  .level_1 {
+   margin-bottom: 11px;
+}
+.nav .level_0 {
+
+}

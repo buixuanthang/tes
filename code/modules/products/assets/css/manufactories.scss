@@ -1,0 +1,120 @@
+.home-menu{
+	.hot-wapper-page{
+		margin: 0 -8px;
+		.item{
+			width: 20%;
+		    float: left;
+		    padding: 0 8px 20px;
+		    box-sizing: border-box;
+			@media screen and (max-width:990px){
+	 			width: 25%;
+		    }
+			@media screen and (max-width:760px){
+	 			width: 33.333%;
+		    }
+		    @media screen and (max-width:500px){
+	 			width: 50%;
+		    }
+			figure{
+				    border: 1px solid #f0f0f0;
+				    border-radius: 6px;
+				    overflow: hidden;
+				    padding: 10px;
+				    img{
+				    	transition: all 0.4s ease 0s;
+    					-webkit-transition: all 0.4s ease 0s;
+    					&:hover{
+    						transform: scale(1.1);
+    						-webkit-transform: scale(1.1);
+    					}
+				    }
+			}
+			h2{
+				text-align: center;
+				margin: 0;
+				margin-top: 8px;
+			    height: 24px;
+			    overflow: hidden;
+			    text-overflow: ellipsis;
+			    white-space: nowrap;
+			   font-size: 1.286em;
+			}
+			&:hover{
+				figure{
+					
+				}
+				h2{
+					a{
+						color: var(--main-color);
+					}
+				}
+			}
+		}
+	}
+	.all-wapper-page{
+		.tabs{
+			.nav{
+				background: #D6E8FF;
+			    padding: 0 10px;
+			    margin: 0 -10px;
+			    border-radius: 8px 8px 8px 16px;
+				> li{
+					margin-bottom: -8px;
+					 // Actual tabs (as links)
+				    > a {
+			  		    position: relative;
+    					top: -4px;
+    					padding: 0 8px;
+					    line-height: 38px;
+					    margin-right: 20px;
+				      &:hover {
+				        color: #fff;
+					    background-color: #0061BD;
+					    border: 1px solid #0061BD;
+					    border-radius: 9px 9px 9px 21px;
+				      }
+				    }
+					&.active > a {
+				      &,
+				      &:hover,
+				      &:focus {
+				        color: #fff;
+					    background-color: #0061BD;
+					    border: 1px solid #0061BD;
+					    border-radius: 9px 9px 9px 21px;					    
+				      }
+				    }
+				}
+			}
+			.tab-content{
+				border:1px solid #D6E8FF;
+				border-top:none;
+				padding:20px;
+				border-radius:0 0 5px 5px;
+				.label{
+					font-size: 50px;
+				    line-height: 28px;
+				   width: 50px;
+				}
+				.pull-right {
+				    width: calc(100% - 50px);
+				}
+				h3{
+					    margin: 0;
+					    float: left;
+					    width: 33.3333%;
+					    font-size: 13px;
+					    padding-bottom: 10px;
+					    font-weight: normal;
+					    border-right: 1px solid #D6E8FF;
+					    padding-left: 30px;
+					   
+					    &.end_row{
+					    	border-right: 1px solid transparent;
+					    }
+				}
+			}
+
+		}
+	}
+}

@@ -1,0 +1,113 @@
+.list_video_below{
+	    margin-top: 15px;
+  
+}
+.list_video_below .video_item{
+	    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+    margin-bottom: 11px;
+}
+.list_video_below .video_item i{
+        font-size: 20px;
+    color: #0094E0;
+    position: absolute;
+    top: 1px;
+    left: 0;
+}
+.videos_block_body{
+
+}
+.videos_block_body .video_item{
+	    float: left;
+    width: 33.333%;
+    padding: 0 15px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.video_item_inner_has_img{
+	    position: relative;
+    overflow: hidden;
+    max-height: 300px;
+    
+}
+.video_item_inner_has_img::before {
+    background: rgba(41, 33, 36, 0.2);
+    content: "";
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.video_item_inner_has_img::after {
+    content: "";
+    display: block;
+    height: 50px;
+    left: 50%;
+    left: calc(50%-25px);
+    left: -webkit-calc(50%-25px);
+    position: absolute;
+    top: 50%;
+    top: calc(50%-25px);
+    top: -webkit-calc(50%-25px);
+    width: 46px;    
+    background-repeat: no-repeat;
+    content: "\f144";
+    font-family: FontAwesome;
+    color: #FFF;
+    font-size: 52px;
+    transform: translate(-24px, -24px);
+}
+.video_item:hover .video_item_inner_has_img::after {    
+    color: #E2201B;
+    
+}
+
+    
+.video-name{
+	    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(2, 123, 179, 0.74);
+}
+.video-name-inner{
+   padding: 10px 10px;
+    color: #FFF;
+}
+.video_item img{
+   -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+    width: 100%;
+    height: auto;
+}
+.video_item:hover img{
+  moz-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+}
+.video_item:hover .video-name-inner{
+        padding-top: 12px;
+    padding-bottom: 12px;
+    -webkit-transition: 0.35s ease-in-out all;
+    transition: 0.35s ease-in-out all;
+    color: #ffffff;
+}
+@media only screen and (max-width: 780px){
+	.video_one_block_body {
+	    
+	}
+}
+@media only screen and (max-width:560px){
+	.videos_block_body .video_item {
+	    float: none;
+	    width: 100%;
+	    text-align: center;
+	}
+}

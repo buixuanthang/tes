@@ -1,0 +1,22 @@
+.tesimonials_home{
+	background: #FFF;
+    padding: 20px;
+    border: 1px solid #EDEDED;
+}
+.tesimonials_home .customer {
+        margin: 10px 0 35px 0;
+}
+.tesimonials_home .customer img {
+    border-radius: 50%;
+    margin-right: 16px;
+}
+
+.tesimonials_home  .customer .name {
+        color: #0084BF;
+    margin-bottom: 10px;
+    font-family: RobotoBold;
+    font-size: 15px;
+}
+.tesimonials_home .customer .description {
+    
+}

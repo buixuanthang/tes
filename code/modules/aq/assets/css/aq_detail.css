@@ -1,0 +1,119 @@
+.aq_detail{
+	    background: #FFF;
+    padding: 20px;
+    border: 1px solid #EDEDED;
+}
+.page_head {
+    
+}
+.send_requirement {
+   background-color: #3b5998;
+    bottom: 0px;
+    color: #fff;
+    padding: 6px 12px;
+    position: absolute;
+    right: 0;
+    text-transform: uppercase;
+    display: none;
+}
+h1 {
+    color: var(--main-color);
+    font-weight: normal;
+    margin-bottom: 6px;
+    font-size: 22px;
+    padding-bottom: 6px;
+    margin-top: 9px;
+    line-height: 26px;
+}
+.item-asker {
+   color: #949494;
+    font-style: italic;
+    font-size: 14px;
+    margin-bottom: 15px;
+    /* display: none; */
+    margin-top: 19px;
+}
+.aq_detail .aq_time {
+    color: #828282;
+    margin-bottom: 12px;
+}
+.aq_detail .question {
+       margin-bottom: 20px;
+    line-height: 24px;
+}
+.aq_detail .description {
+}
+.send_request a {
+        border-radius: 3px;
+    color: #FFF;
+    font-size: 14px;
+    padding: 9px 18px;
+    text-transform: uppercase;
+    background: var(--main-color);
+    display: inline-block;;
+}
+.send_request a:hover {
+    background: #bf0904;
+}
+.reply-label{
+       color: var(--main-color);
+    font-weight: bold;
+    margin-bottom: 24px;
+    font-size: 17px;
+    font-family: RobotoBold;
+}
+
+.aq-related .relate_title {
+        display: block;
+    font-size: 18px;
+    margin-top: 57px;
+    text-decoration: none !important;
+    margin-bottom: 11px;
+    text-transform: uppercase;
+}
+.aq-related .item {
+    border: 1px solid #EFEFEF;
+    margin-bottom: 20px;
+    border-radius: 3px;
+}
+.aq-related  .aq_title {
+    cursor: pointer;
+    font-size: 15px;
+    /* margin-top: 5px; */
+    background: #F6F6F6;
+    padding: 15px 20px;
+    position: relative;
+    color: #767676;
+    font-weight: bold;
+}
+.aq-related .aq_title i {
+        color: var(--main-color);
+    margin-right: 11px;
+    font-size: 27px;
+    position: absolute;
+    top: 14px;
+}
+.aq-related .aq_title a {
+    margin-left: 33px;
+}
+.item-content {
+    border-radius: 2px;
+    color: #333333;
+    font-size: 14px;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    position: relative;
+    line-height: 24px;
+}
+.item-readmore {
+    padding: 0px 20px 0px;
+    margin-bottom: 20px;
+    text-align: right;
+}
+.item-readmore a {
+    color: var(--main-color);
+    font-style: italic;
+}
+.aq-related  .item-asker {
+       margin-left: 20px;
+}

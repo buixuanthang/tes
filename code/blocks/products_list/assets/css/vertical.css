@@ -1,0 +1,22 @@
+.block_products_list .item{
+       padding: 15px;
+    border-bottom: 1px solid #EEE;
+}
+.block_products_list .item .frame_img_cat {
+           float: left;
+    width: 100px;
+    margin-right: 11px;
+    box-sizing: border-box;
+}
+.block_products_list .item .name {
+   font-weight: normal;
+}
+.block_products_list .item .warranty {
+      margin-top: 6px;
+    display: block;
+    font-size: 13px;
+    color: #333;
+}
+.block_products_list .item .price {
+        margin-top: 6px;
+}

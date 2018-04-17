@@ -1,0 +1,66 @@
+.jssora093 {
+    display: none;
+    position: absolute;
+    cursor: pointer;
+}
+.jssora093 .c {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 400;
+    stroke-miterlimit: 10;
+}
+.jssora093 .a {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 400;
+    stroke-miterlimit: 10;
+}
+.jssora093 .a {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 400;
+    stroke-miterlimit: 10;
+}
+.jssorb053 .i {
+   position: absolute;
+    cursor: pointer;
+    /* background: red; */
+    border-radius: 50%;
+    border: 3px solid #FFF;
+    box-sizing: border-box;
+}
+.jssorb053 .iav {
+  background: #20282b;
+}
+
+.jssorb053 .i .b {
+    fill: #fff;
+    fill-opacity: 0.5;
+}
+.jssorb053 .i:hover .b {
+    fill-opacity: .7;
+}
+.jssorb053 .iav .b {
+    fill-opacity: 1;
+}
+.slider-home:hover  .jssora093 {
+    display: block;
+   
+}
+.slider-home:hover .jssora093 .c {
+    fill: #20282b;
+    stroke: #20282b;
+    stroke-width: 400;
+    stroke-miterlimit: 10;
+}
+
+
+@media screen and (max-width:600px){
+    .slider-home-wrapper{
+        overflow: hidden;
+    }
+    .slider-home {   
+        
+        
+    }
+}

@@ -1,0 +1,33 @@
+h1 {
+    color: #00AEEF;
+    font-size: 37px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: Roboto Condensed;
+}
+.orders-list table{
+	border-collapse: collapse;
+    margin-bottom: 60px;
+}
+.orders-list table .row-0{
+	background: #FFF;
+}
+.stt_0{
+	text-align: center;
+}
+h2.name{
+	font-size: 18px;
+    margin-top: 0px;
+	color: #000;
+}
+.price{
+	margin: 3px 0 7px;
+}
+.price strong{
+	color: red;
+}
+.color a{
+	padding: 0px 11px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+}

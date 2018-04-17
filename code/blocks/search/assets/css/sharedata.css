@@ -1,0 +1,74 @@
+.search {
+    background: none repeat scroll 0 0 #e6f0f2;
+}
+.search_cat ul{
+	 margin-top: 13px;
+}
+.search_cat ul li{
+	float: left;
+    height: 34px;
+    margin-right: 16px;
+}
+.search_cat ul li a{
+	color: #3b5998;
+    font-weight: bold;
+    padding: 10px 0 10px 31px;
+}
+.search_cat ul li a.selected{
+	color: #A57B6B;
+    text-decoration: underline;
+}
+.keyword{
+	border: medium none;
+    margin-right: 7px;
+    padding: 11px 5px;
+    width: 470px;
+}
+#searchbt{
+	background: url("../images/search.png") no-repeat scroll left -2px rgba(0, 0, 0, 0);
+    border: medium none;
+    padding: 11px 27px;
+}
+#search_form{
+	padding: 40px 10px 15px;
+}
+#search_form p{
+	color: #a57b6b;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+#tat-ca{
+	background: url("../images/the_all.png") no-repeat scroll left center rgba(0, 0, 0, 0);
+    padding-left: 22px;
+}
+#web-template{
+	background: url("../images/web_template.png") no-repeat scroll left center rgba(0, 0, 0, 0);
+}
+#source-code{
+	background: url("../images/sourcecode.png") no-repeat scroll left center rgba(0, 0, 0, 0);
+}
+#thiet-ke{
+	background: url("../images/design_icon.png") no-repeat scroll left center rgba(0, 0, 0, 0);
+}
+#tai-lieu{
+	background: url("../images/document_icon.png") no-repeat scroll left center rgba(0, 0, 0, 0);
+}
+.redirect_upload_form{
+	background: none repeat scroll 0 0 #3b5998;
+    border-radius: 6px;
+    margin: 30px 10px 15px;
+    padding: 5px 0;
+    text-align: center;
+}
+.redirect_upload_form_t a{
+	color: #fff;
+    font-family: times new roman;
+    font-size: 34px;
+}
+.redirect_upload_form_b a{
+	color: #1371f1;
+    font-family: times new roman;
+    font-size: 35px;
+    font-weight: bold;
+    text-transform: uppercase;
+}

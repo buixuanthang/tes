@@ -1,0 +1,25 @@
+.strengths-product {
+    width: 100%;
+    background: #f4f4f4;
+    color: #20282b;
+    margin-bottom: 15px;
+}
+.strengths-product .icon {
+    font-size: 23px;
+}
+.strengths-product .title {
+    font-size: 16px;
+    font-family: RobotoBold;
+    border-bottom: 1px solid white;
+    padding: 15px;
+    width: 100%;
+}
+
+.strengths-product ul li {
+    padding: 10px 20px;
+}
+
+.strengths-product i {
+    width: 30px;
+
+}

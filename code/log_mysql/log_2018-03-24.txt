@@ -1,0 +1,1051 @@
+
+================REMOTE: 127.0.0.1  (2018-03-24 07:01:02)===================
+
+================URL : /===================
+
+================1521871262===================
+
+ SELECT lang_key, lang_vi 
+						FROM fs_languages_text 
+						WHERE is_common = 1
+					 OR module = 'home' 
+
+time:::0.045829057693481
+
+===========
+
+ SELECT * FROM fs_config
+						WHERE is_common = 1
+					 
+
+time:::0.045491933822632
+
+===========
+
+ SELECT cache,params,fields_seo_title,fields_seo_keyword,fields_seo_description,fields_seo_h1,fields_seo_h2,fields_seo_image_alt,value_seo_title,value_seo_keyword,value_seo_description FROM fs_config_modules
+				WHERE module = "home" AND view = "home" AND ( task = "display" OR task = "" OR task IS NULL) 
+
+time:::0.060415983200073
+
+===========
+
+SELECT id,title,content, ordering, module, position, showTitle, params ,listItemid,news_categories,contents_categories,link_title
+						FROM fs_blocks AS a 
+						WHERE published = 1 
+					ORDER BY ordering
+
+time:::0.033818006515503
+
+===========
+
+ SELECT *
+					  FROM fs_products_categories
+					  WHERE published = 1 AND is_special = 1
+
+time:::0.10534286499023
+
+===========
+
+ SELECT id,name, alias,tags_group,tablename,is_accessories, root_id, is_accessories,list_parents,icon,is_special
+					FROM fs_products_categories 
+					WHERE 
+						show_in_homepage = 1 AND level = 0
+					ORDER BY ordering
+							
+
+time:::0.00063490867614746
+
+===========
+
+ SELECT id,name,summary,image, created_time,category_id, category_alias, alias,price,price_old ,discount,published_double,image_double,date_end,date_start,warranty,types,is_hotdeal,accessories  FROM fs_products
+						  WHERE 
+						  	 published = 1  AND category_published = 1 AND show_in_home = 1
+						  	 AND category_id_wrapper like '%1%'  ORDER BY  ordering DESC,created_time DESC, id DESC
+						 LIMIT 10
+
+time:::0.05163311958313
+
+===========
+
+ SELECT id,name, image, alias
+							FROM fs_manufactories 
+							WHERE published = 1  
+							 AND tablenames like "%,fs_products_tai_nghe,%"
+							 ORDER BY  ordering ASC,name ASC
+							 
+
+time:::0.040182113647461
+
+===========
+
+ SELECT id,name,summary,image, created_time,category_id, category_alias, alias,price,price_old ,discount,published_double,image_double,date_end,date_start,warranty,types,is_hotdeal,accessories  FROM fs_products
+						  WHERE 
+						  	 published = 1  AND category_published = 1 AND show_in_home = 1
+						  	 AND category_id_wrapper like '%2%'  ORDER BY  ordering DESC,created_time DESC, id DESC
+						 LIMIT 10
+
+time:::0.00072312355041504
+
+===========
+
+ SELECT id,name, image, alias
+							FROM fs_manufactories 
+							WHERE published = 1  
+							 AND tablenames like "%,fs_products_loa_di_dong,%"
+							 ORDER BY  ordering ASC,name ASC
+							 
+
+time:::0.00071907043457031
+
+===========
+
+ SELECT id,name,summary,image, created_time,category_id, category_alias, alias,price,price_old ,discount,published_double,image_double,date_end,date_start,warranty,types,is_hotdeal,accessories  FROM fs_products
+						  WHERE 
+						  	 published = 1  AND category_published = 1 AND show_in_home = 1
+						  	 AND category_id_wrapper like '%3%'  ORDER BY  ordering DESC,created_time DESC, id DESC
+						 LIMIT 10
+
+time:::0.00063419342041016
+
+===========
+
+ SELECT id,name, image, alias
+							FROM fs_manufactories 
+							WHERE published = 1  
+							 AND tablenames like "%,fs_products_may_nghe_nhac,%"
+							 ORDER BY  ordering ASC,name ASC
+							 
+
+time:::0.0057389736175537
+
+===========
+
+ SELECT id,name,summary,image, created_time,category_id, category_alias, alias,price,price_old ,discount,published_double,image_double,date_end,date_start,warranty,types,is_hotdeal,accessories  FROM fs_products
+						  WHERE 
+						  	 published = 1  AND category_published = 1 AND show_in_home = 1
+						  	 AND category_id_wrapper like '%4%'  ORDER BY  ordering DESC,created_time DESC, id DESC
+						 LIMIT 10
+
+time:::0.00064516067504883
+
+===========
+
+ SELECT id,name, image, alias
+							FROM fs_manufactories 
+							WHERE published = 1  
+							 AND tablenames like "%,fs_products_amp_dac,%"
+							 ORDER BY  ordering ASC,name ASC
+							 
+
+time:::0.00072789192199707
+
+===========
+
+ SELECT id,name,image,alias
+					  FROM fs_products_types  WHERE published = 1 ORDER BY ordering ASC
+
+time:::0.046889066696167
+
+===========
+
+ SELECT *
+					  FROM fs_products_filters  WHERE published = 1 AND is_home = 1 AND field_name <> "manufactory" 
+
+time:::0.033704042434692
+
+===========
+
+ SELECT *
+					  FROM fs_products_filters  WHERE published = 1 AND is_home = 1 AND field_name = "manufactory"  ORDER BY  ordering ASC 
+
+time:::0.0011880397796631
+
+===========
+
+ SELECT *
+					  FROM fs_slideshow_categories
+					  WHERE id = 47 
+
+time:::0.096360921859741
+
+===========
+
+  SELECT id,name,image,url,summary
+					FROM fs_slideshow
+					WHERE published = 1  AND category_id = 47 	
+					ORDER BY ordering 
+
+time:::0.020143032073975
+
+===========
+
+ SELECT *
+					  FROM fs_slideshow_categories
+					  WHERE id = 47 
+
+time:::0.00049805641174316
+
+===========
+
+  SELECT id,name,image,url,summary
+					FROM fs_slideshow
+					WHERE published = 1  AND category_id = 47 	
+					ORDER BY ordering 
+
+time:::0.00059604644775391
+
+===========
+
+ SELECT *
+					  FROM fs_slideshow_categories
+					  WHERE id = 47 
+
+time:::0.00054502487182617
+
+===========
+
+  SELECT id,name,image,url,summary
+					FROM fs_slideshow
+					WHERE published = 1  AND category_id = 47 	
+					ORDER BY ordering 
+
+time:::0.00057291984558105
+
+===========
+
+ SELECT *
+					  FROM fs_slideshow_categories
+					  WHERE id = 47 
+
+time:::0.00056719779968262
+
+===========
+
+  SELECT id,name,image,url,summary
+					FROM fs_slideshow
+					WHERE published = 1  AND category_id = 47 	
+					ORDER BY ordering 
+
+time:::0.00047397613525391
+
+===========
+
+SELECT name,alias,id,level,parent_id as parent_id,alias, list_parents,tablename,image,icon,show_in_homepage,show_in_footer						  FROM fs_products_categories AS a						  WHERE published = 1 						  ORDER BY ordering ASC, id ASC						  						 
+
+time:::0.00066304206848145
+
+===========
+
+ SELECT *						FROM fs_products_filters						WHERE published = 1						ORDER BY field_ordering ASC, ordering, is_common DESC						
+
+time:::0.0016689300537109
+
+===========
+
+ SELECT *
+					FROM fs_menus_items
+					WHERE published  = 1
+						AND group_id = 1 
+					ORDER BY ordering
+
+time:::0.044957876205444
+
+===========
+
+ SELECT *
+					  FROM fs_slideshow_categories
+					  WHERE id = 45 
+
+time:::0.00054287910461426
+
+===========
+
+  SELECT id,name,image,url,summary
+					FROM fs_slideshow
+					WHERE published = 1  AND category_id = 45 	
+					ORDER BY ordering 
+
+time:::0.0011439323425293
+
+===========
+
+ SELECT name,id,category_id,type,image,flash,content,link,height,width
+						  FROM fs_banners AS a
+						  WHERE published = 1
+						  AND category_id IN (43) AND (listItemid = 'all'
+							OR listItemid like '%,1,%')
+							 ORDER BY ordering, id 
+
+time:::0.041831970214844
+
+===========
+
+ SELECT *
+						  FROM fs_strengths
+						 WHERE  published = 1 
+						 ORDER BY  ordering ASC 
+						 LIMIT 4 
+						 
+
+time:::0.10039591789246
+
+===========
+
+ SELECT title,alias,image,summary,hits,updated_time,id,category_alias,is_hot,comments_total,created_time
+						  FROM fs_news
+						 WHERE  published = 1 and category_published = 1 
+						  ORDER BY   ordering DESC,created_time DESC, ordering DESC,created_time DESC
+						 LIMIT 4  
+						 
+
+time:::0.089607954025269
+
+===========
+
+ SELECT *
+					FROM fs_menus_items
+					WHERE published  = 1
+						AND group_id = 3 
+					ORDER BY ordering
+
+time:::0.00074291229248047
+
+===========
+
+ SELECT id, name, level, alias,is_bold,link
+					FROM fs_tags
+					WHERE published  = 1  
+					ORDER BY ordering
+					LIMIT 150 
+
+time:::0.05362606048584
+
+===========
+
+================REMOTE: 127.0.0.1  (2018-03-24 07:01:08)===================
+
+================URL : /tim-nhanh/?query=a===================
+
+================1521871268===================
+
+ SELECT lang_key, lang_vi 
+						FROM fs_languages_text 
+						WHERE is_common = 1
+					 OR module = 'products' 
+
+time:::0.0015709400177002
+
+===========
+
+ SELECT * FROM fs_config
+						WHERE is_common = 1
+					 
+
+time:::0.0052108764648438
+
+===========
+
+ SELECT cache,params,fields_seo_title,fields_seo_keyword,fields_seo_description,fields_seo_h1,fields_seo_h2,fields_seo_image_alt,value_seo_title,value_seo_keyword,value_seo_description FROM fs_config_modules
+				WHERE module = "products" AND view = "search" AND task = "get_ajax_search"  
+
+time:::0.0053431987762451
+
+===========
+
+  SELECT *
+                      FROM fs_products 
+                      WHERE published = 1   AND name like  '%a%' 
+                      ORDER BY is_service ASC , ordering DESC
+                      LIMIT 8
+                      
+
+time:::0.0017030239105225
+
+===========
+
+  SELECT *
+                      FROM fs_products 
+                      WHERE published = 1   AND tags like  '%a%' 
+                      ORDER BY is_service ASC , ordering DESC
+                      LIMIT 8
+                      
+
+time:::0.0011129379272461
+
+===========
+
+  SELECT *
+                      FROM fs_products 
+                      WHERE published = 1   AND ( `name` like '%a%' )  
+                      ORDER BY is_service ASC , ordering DESC
+                      LIMIT 8
+                      
+
+time:::0.0011570453643799
+
+===========
+
+  SELECT *
+                      FROM fs_products 
+                      WHERE published = 1   AND ( `name` like '%a%' OR `tags` like '%a%' )  
+                      ORDER BY is_service ASC , ordering DESC
+                      LIMIT 8
+                      
+
+time:::0.0012321472167969
+
+===========
+
+================REMOTE: 127.0.0.1  (2018-03-24 07:01:09)===================
+
+================URL : /tim-kiem/a.html===================
+
+================1521871269===================
+
+ SELECT lang_key, lang_vi 
+						FROM fs_languages_text 
+						WHERE is_common = 1
+					 OR module = 'search' 
+
+time:::0.0048351287841797
+
+===========
+
+ SELECT * FROM fs_config
+						WHERE is_common = 1
+					 
+
+time:::0.00055313110351562
+
+===========
+
+ SELECT cache,params,fields_seo_title,fields_seo_keyword,fields_seo_description,fields_seo_h1,fields_seo_h2,fields_seo_image_alt,value_seo_title,value_seo_keyword,value_seo_description FROM fs_config_modules
+				WHERE module = "search" AND view = "search" AND ( task = "display" OR task = "" OR task IS NULL) 
+
+time:::0.00059604644775391
+
+===========
+
+SELECT id,title,content, ordering, module, position, showTitle, params ,listItemid,news_categories,contents_categories,link_title
+						FROM fs_blocks AS a 
+						WHERE published = 1 
+					ORDER BY ordering
+
+time:::0.001237154006958
+
+===========
+
+ SELECT * 	 FROM fs_products
+						WHERE published =1  AND (name like '%a%' OR tags like '%a%' ) ORDER BY  id DESC LIMIT 0,2 
+
+time:::7.8678131103516E-6
+
+===========
+
+SELECT count(*) 	 FROM fs_products
+						WHERE published =1  AND (name like '%a%' OR tags like '%a%' ) 
+
+time:::0.00043606758117676
+
+===========
+
+ SELECT *	 FROM fs_news
+						WHERE published =1  AND (title like '%a%' OR tags like '%a%' )  ORDER BY id DESC 
+						LIMIT 6 
+
+time:::0.00077080726623535
+
+===========
+
+SELECT name,alias,id,level,parent_id as parent_id,alias, list_parents,tablename,image,icon,show_in_homepage,show_in_footer						  FROM fs_products_categories AS a						  WHERE published = 1 						  ORDER BY ordering ASC, id ASC						  						 
+
+time:::0.00063586235046387
+
+===========
+
+ SELECT *						FROM fs_products_filters						WHERE published = 1						ORDER BY field_ordering ASC, ordering, is_common DESC						
+
+time:::0.0015430450439453
+
+===========
+
+ SELECT *
+					FROM fs_menus_items
+					WHERE published  = 1
+						AND group_id = 1 
+					ORDER BY ordering
+
+time:::0.0052661895751953
+
+===========
+
+SELECT name,alias,id,level,parent_id as parent_id,alias, list_parents,tablename,image,icon,show_in_homepage,show_in_footer						  FROM fs_products_categories AS a						  WHERE published = 1 						  ORDER BY ordering ASC, id ASC						  						 
+
+time:::0.00047206878662109
+
+===========
+
+ SELECT *
+					FROM fs_menus_items
+					WHERE published  = 1
+						AND group_id = 3 
+					ORDER BY ordering
+
+time:::0.0013749599456787
+
+===========
+
+ SELECT id, name, level, alias,is_bold,link
+					FROM fs_tags
+					WHERE published  = 1  
+					ORDER BY ordering
+					LIMIT 150 
+
+time:::0.0007171630859375
+
+===========
+
+================REMOTE: 127.0.0.1  (2018-03-24 07:01:37)===================
+
+================URL : /tim-kiem/a.html===================
+
+================1521871297===================
+
+ SELECT lang_key, lang_vi 
+						FROM fs_languages_text 
+						WHERE is_common = 1
+					 OR module = 'search' 
+
+time:::0.00047898292541504
+
+===========
+
+ SELECT * FROM fs_config
+						WHERE is_common = 1
+					 
+
+time:::0.0006258487701416
+
+===========
+
+ SELECT cache,params,fields_seo_title,fields_seo_keyword,fields_seo_description,fields_seo_h1,fields_seo_h2,fields_seo_image_alt,value_seo_title,value_seo_keyword,value_seo_description FROM fs_config_modules
+				WHERE module = "search" AND view = "search" AND ( task = "display" OR task = "" OR task IS NULL) 
+
+time:::0.00051689147949219
+
+===========
+
+SELECT id,title,content, ordering, module, position, showTitle, params ,listItemid,news_categories,contents_categories,link_title
+						FROM fs_blocks AS a 
+						WHERE published = 1 
+					ORDER BY ordering
+
+time:::0.00072503089904785
+
+===========
+
+ SELECT * 	 FROM fs_products
+						WHERE published =1  AND (name like '%a%' OR tags like '%a%' ) ORDER BY  id DESC LIMIT 0,2 
+
+time:::8.1062316894531E-6
+
+===========
+
+SELECT count(*) 	 FROM fs_products
+						WHERE published =1  AND (name like '%a%' OR tags like '%a%' ) 
+
+time:::0.00050187110900879
+
+===========
+
+ SELECT *	 FROM fs_news
+						WHERE published =1  AND (title like '%a%' OR tags like '%a%' )  ORDER BY id DESC 
+						LIMIT 6 
+
+time:::0.00088095664978027
+
+===========
+
+SELECT name,alias,id,level,parent_id as parent_id,alias, list_parents,tablename,image,icon,show_in_homepage,show_in_footer						  FROM fs_products_categories AS a						  WHERE published = 1 						  ORDER BY ordering ASC, id ASC						  						 
+
+time:::0.00055909156799316
+
+===========
+
+ SELECT *						FROM fs_products_filters						WHERE published = 1						ORDER BY field_ordering ASC, ordering, is_common DESC						
+
+time:::0.00282883644104
+
+===========
+
+ SELECT *
+					FROM fs_menus_items
+					WHERE published  = 1
+						AND group_id = 1 
+					ORDER BY ordering
+
+time:::0.00082802772521973
+
+===========
+
+SELECT name,alias,id,level,parent_id as parent_id,alias, list_parents,tablename,image,icon,show_in_homepage,show_in_footer						  FROM fs_products_categories AS a						  WHERE published = 1 						  ORDER BY ordering ASC, id ASC						  						 
+
+time:::0.0026388168334961
+
+===========
+
+ SELECT *
+					FROM fs_menus_items
+					WHERE published  = 1
+						AND group_id = 3 
+					ORDER BY ordering
+
+time:::0.00069808959960938
+
+===========
+
+ SELECT id, name, level, alias,is_bold,link
+					FROM fs_tags
+					WHERE published  = 1  
+					ORDER BY ordering
+					LIMIT 150 
+
+time:::0.00056004524230957
+
+===========
+
+================REMOTE: 127.0.0.1  (2018-03-24 07:01:50)===================
+
+================URL : /tim-kiem/a-page2.html===================
+
+================1521871310===================
+
+ SELECT lang_key, lang_vi 
+						FROM fs_languages_text 
+						WHERE is_common = 1
+					 OR module = 'search' 
+
+time:::0.00054788589477539
+
+===========
+
+ SELECT * FROM fs_config
+						WHERE is_common = 1
+					 
+
+time:::0.0053379535675049
+
+===========
+
+ SELECT cache,params,fields_seo_title,fields_seo_keyword,fields_seo_description,fields_seo_h1,fields_seo_h2,fields_seo_image_alt,value_seo_title,value_seo_keyword,value_seo_description FROM fs_config_modules
+				WHERE module = "search" AND view = "search" AND ( task = "display" OR task = "" OR task IS NULL) 
+
+time:::0.0013718605041504
+
+===========
+
+SELECT id,title,content, ordering, module, position, showTitle, params ,listItemid,news_categories,contents_categories,link_title
+						FROM fs_blocks AS a 
+						WHERE published = 1 
+					ORDER BY ordering
+
+time:::0.0030472278594971
+
+===========
+
+ SELECT * 	 FROM fs_products
+						WHERE published =1  AND (name like '%a%' OR tags like '%a%' ) ORDER BY  id DESC LIMIT 2,2 
+
+time:::8.1062316894531E-6
+
+===========
+
+SELECT count(*) 	 FROM fs_products
+						WHERE published =1  AND (name like '%a%' OR tags like '%a%' ) 
+
+time:::0.00060510635375977
+
+===========
+
+ SELECT *	 FROM fs_news
+						WHERE published =1  AND (title like '%a%' OR tags like '%a%' )  ORDER BY id DESC 
+						LIMIT 6 
+
+time:::0.0050539970397949
+
+===========
+
+SELECT name,alias,id,level,parent_id as parent_id,alias, list_parents,tablename,image,icon,show_in_homepage,show_in_footer						  FROM fs_products_categories AS a						  WHERE published = 1 						  ORDER BY ordering ASC, id ASC						  						 
+
+time:::0.00098109245300293
+
+===========
+
+ SELECT *						FROM fs_products_filters						WHERE published = 1						ORDER BY field_ordering ASC, ordering, is_common DESC						
+
+time:::0.0046148300170898
+
+===========
+
+ SELECT *
+					FROM fs_menus_items
+					WHERE published  = 1
+						AND group_id = 1 
+					ORDER BY ordering
+
+time:::0.0030789375305176
+
+===========
+
+SELECT name,alias,id,level,parent_id as parent_id,alias, list_parents,tablename,image,icon,show_in_homepage,show_in_footer						  FROM fs_products_categories AS a						  WHERE published = 1 						  ORDER BY ordering ASC, id ASC						  						 
+
+time:::0.00045895576477051
+
+===========
+
+ SELECT *
+					FROM fs_menus_items
+					WHERE published  = 1
+						AND group_id = 3 
+					ORDER BY ordering
+
+time:::0.0025749206542969
+
+===========
+
+ SELECT id, name, level, alias,is_bold,link
+					FROM fs_tags
+					WHERE published  = 1  
+					ORDER BY ordering
+					LIMIT 150 
+
+time:::0.00045609474182129
+
+===========
+
+================REMOTE: 127.0.0.1  (2018-03-24 07:02:14)===================
+
+================URL : /tim-kiem/a-page2.html===================
+
+================1521871334===================
+
+ SELECT lang_key, lang_vi 
+						FROM fs_languages_text 
+						WHERE is_common = 1
+					 OR module = 'search' 
+
+time:::0.00046515464782715
+
+===========
+
+ SELECT * FROM fs_config
+						WHERE is_common = 1
+					 
+
+time:::0.00058603286743164
+
+===========
+
+ SELECT cache,params,fields_seo_title,fields_seo_keyword,fields_seo_description,fields_seo_h1,fields_seo_h2,fields_seo_image_alt,value_seo_title,value_seo_keyword,value_seo_description FROM fs_config_modules
+				WHERE module = "search" AND view = "search" AND ( task = "display" OR task = "" OR task IS NULL) 
+
+time:::0.0012729167938232
+
+===========
+
+SELECT id,title,content, ordering, module, position, showTitle, params ,listItemid,news_categories,contents_categories,link_title
+						FROM fs_blocks AS a 
+						WHERE published = 1 
+					ORDER BY ordering
+
+time:::0.00060415267944336
+
+===========
+
+ SELECT * 	 FROM fs_products
+						WHERE published =1  AND (name like '%a%' OR tags like '%a%' ) ORDER BY  id DESC LIMIT 20,20 
+
+time:::9.0599060058594E-6
+
+===========
+
+SELECT count(*) 	 FROM fs_products
+						WHERE published =1  AND (name like '%a%' OR tags like '%a%' ) 
+
+time:::0.00069117546081543
+
+===========
+
+ SELECT *	 FROM fs_news
+						WHERE published =1  AND (title like '%a%' OR tags like '%a%' )  ORDER BY id DESC 
+						LIMIT 6 
+
+time:::0.0068528652191162
+
+===========
+
+SELECT name,alias,id,level,parent_id as parent_id,alias, list_parents,tablename,image,icon,show_in_homepage,show_in_footer						  FROM fs_products_categories AS a						  WHERE published = 1 						  ORDER BY ordering ASC, id ASC						  						 
+
+time:::0.00051212310791016
+
+===========
+
+ SELECT *						FROM fs_products_filters						WHERE published = 1						ORDER BY field_ordering ASC, ordering, is_common DESC						
+
+time:::0.0020160675048828
+
+===========
+
+ SELECT *
+					FROM fs_menus_items
+					WHERE published  = 1
+						AND group_id = 1 
+					ORDER BY ordering
+
+time:::0.00089597702026367
+
+===========
+
+SELECT name,alias,id,level,parent_id as parent_id,alias, list_parents,tablename,image,icon,show_in_homepage,show_in_footer						  FROM fs_products_categories AS a						  WHERE published = 1 						  ORDER BY ordering ASC, id ASC						  						 
+
+time:::0.00058507919311523
+
+===========
+
+ SELECT *
+					FROM fs_menus_items
+					WHERE published  = 1
+						AND group_id = 3 
+					ORDER BY ordering
+
+time:::0.0050990581512451
+
+===========
+
+ SELECT id, name, level, alias,is_bold,link
+					FROM fs_tags
+					WHERE published  = 1  
+					ORDER BY ordering
+					LIMIT 150 
+
+time:::0.00049185752868652
+
+===========
+
+================REMOTE: 127.0.0.1  (2018-03-24 07:02:31)===================
+
+================URL : /tim-kiem/a.html===================
+
+================1521871351===================
+
+ SELECT lang_key, lang_vi 
+						FROM fs_languages_text 
+						WHERE is_common = 1
+					 OR module = 'search' 
+
+time:::0.0004270076751709
+
+===========
+
+ SELECT * FROM fs_config
+						WHERE is_common = 1
+					 
+
+time:::0.0036828517913818
+
+===========
+
+ SELECT cache,params,fields_seo_title,fields_seo_keyword,fields_seo_description,fields_seo_h1,fields_seo_h2,fields_seo_image_alt,value_seo_title,value_seo_keyword,value_seo_description FROM fs_config_modules
+				WHERE module = "search" AND view = "search" AND ( task = "display" OR task = "" OR task IS NULL) 
+
+time:::0.00037407875061035
+
+===========
+
+SELECT id,title,content, ordering, module, position, showTitle, params ,listItemid,news_categories,contents_categories,link_title
+						FROM fs_blocks AS a 
+						WHERE published = 1 
+					ORDER BY ordering
+
+time:::0.00072598457336426
+
+===========
+
+ SELECT * 	 FROM fs_products
+						WHERE published =1  AND (name like '%a%' OR tags like '%a%' ) ORDER BY  id DESC LIMIT 0,20 
+
+time:::5.0067901611328E-6
+
+===========
+
+SELECT count(*) 	 FROM fs_products
+						WHERE published =1  AND (name like '%a%' OR tags like '%a%' ) 
+
+time:::0.00047707557678223
+
+===========
+
+ SELECT *	 FROM fs_news
+						WHERE published =1  AND (title like '%a%' OR tags like '%a%' )  ORDER BY id DESC 
+						LIMIT 6 
+
+time:::0.00084590911865234
+
+===========
+
+SELECT name,alias,id,level,parent_id as parent_id,alias, list_parents,tablename,image,icon,show_in_homepage,show_in_footer						  FROM fs_products_categories AS a						  WHERE published = 1 						  ORDER BY ordering ASC, id ASC						  						 
+
+time:::0.00046992301940918
+
+===========
+
+ SELECT *						FROM fs_products_filters						WHERE published = 1						ORDER BY field_ordering ASC, ordering, is_common DESC						
+
+time:::0.0015890598297119
+
+===========
+
+ SELECT *
+					FROM fs_menus_items
+					WHERE published  = 1
+						AND group_id = 1 
+					ORDER BY ordering
+
+time:::0.00070285797119141
+
+===========
+
+SELECT name,alias,id,level,parent_id as parent_id,alias, list_parents,tablename,image,icon,show_in_homepage,show_in_footer						  FROM fs_products_categories AS a						  WHERE published = 1 						  ORDER BY ordering ASC, id ASC						  						 
+
+time:::0.0024538040161133
+
+===========
+
+ SELECT *
+					FROM fs_menus_items
+					WHERE published  = 1
+						AND group_id = 3 
+					ORDER BY ordering
+
+time:::0.0005950927734375
+
+===========
+
+ SELECT id, name, level, alias,is_bold,link
+					FROM fs_tags
+					WHERE published  = 1  
+					ORDER BY ordering
+					LIMIT 150 
+
+time:::0.0016801357269287
+
+===========
+
+================REMOTE: 127.0.0.1  (2018-03-24 07:03:19)===================
+
+================URL : /tim-kiem/a.html===================
+
+================1521871399===================
+
+ SELECT lang_key, lang_vi 
+						FROM fs_languages_text 
+						WHERE is_common = 1
+					 OR module = 'search' 
+
+time:::0.00040698051452637
+
+===========
+
+ SELECT * FROM fs_config
+						WHERE is_common = 1
+					 
+
+time:::0.00058293342590332
+
+===========
+
+ SELECT cache,params,fields_seo_title,fields_seo_keyword,fields_seo_description,fields_seo_h1,fields_seo_h2,fields_seo_image_alt,value_seo_title,value_seo_keyword,value_seo_description FROM fs_config_modules
+				WHERE module = "search" AND view = "search" AND ( task = "display" OR task = "" OR task IS NULL) 
+
+time:::0.00042080879211426
+
+===========
+
+SELECT id,title,content, ordering, module, position, showTitle, params ,listItemid,news_categories,contents_categories,link_title
+						FROM fs_blocks AS a 
+						WHERE published = 1 
+					ORDER BY ordering
+
+time:::0.0064070224761963
+
+===========
+
+ SELECT * 	 FROM fs_products
+						WHERE published =1  AND (name like '%a%' OR tags like '%a%' ) ORDER BY  id DESC LIMIT 0,20 
+
+time:::5.9604644775391E-6
+
+===========
+
+SELECT count(*) 	 FROM fs_products
+						WHERE published =1  AND (name like '%a%' OR tags like '%a%' ) 
+
+time:::0.00055503845214844
+
+===========
+
+ SELECT *	 FROM fs_news
+						WHERE published =1  AND (title like '%a%' OR tags like '%a%' )  ORDER BY id DESC 
+						LIMIT 6 
+
+time:::0.00077199935913086
+
+===========
+
+SELECT name,alias,id,level,parent_id as parent_id,alias, list_parents,tablename,image,icon,show_in_homepage,show_in_footer						  FROM fs_products_categories AS a						  WHERE published = 1 						  ORDER BY ordering ASC, id ASC						  						 
+
+time:::0.00065803527832031
+
+===========
+
+ SELECT *						FROM fs_products_filters						WHERE published = 1						ORDER BY field_ordering ASC, ordering, is_common DESC						
+
+time:::0.0021300315856934
+
+===========
+
+ SELECT *
+					FROM fs_menus_items
+					WHERE published  = 1
+						AND group_id = 1 
+					ORDER BY ordering
+
+time:::0.00086402893066406
+
+===========
+
+SELECT name,alias,id,level,parent_id as parent_id,alias, list_parents,tablename,image,icon,show_in_homepage,show_in_footer						  FROM fs_products_categories AS a						  WHERE published = 1 						  ORDER BY ordering ASC, id ASC						  						 
+
+time:::0.0006101131439209
+
+===========
+
+ SELECT *
+					FROM fs_menus_items
+					WHERE published  = 1
+						AND group_id = 3 
+					ORDER BY ordering
+
+time:::0.00064682960510254
+
+===========
+
+ SELECT id, name, level, alias,is_bold,link
+					FROM fs_tags
+					WHERE published  = 1  
+					ORDER BY ordering
+					LIMIT 150 
+
+time:::0.00059103965759277
+
+===========

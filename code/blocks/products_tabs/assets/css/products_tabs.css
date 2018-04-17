@@ -1,0 +1,171 @@
+.tab_content .products_tab{
+    margin-left: 0;
+    margin-right: -16px;
+}
+.tab_content .products_tab  .item {
+    
+    border-bottom: none;
+    
+}
+
+.products_tab .tab_title{
+    position: relative;
+    margin-bottom: 11px;
+    background: #F4F4F4;
+    padding-right: 10px;
+    border-bottom: 2px solid #0094E0;
+    margin-left: 23px;
+}
+.products_tab .item{
+	width: auto !important;
+    float: none !important;
+}
+.products_tabs .tab_title{
+        position: relative;
+    margin-bottom: 17px;
+    /* background: #F4F4F4; */
+    padding-right: 10px;
+    border-bottom: 3px solid #F4F4F4;
+    text-align: left;
+    padding-bottom: 11px;
+    /* border-top: 1px solid #F4F4F4; */
+    padding-top: 19px;
+}
+.products_tabs .tab_title li{
+    padding: 2px 0px;
+    display: inline;
+    z-index: 10;
+    min-width: 116px;
+    text-align: center;
+    color: #333;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-right: 31px;
+    font-family: RobotoCondensed-Bold;
+    font-size: 18px;
+    position: relative;
+    -webkit-transition: 0.3s ease-in-out all;
+    transition: 0.3s ease-in-out all;
+}
+.products_tabs .tab_title li::after{
+        content: '';
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    background: transparent;
+    bottom: -12px;
+    left: 50%;
+    transform: translate(-50%,0);
+    -webkit-transition: 0.3s ease-in-out all;
+    transition: 0.3s ease-in-out all;
+}
+.products_tabs .tab_title li.activated,.products_tabs .tab_title li:hover{
+       border-radius: 4px 4px 0 0;
+    display: inline;
+    position: relative;
+    color: #0183BF;
+    cursor: pointer;
+    font-family: RobotoCondensed-Bold;
+}
+.products_tabs .tab_title li.activated::after,.products_tabs .tab_title li:hover::after{
+        background: #0183BF;
+}
+.products_tabs .tab_title li:before{
+    
+}
+.products_tabs .tab_title li.first-item:before{
+    display: none;
+}
+.products_tabs .tab_title:after{
+	    content: '';
+    clear: both;
+    float: none;
+    display: block;
+}
+.products_tabs  .tab_content{
+        border: 1px solid #efefef;
+    background: #FFF;
+    border-width: 1px 0 1px 1px;
+}
+/************************** OLD *************/
+.products_tab  .owl-controls {
+     position: unset;
+}
+.products_tab .owl-nav {
+    display: block;
+    position: unset;
+}
+
+.owl-theme .owl-controls {
+    text-align: center;
+}
+.products_tab .owl-nav .owl-prev, .products_tab .owl-nav .owl-next{
+  display: block !important;
+    height: 33px;
+    position: absolute;
+    top: 50%;
+    width: 33px;
+    opacity: 0;
+    padding: 3px 10px;
+    border: 1px solid #DDDCDC;
+    border-radius: 50%;
+    font-size: 33px;
+    line-height: 19px;
+    box-sizing: border-box;
+    background: #FFF;
+    transform: translate(0,-50%);
+}
+.products_tab .owl-nav .owl-prev{
+        left: -17px;
+}
+.products_tab .owl-nav .owl-next{
+       right: -17px;
+}
+.owl-carousel:hover .owl-prev,.owl-carousel:hover .owl-next{
+	opacity: 1;
+}
+.slideshow-home .slideshow-home-title {
+    padding: 15px 20px;
+}
+.slideshow-home .slideshow-home-title span {
+    color: #ff2a00;
+    font-family: "RobotoMedium";
+    font-size: 16px;
+    text-transform: uppercase;
+}
+. products_tab_wrapper  {
+}
+.caroufredsel_wrapper {
+}
+.slideshow-home .carousel {
+}
+.slideshow-home .slideshow-home-prev, .slideshow-home .slideshow-home-next {
+    display: block !important;
+    height: 36px;
+    position: absolute;
+    top: 36%;
+    width: 12px;
+}
+.slideshow-home .slideshow-home-prev {
+    background: rgba(0, 0, 0, 0) url("../images/icon-prev.png") no-repeat scroll 0 0;
+    left: 10px;
+}
+.slideshow-home .slideshow-home-next {
+    background: rgba(0, 0, 0, 0) url("../images/icon-next.png") no-repeat scroll 0 0;
+    right: 10px;
+}
+@media screen and (max-width:668px){
+    .slideshow-home-item > p{
+        display: none;
+    }
+    .slideshow-home-item > p.shiped {
+        display: block;
+    }
+    
+	.products_tabs .tab_title li{
+		display: none;
+	}
+	.products_tabs .tab_title li:first{
+		display: block;
+	}
+}

@@ -1,0 +1,102 @@
+ul.menu-bottom li.level0{
+       float: left;
+    width: 50%;
+    padding-right: 25px;
+    box-sizing: border-box;
+}
+ul.menu-bottom li.level0:last-child{
+       
+    padding-right: 0;
+    
+}
+ul.menu-bottom li.level0 > a,
+ul.menu-bottom li.level0 > span{
+	text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 27px;
+    display: inline-block;
+    font-size: 16px;
+    color: #FFF;
+}
+ul.menu-bottom li.level0 ul{
+	margin-top: 4px;
+}
+ul.menu-bottom li.level0 ul li{
+    margin-bottom: 12px;
+    font-size: 13px;
+}
+ul.menu-bottom li.level0 ul li a{
+        font-size: 14px;
+    color: #ffffff;
+}
+ul.menu-bottom li.level0 ul li a:hover{
+}
+ul li.level1 a,
+ul li.level1 span{
+}
+ul li.level1 a:hover,
+ul li.level1 span:hover{
+    color: #0066b2;
+}
+ul.menu-bottom li.level0 span.click-mobile {
+    
+    position: absolute;
+    cursor: pointer;
+    padding: 16px;
+    right: 0px;
+    top: 0px;
+    display: none;
+}
+ul.menu-bottom li.level0 span.click-mobile.active {
+    background: rgba(0, 0, 0, 0) url("../images/icon-click-active.png") no-repeat scroll center;
+}
+.menu-bottom ul li.mid-sitem > span i{
+	    background: rgba(0, 0, 0, 0) url(../images/bo-cong-thuong.png) no-repeat scroll left bottom;
+    content: ' ';
+    height: 47px;
+    display: block;
+    /* border-top: 1px solid #CCC; */
+    margin-top: 10px;
+    padding-top: 12px;
+}
+        
+
+    .menu-bottom{
+            border-top: 1px solid rgba(255, 255, 255, 0.38);
+    }
+   ul.menu-bottom li.level0 {
+          width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.38);
+    padding-top: 18px;
+    position: relative;
+    }
+    ul.menu-bottom li.level0:after{
+       position: absolute;
+        content: "\f105";
+        font-family: FontAwesome;
+        right: 6px;
+        font-size: 25px;
+        top: 12px;
+        color: #ffffff;
+    }
+    ul.menu-bottom li.level0 ul {
+        
+        display: none;
+    }
+    ul.menu-bottom li.level0:hover ul {
+        
+        display: block;
+    }
+    ul.menu-bottom li.level0 > a, ul.menu-bottom li.level0 > span {
+        
+        margin-bottom: 15px;
+        
+    }
+
+
+        ul.menu-bottom li.level0 {
+        
+        width: 100%;    
+        
+       
+    }

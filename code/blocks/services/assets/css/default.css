@@ -1,0 +1,99 @@
+.services_block{
+        margin: 0 -30px;
+}
+.blocks_service_list .block_title{
+}
+.blocks_service_list .block_summary{
+}
+.services_block .item{
+	    float: left;
+    width: 25%;
+}
+.services_block .item .item_inner{
+        margin: 30px;
+    /* border: 1px solid #e0ddd2; */
+    border-radius: 3px;
+    /* background: white; */
+    /* box-shadow: 0 2px 5px rgba(19,21,24,0.05); */
+    position: relative;
+    text-align: center;
+    /* padding: 10px; */
+    box-sizing: border-box;
+}
+.services_block .item:hover .item_inner {
+    
+}
+.services_block .item .item_inner .name{
+    display: block;
+    /* background: white; */
+    line-height: 30px;
+    font-size: 17px;
+    color: #131518;
+    /* white-space: nowrap; */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 21px;
+    margin-bottom: 1px;
+    font-weight: bold;
+}
+.services_block .item .item_inner:hover .name{
+    color: #CE3C5C;
+}
+.services_block .item .item_inner div{
+   
+}
+.services_block .item .item_inner img{
+   width: 100%;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -o-transition: all .3s ease-out;
+    transition: all .3s ease-out;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: #dcdcdc;
+    box-sizing: border-box;
+    border-width: 3px 8px 12px;
+
+}
+.services_block .item .item_inner:hover img {
+    transform: translate(0px,-15px);
+    border-color: #FFCC29;
+    
+}
+.services_block   .content_title_shadow {
+    width: 100%;
+    height: 30px;
+    background: url(../images/shadow.png) center center no-repeat;
+    margin-top: -5px;
+    transition: all 1.2s;
+    -webkit-transition: all 1.2s;
+}
+.services_block  .item_inner:hover .content_title_shadow {
+    transform: translate(-15px, 0px);
+}
+.services_block  .price{
+	float: left;
+    color: #6FC5AE;
+    font-size: 1.1rem;
+}
+.services_block .types{
+    float: right;
+    height: 18px;
+    margin-top: 4px;
+    font-size: 0.75rem;
+    line-height: 20px;
+    color: #878787;
+    overflow: hidden;
+    max-width: 50%;
+}
+@media screen and (max-width:850px){
+	.services_block .item {
+	   
+	}
+}
+
+@media screen and (max-width:570px){
+	.services_block .item {
+	    width: 50%;
+	}
+}

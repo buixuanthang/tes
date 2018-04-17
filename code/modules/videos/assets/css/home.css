@@ -1,0 +1,27 @@
+.videos-home-head{
+	    border-bottom: 1px solid #CCC;
+    border-top: 1px solid #CCC;
+    padding: 8px 0;
+}
+.filter_label{
+   text-transform: uppercase;
+    font-size: 18px;
+    background: url(../images/arrow_large.png) no-repeat right center;
+    padding: 10px 35px 10px 0;
+    font-weight: bold;
+    color: #131518;
+}
+.videos-home-head select{
+   width: 160px;
+    height: 34px;
+    border: 1px solid #BCBCBC;
+    border-radius: 3px;
+    box-sizing: border-box;
+    color: #6D6D6D;
+    font-size: 14px;
+    margin-top: 4px;
+}
+.filter_price{
+	    margin-right: 20px;
+    margin-left: 20px;
+}

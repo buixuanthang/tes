@@ -1,0 +1,143 @@
+.problems_wrapper{
+	background: url(../images/bg3.png) center center no-repeat #088ADA;
+}
+.problems_block	{
+	    display: block;
+    overflow: hidden;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    position: relative;
+    text-align: center;
+}
+.problems_label{
+	    color: #FFF;
+    text-transform: uppercase;
+    border-bottom: none;
+    margin-bottom: 0px;
+    font-size: 22px;
+    padding-bottom: 20px;
+    font-weight: 400;
+    margin-top: 15px;
+    text-align: center;
+}
+.problem_img{
+        display: inline-block;
+}
+.problems_block ul{
+       display: inline-block;
+    margin-left: 39px;
+    margin-top: 35px
+}
+.problems_block ul li{
+   list-style: none;
+    background: #FFF;
+    color: #0682CD;
+    padding: 0px 0px 10px 5px;
+    margin-bottom: 20px;
+    width: 140px;
+    position: relative;
+    transition: all .4s ease-in;
+    border-radius: 4px 0 0 4px;
+    height: 140px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 300px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+.problems_block ul .problem0{
+        left: 200px;
+    top: 10px;
+}
+.problems_block ul .problem1{
+        left: 700px;
+    top: 10px;
+}
+.problems_block ul .problem2{
+        left: 200px;
+    top: 190px;
+}
+.problems_block ul .problem3{
+        left: 700px;
+   top: 190px;
+}
+.problems_block ul li:hover{
+    width: 600px;
+    background: rgb(204, 4, 4);
+}
+
+.problems_block li:after {
+
+}
+
+.problems_block ul li h2{
+        text-transform: uppercase;
+    margin: 0;
+    border-bottom: none;
+    text-align: left;
+    font-weight: 600;
+    padding-bottom: 6px;
+    font-size: 17px;
+}
+.problems_block ul li:hover h2{
+   color: #FFF;
+}
+.problems_block ul li div{
+        color: #0682CD;
+    font-size: 18px;
+    min-height: 40px;
+    line-height: 20px;
+    /* margin-top: 25px; */
+    /* padding: 10px; */
+    display: table-cell;
+    height: 140px;
+    width: 100%;
+    vertical-align: middle;
+}
+.problems_block ul li:hover div{
+        color: #FFF;
+}
+.problems_solution{
+        margin-top: 100px;
+}
+.problems_solution h2 {
+   background: #FFF;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 600px;
+    margin: 0 auto 10px;
+    position: relative;
+    color: #fd720b;
+}
+.problems_block h2:after {
+       content: "";
+    position: absolute;
+    border-top: 18px solid transparent;
+    border-bottom: 19px solid transparent;
+    border-left: 20px solid #FFF;
+    right: -20px;
+    top: 0%;
+    transition: all .4s ease-in;
+}
+@media only screen  and (max-width: 870px){
+    .problems_block li{
+           margin-left: 0px !important; 
+    }
+}
+@media only screen  and (max-width: 720px){
+    .problems_block li:after {
+        display: none;
+    }
+    .problems_block ul li {
+       border-radius: 4px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .problems_block ul li:hover {
+        width: 100%;
+        background: rgb(204, 4, 4);
+    }
+}

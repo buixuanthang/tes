@@ -1,0 +1,144 @@
+i.fa.fa-file-text.news-icon {
+    font-size: 30px;
+    margin-right: 5px;
+}
+
+.news-top-block{
+	    margin-bottom: 25px;
+    margin-top: 38px;
+}
+.news-top-block span i{
+    font-size: 15px;
+}
+.news-top-block span{
+    margin-bottom: 30px;
+    font-family: RobotoThin;
+    font-size: 30px;
+    color: #464141;
+    // margin-left: 10px;
+
+}
+.news-top-block a{
+    float: right;
+    margin-top:16px;
+    color: #20282b;
+}
+.body-list-news{
+	
+}
+.body-list-news .left{
+	float: left;
+	width: 67.5%;
+	/*background:red;*/
+}
+.body-list-news .left .img{
+	display: block;
+	float:left;
+	margin-right:25px;
+}
+.body-list-news .left .content{
+	float:left;
+	box-sizing: border-box;
+	width:44.3%;
+	margin-top: -35px;
+}
+.content .title{
+	font-family: RobotoBold;
+	font-size: 16px;
+	padding-bottom: 20px;
+}
+.body-list-news .left .content i{
+	font-family: FontAwesome;
+	font-size: 16px;
+	width: 16px;
+	height: 16px;
+	color: #ccc;
+}
+.body-list-news .left .content span{
+	font-family: FontAwesome;
+	font-size: 14px;
+	color: #ccc;
+}
+.body-list-news .left .content p{
+	font-family: Roboto;
+	font-size: 14px;
+	color: #4d4d4d;
+
+}
+.body-list-news .left .content button{
+	font-family: Roboto;
+    font-size: 14px;
+    color: #20282b;
+    margin-top: 35px;
+    padding: 7px 14px;
+    border: 1px solid #20282b;
+    border-radius: 3px;
+    background: none;
+
+}
+.body-list-news .right{
+	float: right;
+	width: 31.5%;
+	background:white;
+
+}
+
+
+    
+.body-list-news .right ul li{
+	list-style: none;
+    padding: 11px;
+    border-left: 2px solid #a8a8a8;
+    /* margin-bottom: 2px; */
+    font-family: Roboto;
+    font-size: 14px;
+    border-bottom: #ececec 1px solid;
+}
+
+.body-list-news .right ul li::before{
+	border-bottom: white;
+}
+.body-list-news .right ul li:hover{
+	background: #20282b;
+	color: white;
+	cursor: pointer;
+}
+
+
+@media all and (max-width: 1024px){
+    .body-list-news .left {
+    float: none; 
+    width: 100%;
+   
+	}
+	.body-list-news .right {
+    float: none; 
+    width: 100%;
+     clear: both;
+	}
+	.body-list-news .right ul li:hover{
+	background: none;
+	color: black;
+	cursor: pointer;
+	}
+	.body-list-news .left .content button{
+		margin-top: 16px;
+	}
+}
+
+
+@media all and (max-width: 768px){
+   .body-list-news .left .img {
+    display: block;
+    /* float: left; */
+    margin-right: 25px;
+    width: 100%;
+	}
+
+	.body-list-news .left .content {
+    /* float: left; */
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px 0px;
+	}
+}

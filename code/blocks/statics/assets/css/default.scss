@@ -1,0 +1,29 @@
+.statics-default{
+	max-width:520px;
+	.block_title {
+	    margin-bottom: 40px;
+	}
+	ul{
+		li{
+			margin-bottom: 30px;
+			.img{
+				float: left;
+				width: 62px;
+			}
+			.ct{
+				float: right;
+				width: -webkit-calc(100% - 90px);
+			    width: -moz-calc(100% - 90px);
+			    width: calc(100% - 90px);
+			    b{
+			    	display: block;
+			    	margin-bottom: 10px;
+			    	font-size: 19px;
+			    }
+			    span{
+			    	line-height: 28px;
+			    }
+			}
+		}
+	}
+}

@@ -1,0 +1,109 @@
+.field_title{
+	    position: relative;
+    /* margin-bottom: 11px; */
+    /* background: #F4F4F4; */
+    /* padding-right: 10px; */
+    border-bottom: 1px solid #F4F4F4;
+}
+.cat-title {
+   
+}
+.cat-title .cat-title-main {
+    float: left;
+}
+.title_icon {
+   float: left;
+    /* background: #734F2E; */
+    padding: 14px 0px 7px;
+    /* border-radius: 4px 4px 0 0; */
+    display: inline-block;
+    position: relative;
+    margin-left: 0px;
+    
+    /* min-width: 116px; */
+    text-align: center;
+    webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    transition: all .5s ease;
+    /* margin-top: -6px; */
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #FFF;
+    text-decoration: none;
+    font-family: RobotoBold;
+}
+
+.cat-title .cat-title-main h1 {
+      font-size: 19px;
+    font-weight: normal;
+    display: inline;
+    float: left;
+    color: var(--main-color);
+    padding-right: 6px;
+}
+.title_icon:before{
+   position: absolute;
+    width: 21px;
+    height: 24px;
+    top: 14px;
+    left: 20px;
+    z-index: 10;
+    font-size: 29px;
+    font-family: FontAwesome;
+    font-weight: normal;
+}
+#cat-dien-thoai .title_icon:before {
+    content: "\f10b";
+}
+
+#cat-may-tinh-bang  .title_icon:before {
+        content: "\f10a";
+    
+}
+#cat-phu-kien  .title_icon:before {
+         content: "\f025";
+   
+}
+
+
+.field_title select {
+       position: absolute;
+    right: 10px;
+    top: 13px;
+    border: none;
+    /* color: #734F2E; */
+    padding: 4px;
+    border-radius: 4px;
+    background: transparent;
+}
+.product_grid{
+       border-top: 1px solid #F4F4F4;
+    border-left: 1px solid #F4F4F4;
+    margin-top: 15px;
+}
+.products-cat-frame-inner .product_grid .item{
+        width: 25%;
+}
+@media screen and (max-width:900px){
+	.cat-title .cat-title-main {
+	    float: none;
+	}
+}
+@media screen and (max-width:768px){
+    .products-cat-frame-inner .product_grid .item{
+        width: 33.3333%;
+    }
+}
+@media screen and (max-width:560px){
+    .products-cat-frame-inner .product_grid .item{
+        width: 50%;
+    }
+}
+    
+@media screen and (max-width:550px){
+	.field_title select {
+	    display: none;
+	}
+}
